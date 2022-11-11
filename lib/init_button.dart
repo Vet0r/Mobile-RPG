@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/host/create_campaing.dart';
 import 'package:mobile_rpg/player/chose_your_name.dart';
-import 'host/host.dart';
 
 initButton(BuildContext context, bool isMaster) {
   return TextButton(
@@ -8,7 +8,7 @@ initButton(BuildContext context, bool isMaster) {
         ? () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const Host()),
+              MaterialPageRoute(builder: (context) => const CreatCampaing()),
             );
           }
         : () {

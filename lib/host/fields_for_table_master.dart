@@ -1,7 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-fielsFortableMaster(String fieldFB, String field, BuildContext context,
+fielsFortableMaster(
+    String campaignId,
+    String fieldFB,
+    String field,
+    BuildContext context,
     QueryDocumentSnapshot<Map<String, dynamic>> documents) {
   var controller = TextEditingController();
   return Padding(
@@ -18,7 +22,9 @@ fielsFortableMaster(String fieldFB, String field, BuildContext context,
             : IconButton(
                 onPressed: () async {
                   var update = FirebaseFirestore.instance
-                      .collection('/players')
+                      .collection("campaigns")
+                      .doc(campaignId)
+                      .collection('players')
                       .doc(documents.id);
                   showDialog(
                     context: context,

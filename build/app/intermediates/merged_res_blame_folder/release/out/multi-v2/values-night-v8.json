@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/vitor/Desktop/Mobile RPG/mobile_rpg/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

@@ -1,4 +1,4 @@
-# The proguard configuration file for the following section is /home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.1.2
+# The proguard configuration file for the following section is /home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.1.2
 # This is a configuration file for ProGuard.
 # http://proguard.sourceforge.net/index.html#manual/usage.html
 #
@@ -116,7 +116,7 @@
 # These classes are duplicated between android.jar and core-lambda-stubs.jar.
 -dontnote java.lang.invoke.**
 
-# End of content from /home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.1.2
+# End of content from /home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.1.2
 # The proguard configuration file for the following section is /home/vitor/snap/flutter/common/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
 # Build the ephemeral app in a module project.
 # Prevents: Warning: library class <plugin-package> depends on program class io.flutter.plugin.**
@@ -127,7 +127,7 @@
 -dontwarn android.**
 
 # End of content from /home/vitor/snap/flutter/common/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro
-# The proguard configuration file for the following section is /home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# The proguard configuration file for the following section is /home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class com.example.mobile_rpg.MainActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
@@ -135,7 +135,7 @@
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 -keep class io.flutter.app.FlutterMultiDexApplication { <init>(); }
 
-# End of content from /home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
+# End of content from /home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 # The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #

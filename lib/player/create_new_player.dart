@@ -1,8 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-Future<String> createNewPlayer(String name) async {
-  CollectionReference players =
-      FirebaseFirestore.instance.collection('/players');
+Future<String> createNewPlayer(String name, String campaingDocId) async {
+  CollectionReference players = FirebaseFirestore.instance
+      .collection('/campaigns')
+      .doc(campaingDocId)
+      .collection('players');
 
   Map<String, dynamic> mapPlayer = <String, dynamic>{
     "name": name,

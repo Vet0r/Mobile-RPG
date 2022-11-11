@@ -5,7 +5,8 @@ import 'button_delete_player.dart';
 import 'fields_for_table_master.dart';
 
 class Host extends StatefulWidget {
-  const Host({super.key});
+  String? campaingId;
+  Host({this.campaingId, super.key});
 
   @override
   State<Host> createState() => _HostState();
@@ -17,7 +18,11 @@ class _HostState extends State<Host> {
     return Scaffold(
       backgroundColor: Colors.grey,
       body: StreamBuilder(
-        stream: FirebaseFirestore.instance.collection('players').snapshots(),
+        stream: FirebaseFirestore.instance
+            .collection('campaigns')
+            .doc(widget.campaingId)
+            .collection("players")
+            .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return Center(
@@ -75,8 +80,14 @@ class _HostState extends State<Host> {
                                                         .spaceAround,
                                                 children: [
                                                   buttonDelete(
-                                                      context, true, documents),
-                                                  buttonDelete(context, false,
+                                                      widget.campaingId,
+                                                      context,
+                                                      true,
+                                                      documents),
+                                                  buttonDelete(
+                                                      widget.campaingId,
+                                                      context,
+                                                      false,
                                                       documents),
                                                 ],
                                               ),
@@ -96,36 +107,40 @@ class _HostState extends State<Host> {
                           height: 0.1,
                           thickness: 2,
                         ),
-                        fielsFortableMaster(
-                            'level', 'Level', context, documents),
-                        const Divider(
-                          height: 0.1,
-                          thickness: 2,
-                        ),
-                        fielsFortableMaster('hp', 'HP', context, documents),
-                        const Divider(
-                          height: 0.1,
-                          thickness: 2,
-                        ),
-                        fielsFortableMaster('mana', 'Mana', context, documents),
+                        fielsFortableMaster(widget.campaingId!, 'level',
+                            'Level', context, documents),
                         const Divider(
                           height: 0.1,
                           thickness: 2,
                         ),
                         fielsFortableMaster(
-                            'stamina', 'Stamina', context, documents),
+                            widget.campaingId!, 'hp', 'HP', context, documents),
                         const Divider(
                           height: 0.1,
                           thickness: 2,
                         ),
-                        fielsFortableMaster('xp', 'XP', context, documents),
+                        fielsFortableMaster(widget.campaingId!, 'mana', 'Mana',
+                            context, documents),
                         const Divider(
                           height: 0.1,
                           thickness: 2,
                         ),
-                        fielsFortableMaster('dice', 'Dado', context, documents),
+                        fielsFortableMaster(widget.campaingId!, 'stamina',
+                            'Stamina', context, documents),
+                        const Divider(
+                          height: 0.1,
+                          thickness: 2,
+                        ),
                         fielsFortableMaster(
-                            'roled_dice', 'Dado Rolado', context, documents),
+                            widget.campaingId!, 'xp', 'XP', context, documents),
+                        const Divider(
+                          height: 0.1,
+                          thickness: 2,
+                        ),
+                        fielsFortableMaster(widget.campaingId!, 'dice', 'Dado',
+                            context, documents),
+                        fielsFortableMaster(widget.campaingId!, 'roled_dice',
+                            'Dado Rolado', context, documents),
                         const Divider(
                           height: 0.1,
                           thickness: 2,

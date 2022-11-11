@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/cloud_firestore/intermediates/merged_res/release/values-ar/values-ar.xml",
+            "outputFile": "/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/cloud_firestore/intermediates/incremental/mergeReleaseResources/merged.dir/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "/home/vitor/.gradle/caches/transforms-3/19fea4fb28dedd992824e13cc158e7a1/transformed/jetified-play-services-base-18.0.1/res/values-ar/values.xml",
@@ -57,7 +57,7 @@
             ]
         },
         {
-            "outputFile": "/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/cloud_firestore/intermediates/incremental/mergeReleaseResources/merged.dir/values-ar/values-ar.xml",
+            "outputFile": "/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/cloud_firestore/intermediates/merged_res/release/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "/home/vitor/.gradle/caches/transforms-3/19fea4fb28dedd992824e13cc158e7a1/transformed/jetified-play-services-base-18.0.1/res/values-ar/values.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/firebase_core/intermediates/merged_res/release/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_core/intermediates/merged_res/release/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/home/vitor/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/res/values-en-rGB/values.xml",
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "outputFile": "/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/firebase_core/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_core/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/home/vitor/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/res/values-en-rGB/values.xml",

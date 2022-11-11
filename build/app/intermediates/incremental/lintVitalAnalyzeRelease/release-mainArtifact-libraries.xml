@@ -1,13 +1,13 @@
 <libraries>
   <library
-      name="__local_aars__:/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
-      jars="/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/flutter/release/libs.jar"
-      resolved="__local_aars__:/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
+      name="__local_aars__:/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/flutter/release/libs.jar:unspecified@jar"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/flutter/release/libs.jar"
+      resolved="__local_aars__:/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
-      name="/home/vitor/Desktop/Mobile RPG/mobile_rpg/android@@:firebase_database::release"
-      jars="/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/firebase_database/.transforms/add911baca22458661004a43cf829a62/transformed/out/jars/classes.jar"
+      name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:firebase_database::release"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_database/.transforms/f8c396bad544b8cb7e75ab5e9033e160/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.firebase.database:firebase_database:unspecified"
-      folder="/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/firebase_database/.transforms/add911baca22458661004a43cf829a62/transformed/out"
+      folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_database/.transforms/f8c396bad544b8cb7e75ab5e9033e160/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -17,10 +17,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/vitor/Desktop/Mobile RPG/mobile_rpg/android@@:cloud_firestore::release"
-      jars="/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/cloud_firestore/.transforms/a2d4692a91f37958863179ef31cadd60/transformed/out/jars/classes.jar"
+      name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:cloud_firestore::release"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/cloud_firestore/.transforms/f294129042eda5efbc001c723f8b4ae2/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.firebase.cloudfirestore:cloud_firestore:unspecified"
-      folder="/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/cloud_firestore/.transforms/a2d4692a91f37958863179ef31cadd60/transformed/out"
+      folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/cloud_firestore/.transforms/f294129042eda5efbc001c723f8b4ae2/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -30,10 +30,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/home/vitor/Desktop/Mobile RPG/mobile_rpg/android@@:firebase_core::release"
-      jars="/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/firebase_core/.transforms/c0a8a514bd763f46ec62252ae7885a36/transformed/out/jars/classes.jar"
+      name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:firebase_core::release"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_core/.transforms/ade89995dba9f7ccdc5de124dc24e10b/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.firebase.core:firebase_core:unspecified"
-      folder="/home/vitor/Desktop/Mobile RPG/mobile_rpg/build/firebase_core/.transforms/c0a8a514bd763f46ec62252ae7885a36/transformed/out"
+      folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_core/.transforms/ade89995dba9f7ccdc5de124dc24e10b/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

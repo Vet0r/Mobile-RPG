@@ -12,10 +12,12 @@ import 'fields_for_table.dart';
 
 class Player extends StatefulWidget {
   String? playerId;
+  String? campaignId;
 
   Player({
     Key? key,
     this.playerId,
+    this.campaignId,
   }) : super(key: key);
   @override
   State<Player> createState() => _PlayerState();
@@ -26,10 +28,12 @@ class _PlayerState extends State<Player> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
-      appBar: playerAppBar(widget.playerId, context),
+      appBar: playerAppBar(widget.campaignId, widget.playerId, context),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
-            .collection('players')
+            .collection('campaigns')
+            .doc(widget.campaignId)
+            .collection("players")
             .doc(widget.playerId)
             .snapshots(),
         builder: (context, snapshot) {
