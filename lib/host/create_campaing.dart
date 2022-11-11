@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import '../standard_textfiel_decoration.dart';
 import 'host.dart';
 
 class CreatCampaing extends StatefulWidget {
@@ -21,73 +22,67 @@ class _CreatCampaingState extends State<CreatCampaing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Scaffold(
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text("Digite o ID da campanha"),
-                TextField(
-                  controller: idCampaingController,
-                ),
-              ],
-            ),
+      backgroundColor: Colors.grey,
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: TextField(
+            cursorColor: Colors.black,
+            decoration: standardTextFieldDecoration("ID da Campanha"),
+            controller: idCampaingController,
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () async {
-            if (idCampaingController.text == "") {
-              showDialog(
-                context: context,
-                builder: (context) {
-                  return const AlertDialog(
-                    content: Text("Digite um ID válido"),
-                  );
-                },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          if (idCampaingController.text == "") {
+            showDialog(
+              context: context,
+              builder: (context) {
+                return const AlertDialog(
+                  content: Text("Digite um ID válido"),
+                );
+              },
+            );
+          } else {
+            var docs =
+                await FirebaseFirestore.instance.collection('/campaigns').get();
+            for (var doc in docs.docs) {
+              var fields = await FirebaseFirestore.instance
+                  .collection('/campaigns')
+                  .doc(doc.id)
+                  .get();
+              if (fields["campaign_code"] == idCampaingController.text) {
+                verify = true;
+                fbIdcamp = doc.id;
+                break;
+              }
+            }
+            if (verify == true) {
+              verify = false;
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Host(
+                    campaingId: fbIdcamp,
+                  ),
+                ),
               );
             } else {
-              var docs = await FirebaseFirestore.instance
-                  .collection('/campaigns')
-                  .get();
-              for (var doc in docs.docs) {
-                var fields = await FirebaseFirestore.instance
-                    .collection('/campaigns')
-                    .doc(doc.id)
-                    .get();
-                if (fields["campaign_code"] == idCampaingController.text) {
-                  verify = true;
-                  fbIdcamp = doc.id;
-                  break;
-                }
-              }
-              if (verify == true) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Host(
-                      campaingId: fbIdcamp,
-                    ),
+              fbIdcamp = await createNewCampaing(idCampaingController.text);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Host(
+                    campaingId: fbIdcamp,
                   ),
-                );
-              } else {
-                fbIdcamp = await createNewCampaing(idCampaingController.text);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Host(
-                      campaingId: fbIdcamp,
-                    ),
-                  ),
-                );
-              }
-              // ignore: use_build_context_synchronously
+                ),
+              );
             }
-          },
-          tooltip: 'Próximo',
-          child: const Icon(Icons.arrow_forward),
-        ),
+          }
+        },
+        tooltip: 'Próximo',
+        child: const Icon(Icons.arrow_forward),
       ),
     );
   }

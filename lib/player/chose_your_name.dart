@@ -7,6 +7,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:mobile_rpg/player/create_new_player.dart';
 import 'package:mobile_rpg/player/player.dart';
 
+import '../standard_textfiel_decoration.dart';
+
 class ChoseYourName extends StatefulWidget {
   const ChoseYourName({super.key});
 
@@ -16,26 +18,30 @@ class ChoseYourName extends StatefulWidget {
 
 class _ChoseYourNameState extends State<ChoseYourName> {
   bool isLoading = false;
-  String? playerId = "";
-  String campingDocId = "";
   var nameController = TextEditingController();
   var campaingIdController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text("Escolha o seu nome"),
               TextField(
+                decoration: standardTextFieldDecoration("Nome"),
                 controller: nameController,
+                cursorColor: Colors.black,
               ),
-              const Text("Digite o Id da campanha"),
+              const SizedBox(
+                height: 50,
+              ),
               TextField(
+                decoration: standardTextFieldDecoration("ID da Campanha"),
                 controller: campaingIdController,
+                cursorColor: Colors.black,
               ),
               isLoading == true
                   ? const SizedBox(
@@ -71,8 +77,11 @@ class _ChoseYourNameState extends State<ChoseYourName> {
               },
             );
           } else if (campaingIdController.text != "") {
+            String? playerId = "";
+            String campingDocId = "";
             isLoading = true;
             bool verify = false;
+            bool verify2 = false;
             var docs =
                 await FirebaseFirestore.instance.collection('/campaigns').get();
             for (var doc in docs.docs) {
@@ -87,18 +96,52 @@ class _ChoseYourNameState extends State<ChoseYourName> {
                 break;
               }
             }
-            if (verify == true) {
-              var playerId =
-                  await createNewPlayer(nameController.text, campingDocId);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => Player(
-                    playerId: playerId,
-                    campaignId: campingDocId,
+            if (verify) {
+              isLoading = true;
+              var docs = await FirebaseFirestore.instance
+                  .collection('/campaigns')
+                  .doc(campingDocId)
+                  .collection("players")
+                  .get();
+              for (var doc in docs.docs) {
+                var fields = await FirebaseFirestore.instance
+                    .collection('campaigns')
+                    .doc(campingDocId)
+                    .collection("players")
+                    .doc(doc.id)
+                    .get();
+                if (fields.exists) {
+                  if (fields["name"] == nameController.text) {
+                    verify2 = true;
+                    isLoading = false;
+                    playerId = doc.id;
+                    break;
+                  }
+                }
+              }
+              if (verify2) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Player(
+                      playerId: playerId,
+                      campaignId: campingDocId,
+                    ),
                   ),
-                ),
-              );
+                );
+              } else {
+                playerId =
+                    await createNewPlayer(nameController.text, campingDocId);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Player(
+                      playerId: playerId,
+                      campaignId: campingDocId,
+                    ),
+                  ),
+                );
+              }
             } else {
               showDialog(
                 context: context,
