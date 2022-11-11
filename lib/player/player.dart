@@ -37,42 +37,45 @@ class _PlayerState extends State<Player> {
               child: CircularProgressIndicator(),
             );
           } else {
-            return Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                color: Colors.brown,
-                child: Column(
-                  children: [
-                    const Divider(
-                      height: 0.1,
-                      thickness: 2,
+            return snapshot.data!.exists
+                ? Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.brown,
+                      child: Column(
+                        children: [
+                          const Divider(
+                            height: 0.1,
+                            thickness: 2,
+                          ),
+                          fielsFortable('hp', 'HP', context, snapshot.data),
+                          const Divider(
+                            height: 0.1,
+                            thickness: 2,
+                          ),
+                          fielsFortable('mana', 'Mana', context, snapshot.data),
+                          const Divider(
+                            height: 0.1,
+                            thickness: 2,
+                          ),
+                          fielsFortable(
+                              'stamina', 'Stamina', context, snapshot.data),
+                          const Divider(
+                            height: 0.1,
+                            thickness: 2,
+                          ),
+                          fielsFortable('xp', 'XP', context, snapshot.data),
+                          const Divider(
+                            height: 0.1,
+                            thickness: 2,
+                          ),
+                          fielsFortable('dice', 'Dado', context, snapshot.data),
+                        ],
+                      ),
                     ),
-                    fielsFortable('hp', 'HP', context, snapshot.data),
-                    const Divider(
-                      height: 0.1,
-                      thickness: 2,
-                    ),
-                    fielsFortable('mana', 'Mana', context, snapshot.data),
-                    const Divider(
-                      height: 0.1,
-                      thickness: 2,
-                    ),
-                    fielsFortable('stamina', 'Stamina', context, snapshot.data),
-                    const Divider(
-                      height: 0.1,
-                      thickness: 2,
-                    ),
-                    fielsFortable('xp', 'XP', context, snapshot.data),
-                    const Divider(
-                      height: 0.1,
-                      thickness: 2,
-                    ),
-                    fielsFortable('dice', 'Dado', context, snapshot.data),
-                  ],
-                ),
-              ),
-            );
+                  )
+                : Container();
           }
         },
       ),
