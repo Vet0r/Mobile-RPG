@@ -6,7 +6,7 @@ fielsFortable(String fieldFB, String field, BuildContext context,
   return Padding(
     padding: const EdgeInsets.only(left: 15.0, right: 15),
     child: Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Text(
           "$field: ${documents?.get(fieldFB)}",

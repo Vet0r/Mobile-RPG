@@ -96,6 +96,12 @@ class _HostState extends State<Host> {
                           height: 0.1,
                           thickness: 2,
                         ),
+                        fielsFortableMaster(
+                            'level', 'Level', context, documents),
+                        const Divider(
+                          height: 0.1,
+                          thickness: 2,
+                        ),
                         fielsFortableMaster('hp', 'HP', context, documents),
                         const Divider(
                           height: 0.1,
@@ -118,6 +124,12 @@ class _HostState extends State<Host> {
                           thickness: 2,
                         ),
                         fielsFortableMaster('dice', 'Dado', context, documents),
+                        fielsFortableMaster(
+                            'roled_dice', 'Dado Rolado', context, documents),
+                        const Divider(
+                          height: 0.1,
+                          thickness: 2,
+                        ),
                       ]),
                     ),
                   );

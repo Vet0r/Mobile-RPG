@@ -11,6 +11,8 @@ Future<String> createNewPlayer(String name) async {
     "stamina": 10,
     "xp": 0,
     "dice": 0,
+    "level": 0,
+    "roled_dice": 0,
   };
 
   DocumentReference playerId = await players.add(mapPlayer);

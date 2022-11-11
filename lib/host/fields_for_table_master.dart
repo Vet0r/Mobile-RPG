@@ -13,36 +13,38 @@ fielsFortableMaster(String fieldFB, String field, BuildContext context,
           "$field: ${documents.get(fieldFB)}",
           style: const TextStyle(fontSize: 20),
         ),
-        IconButton(
-          onPressed: () async {
-            var update = FirebaseFirestore.instance
-                .collection('/players')
-                .doc(documents.id);
-            showDialog(
-              context: context,
-              builder: (context) {
-                return AlertDialog(
-                  content: TextField(
-                    controller: controller,
-                    decoration: InputDecoration(
-                      hintText: '${documents.get(fieldFB)}',
-                      suffixIcon: IconButton(
-                        onPressed: () {
-                          update.update(
-                            {fieldFB: int.parse(controller.text)},
-                          );
-                          Navigator.pop(context);
-                        },
-                        icon: const Icon(Icons.arrow_forward_rounded),
-                      ),
-                    ),
-                  ),
-                );
-              },
-            );
-          },
-          icon: const Icon(Icons.mode),
-        ),
+        fieldFB == "roled_dice" || fieldFB == "dice"
+            ? Container()
+            : IconButton(
+                onPressed: () async {
+                  var update = FirebaseFirestore.instance
+                      .collection('/players')
+                      .doc(documents.id);
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        content: TextField(
+                          controller: controller,
+                          decoration: InputDecoration(
+                            hintText: '${documents.get(fieldFB)}',
+                            suffixIcon: IconButton(
+                              onPressed: () {
+                                update.update(
+                                  {fieldFB: int.parse(controller.text)},
+                                );
+                                Navigator.pop(context);
+                              },
+                              icon: const Icon(Icons.arrow_forward_rounded),
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                },
+                icon: const Icon(Icons.mode),
+              ),
       ],
     ),
   );

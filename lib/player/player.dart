@@ -5,6 +5,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:mobile_rpg/player/dice.dart';
 import 'package:mobile_rpg/player/player_app_bar.dart';
 
 import 'fields_for_table.dart';
@@ -49,6 +50,12 @@ class _PlayerState extends State<Player> {
                             height: 0.1,
                             thickness: 2,
                           ),
+                          fielsFortable(
+                              'level', 'Level', context, snapshot.data),
+                          const Divider(
+                            height: 0.1,
+                            thickness: 2,
+                          ),
                           fielsFortable('hp', 'HP', context, snapshot.data),
                           const Divider(
                             height: 0.1,
@@ -71,6 +78,11 @@ class _PlayerState extends State<Player> {
                             thickness: 2,
                           ),
                           fielsFortable('dice', 'Dado', context, snapshot.data),
+                          const Divider(
+                            height: 0.1,
+                            thickness: 2,
+                          ),
+                          diceForTable('dice', 'Dado', context, snapshot.data),
                         ],
                       ),
                     ),
