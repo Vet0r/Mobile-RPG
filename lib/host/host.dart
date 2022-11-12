@@ -1,8 +1,12 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../player/dice.dart';
 import 'button_delete_player.dart';
 import 'fields_for_table_master.dart';
+import 'master_dice.dart';
 
 class Host extends StatefulWidget {
   String? campaingId;
@@ -13,6 +17,8 @@ class Host extends StatefulWidget {
 }
 
 class _HostState extends State<Host> {
+  int value = 0;
+  var controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -144,6 +150,22 @@ class _HostState extends State<Host> {
                         const Divider(
                           height: 0.1,
                           thickness: 2,
+                        ),
+                        TextField(
+                          controller: controller,
+                          decoration: InputDecoration(
+                            suffixIcon: IconButton(
+                              onPressed: () {
+                                value = Random().nextInt(
+                                  int.parse(controller.text),
+                                );
+                                setState(() {
+                                  value;
+                                });
+                              },
+                              icon: Text(value.toString()),
+                            ),
+                          ),
                         ),
                       ]),
                     ),

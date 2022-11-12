@@ -1,24 +1,22 @@
 import 'dart:math';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-Widget rollMasterDice() {
+masterDiceForTable(BuildContext context) {
+  int value = 0;
   var controller = TextEditingController();
-  int value = 1;
-  return Row(
-    children: [
-      Text(value.toString()),
-      TextField(
-        controller: controller,
-        decoration: InputDecoration(
-          suffixIcon: IconButton(
-            onPressed: () {
-              value = Random().nextInt(int.parse(controller.text));
-            },
-            icon: const Icon(Icons.square_rounded),
-          ),
-        ),
+  return TextField(
+    controller: controller,
+    decoration: InputDecoration(
+      suffixIcon: IconButton(
+        onPressed: () {
+          value = Random().nextInt(
+            int.parse(controller.text),
+          );
+        },
+        icon: Text(value.toString()),
       ),
-    ],
+    ),
   );
 }
