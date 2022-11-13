@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/host/searching_for_players.dart';
 
 import '../player/dice.dart';
 import 'button_delete_player.dart';
@@ -31,25 +32,17 @@ class _HostState extends State<Host> {
             .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
-            return Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Text(
-                    "Buscando players",
-                  ),
-                  CircularProgressIndicator(),
-                ],
-              ),
-            );
+            return searchingWidget("Buscando jogadores");
+          }
+          if (snapshot.data?.size == 0) {
+            return searchingWidget("Aguardando jogadores");
           } else {
             return Padding(
               padding: const EdgeInsets.all(8.0),
-              child: ListView(
+              child: ExpansionPanelList(
                 children: snapshot.data!.docs.map((documents) {
-                  return Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
+                  return ExpansionPanel(
+                    body: Container(
                       width: 100,
                       color: Colors.brown,
                       child: Column(children: [
@@ -113,39 +106,27 @@ class _HostState extends State<Host> {
                           height: 0.1,
                           thickness: 2,
                         ),
-                        fielsFortableMaster(widget.campaingId!, 'level',
+                        fieldsFortableMaster(widget.campaingId!, 'level',
                             'Level', context, documents),
                         const Divider(
                           height: 0.1,
                           thickness: 2,
                         ),
-                        fielsFortableMaster(
+                        fieldsFortableMaster(
                             widget.campaingId!, 'hp', 'HP', context, documents),
                         const Divider(
                           height: 0.1,
                           thickness: 2,
                         ),
-                        fielsFortableMaster(widget.campaingId!, 'mana', 'Mana',
-                            context, documents),
-                        const Divider(
-                          height: 0.1,
-                          thickness: 2,
-                        ),
-                        fielsFortableMaster(widget.campaingId!, 'stamina',
-                            'Stamina', context, documents),
-                        const Divider(
-                          height: 0.1,
-                          thickness: 2,
-                        ),
-                        fielsFortableMaster(
+                        fieldsFortableMaster(
                             widget.campaingId!, 'xp', 'XP', context, documents),
                         const Divider(
                           height: 0.1,
                           thickness: 2,
                         ),
-                        fielsFortableMaster(widget.campaingId!, 'dice', 'Dado',
+                        fieldsFortableMaster(widget.campaingId!, 'dice', 'Dado',
                             context, documents),
-                        fielsFortableMaster(widget.campaingId!, 'roled_dice',
+                        fieldsFortableMaster(widget.campaingId!, 'roled_dice',
                             'Dado Rolado', context, documents),
                         const Divider(
                           height: 0.1,
@@ -169,6 +150,9 @@ class _HostState extends State<Host> {
                         ),
                       ]),
                     ),
+                    headerBuilder: (BuildContext context, bool isExpanded) {
+                      return Text("data");
+                    },
                   );
                 }).toList(),
               ),

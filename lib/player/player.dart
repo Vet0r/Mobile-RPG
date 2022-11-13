@@ -7,7 +7,10 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:mobile_rpg/player/dice.dart';
 import 'package:mobile_rpg/player/player_app_bar.dart';
+import 'package:mobile_rpg/player/retangular_fields_for_table.dart';
 
+import 'circular2_fields_for_table.dart';
+import 'circular_fields_for_table.dart';
 import 'fields_for_table.dart';
 
 class Player extends StatefulWidget {
@@ -43,54 +46,110 @@ class _PlayerState extends State<Player> {
             );
           } else {
             return snapshot.data!.exists
-                ? Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Container(
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.brown,
-                      child: Column(
-                        children: [
-                          const Divider(
-                            height: 0.1,
-                            thickness: 2,
+                ? ListView(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width,
+                          color: Colors.brown,
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  fieldsFortable(
+                                      'level', 'Level', context, snapshot.data),
+                                  fieldsFortable(
+                                      'xp', 'XP', context, snapshot.data),
+                                ],
+                              ),
+                              const Divider(
+                                height: 0.1,
+                                thickness: 2,
+                              ),
+                              fieldsFortable(
+                                  'race', 'Raça', context, snapshot.data),
+                              fieldsFortable(
+                                  'class', 'Classe', context, snapshot.data),
+                              fieldsFortable(
+                                  'hp', 'HP', context, snapshot.data),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  circularFieldsFortable(
+                                      'force', 'Força', context, snapshot.data),
+                                  circularFieldsFortable('dex', 'Destreza',
+                                      context, snapshot.data),
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  circularFieldsFortable('inteligence',
+                                      'Inteligência', context, snapshot.data),
+                                  circularFieldsFortable('knologe', 'Sabedoria',
+                                      context, snapshot.data),
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  circularFieldsFortable('charisam', 'Carisma',
+                                      context, snapshot.data),
+                                  circularFieldsFortable('constitution',
+                                      'Constituição', context, snapshot.data),
+                                ],
+                              ),
+                              const Divider(
+                                height: 0.1,
+                                thickness: 2,
+                              ),
+                              fieldsFortable(
+                                  'dice', 'Dado', context, snapshot.data),
+                              diceForTable(widget.campaignId!, 'dice', 'Dado',
+                                  context, snapshot.data),
+                              const Divider(
+                                height: 0.1,
+                                thickness: 2,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
+                                children: [
+                                  circular2FieldsFortable('armor', 'Armadura',
+                                      context, snapshot.data),
+                                  circular2FieldsFortable('iniciative',
+                                      'Iniciativa', context, snapshot.data),
+                                  circular2FieldsFortable('deslocamento',
+                                      'Deslocamento', context, snapshot.data),
+                                ],
+                              ),
+                              const Divider(
+                                height: 0.1,
+                                thickness: 2,
+                              ),
+                              Column(children: [
+                                retangularFieldsFortable(
+                                    'hp',
+                                    'Pontos de vida Atuais',
+                                    context,
+                                    snapshot.data,
+                                    true),
+                                retangularFieldsFortable(
+                                    'hp_temp',
+                                    'Pontos de vida temporários',
+                                    context,
+                                    snapshot.data,
+                                    false),
+                              ]),
+                            ],
                           ),
-                          fielsFortable(
-                              'level', 'Level', context, snapshot.data),
-                          const Divider(
-                            height: 0.1,
-                            thickness: 2,
-                          ),
-                          fielsFortable('hp', 'HP', context, snapshot.data),
-                          const Divider(
-                            height: 0.1,
-                            thickness: 2,
-                          ),
-                          fielsFortable('mana', 'Mana', context, snapshot.data),
-                          const Divider(
-                            height: 0.1,
-                            thickness: 2,
-                          ),
-                          fielsFortable(
-                              'stamina', 'Stamina', context, snapshot.data),
-                          const Divider(
-                            height: 0.1,
-                            thickness: 2,
-                          ),
-                          fielsFortable('xp', 'XP', context, snapshot.data),
-                          const Divider(
-                            height: 0.1,
-                            thickness: 2,
-                          ),
-                          fielsFortable('dice', 'Dado', context, snapshot.data),
-                          const Divider(
-                            height: 0.1,
-                            thickness: 2,
-                          ),
-                          diceForTable(widget.campaignId!, 'dice', 'Dado',
-                              context, snapshot.data),
-                        ],
+                        ),
                       ),
-                    ),
+                    ],
                   )
                 : Container();
           }

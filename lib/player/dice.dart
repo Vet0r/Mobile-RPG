@@ -15,6 +15,16 @@ diceForTable(String campID, String fieldFB, String field, BuildContext context,
   return TextField(
     controller: controller,
     decoration: InputDecoration(
+      enabledBorder: const OutlineInputBorder(
+        borderSide: BorderSide(width: 3, color: Colors.black),
+      ),
+      fillColor: Colors.black,
+      border: const OutlineInputBorder(),
+      focusedBorder: const OutlineInputBorder(
+        borderSide: BorderSide(width: 3, color: Colors.black),
+      ),
+      labelText: field,
+      labelStyle: const TextStyle(color: Colors.black),
       suffixIcon: IconButton(
         onPressed: () {
           update.update(
