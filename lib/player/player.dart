@@ -5,12 +5,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:mobile_rpg/player/dice.dart';
+import 'package:mobile_rpg/player/widgets/dice.dart';
 import 'package:mobile_rpg/player/player_app_bar.dart';
 import 'package:mobile_rpg/player/retangular_fields_for_table.dart';
 
-import 'circular2_fields_for_table.dart';
-import 'circular_fields_for_table.dart';
+import 'widgets/circular2_fields_for_table.dart';
+import 'widgets/circular_fields_for_table.dart';
 import 'fields_for_table.dart';
 
 class Player extends StatefulWidget {
@@ -52,7 +52,7 @@ class _PlayerState extends State<Player> {
                         padding: const EdgeInsets.all(16.0),
                         child: Container(
                           width: MediaQuery.of(context).size.width,
-                          color: Colors.brown,
+                          color: Colors.grey,
                           child: Column(
                             children: [
                               Row(
@@ -71,8 +71,6 @@ class _PlayerState extends State<Player> {
                                   'race', 'Raça', context, snapshot.data),
                               fieldsFortable(
                                   'class', 'Classe', context, snapshot.data),
-                              fieldsFortable(
-                                  'hp', 'HP', context, snapshot.data),
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
@@ -97,7 +95,7 @@ class _PlayerState extends State<Player> {
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceAround,
                                 children: [
-                                  circularFieldsFortable('charisam', 'Carisma',
+                                  circularFieldsFortable('charisma', 'Carisma',
                                       context, snapshot.data),
                                   circularFieldsFortable('constitution',
                                       'Constituição', context, snapshot.data),
@@ -131,20 +129,22 @@ class _PlayerState extends State<Player> {
                                 height: 0.1,
                                 thickness: 2,
                               ),
-                              Column(children: [
-                                retangularFieldsFortable(
-                                    'hp',
-                                    'Pontos de vida Atuais',
-                                    context,
-                                    snapshot.data,
-                                    true),
-                                retangularFieldsFortable(
-                                    'hp_temp',
-                                    'Pontos de vida temporários',
-                                    context,
-                                    snapshot.data,
-                                    false),
-                              ]),
+                              Column(
+                                children: [
+                                  retangularFieldsFortable(
+                                      'hp',
+                                      'Pontos de vida Atuais',
+                                      context,
+                                      snapshot.data,
+                                      true),
+                                  retangularFieldsFortable(
+                                      'hp_temp',
+                                      'Pontos de vida temporários',
+                                      context,
+                                      snapshot.data,
+                                      false),
+                                ],
+                              ),
                             ],
                           ),
                         ),

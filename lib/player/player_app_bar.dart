@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 playerAppBar(String? campaignId, String? playerId, BuildContext context) {
   return AppBar(
-    backgroundColor: Colors.brown,
+    backgroundColor: Colors.black45,
     centerTitle: true,
     automaticallyImplyLeading: false,
     title: FutureBuilder(
@@ -35,7 +35,7 @@ playerAppBar(String? campaignId, String? playerId, BuildContext context) {
                   if (!snapshot.hasData) {
                     return Container();
                   }
-                  return Text("Aventura: " + snapshot.data!["campaign_code"]);
+                  return Text("Aventura: ${snapshot.data!["campaign_code"]}");
                 }),
           ],
         );

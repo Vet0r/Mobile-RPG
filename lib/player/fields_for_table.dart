@@ -12,7 +12,7 @@ fieldsFortable(String fieldFB, String field, BuildContext context,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
-              color: fieldColor ?? Colors.brown,
+              color: fieldColor ?? Colors.transparent,
               child: Text(
                 "$field: ${documents?.get(fieldFB)}",
                 style: const TextStyle(fontSize: 25),

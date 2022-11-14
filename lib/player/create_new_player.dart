@@ -25,13 +25,13 @@ Future<String> createNewPlayer(String name, String campaingDocId) async {
     "constitution": 0,
     "inteligence": 0,
     "knologe": 0,
-    "charisam": 0,
+    "charisma": 0,
     "forceMd": 0,
     "dexMd": 0,
     "constitutionMd": 0,
     "inteligenceMd": 0,
     "knologeMd": 0,
-    "charisamMd": 0,
+    "charismaMd": 0,
   };
 
   DocumentReference playerId = await players.add(mapPlayer);
