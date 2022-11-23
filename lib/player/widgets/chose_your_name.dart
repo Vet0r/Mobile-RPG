@@ -81,6 +81,7 @@ class _ChoseYourNameState extends State<ChoseYourName> {
             isLoading = true;
             bool verify = false;
             bool verify2 = false;
+            bool verify3 = false;
             var docs =
                 await FirebaseFirestore.instance.collection('/campaigns').get();
             for (var doc in docs.docs) {
@@ -113,44 +114,51 @@ class _ChoseYourNameState extends State<ChoseYourName> {
                   if (fields["name"] == nameController.text &&
                       fields["user_id"] ==
                           FirebaseAuth.instance.currentUser!.uid) {
+                    verify2 = true;
+                    verify3 = true;
                     isLoading = false;
                     playerId = doc.id;
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Player(
-                          playerId: playerId,
-                          campaignId: campingDocId,
-                        ),
-                      ),
-                    );
                     break;
                   } else if (fields["name"] == nameController.text &&
                       fields["user_id"] !=
                           FirebaseAuth.instance.currentUser!.uid) {
-                    showDialog(
-                      context: context,
-                      builder: (context) {
-                        return const AlertDialog(
-                          content:
-                              Text("Esse nome já está em uso nessa campanha"),
-                        );
-                      },
-                    );
-                  } else {
-                    playerId = await createNewPlayer(
-                        nameController.text, campingDocId);
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Player(
-                          playerId: playerId,
-                          campaignId: campingDocId,
-                        ),
-                      ),
-                    );
+                    verify2 = true;
+                    verify3 = false;
+                    break;
                   }
                 }
+              }
+              if (verify2 == true && verify3 == true) {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Player(
+                      playerId: playerId,
+                      campaignId: campingDocId,
+                    ),
+                  ),
+                );
+              } else if (verify2 == true && verify3 == false) {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return const AlertDialog(
+                      content: Text("Esse nome já está em uso nessa campanha"),
+                    );
+                  },
+                );
+              } else {
+                playerId =
+                    await createNewPlayer(nameController.text, campingDocId);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Player(
+                      playerId: playerId,
+                      campaignId: campingDocId,
+                    ),
+                  ),
+                );
               }
             } else {
               showDialog(
