@@ -13,11 +13,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "20",
+                        "startLines": "24",
                         "startColumns": "4",
-                        "startOffsets": "2272",
+                        "startOffsets": "2689",
                         "endColumns": "100",
-                        "endOffsets": "2368"
+                        "endOffsets": "2785"
                     }
                 },
                 {
@@ -52,6 +52,23 @@
                         "startOffsets": "1041",
                         "endColumns": "163",
                         "endOffsets": "1200"
+                    }
+                },
+                {
+                    "source": "/home/vitor/.gradle/caches/transforms-3/38e30c664341fe5bfcc1d9de04582443/transformed/browser-1.4.0/res/values-kk/values-kk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,155,259,367",
+                        "endColumns": "99,103,107,104",
+                        "endOffsets": "150,254,362,467"
+                    },
+                    "to": {
+                        "startLines": "20,21,22,23",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2272,2372,2476,2584",
+                        "endColumns": "99,103,107,104",
+                        "endOffsets": "2367,2471,2579,2684"
                     }
                 }
             ]

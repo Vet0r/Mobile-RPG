@@ -1,4 +1,7 @@
+import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider;
+import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/buttons_chose.dart';
 
 import 'init_button.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -48,20 +51,20 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey,
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            initButton(context, true),
-            const SizedBox(
-              width: 10,
-            ),
-            initButton(context, false),
-          ],
-        ),
-      ),
+    return StreamBuilder(
+      stream: FirebaseAuth.instance.authStateChanges(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData) {
+          return SignInScreen(
+            providers: [
+              EmailAuthProvider(),
+            ],
+          );
+        }
+        return ButtonsChose(
+          userData: snapshot.data!,
+        );
+      },
     );
   }
 }

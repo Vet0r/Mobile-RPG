@@ -66,12 +66,100 @@ class _HostState extends State<Host> {
                               },
                               child: Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  documents.data().toString().contains('name')
-                                      ? documents.get('name')
-                                      : 'NONAME',
-                                  style: const TextStyle(
-                                      fontSize: 30, color: Colors.black),
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      documents
+                                              .data()
+                                              .toString()
+                                              .contains('name')
+                                          ? documents.get('name')
+                                          : 'NONAME',
+                                      style: const TextStyle(
+                                          fontSize: 30, color: Colors.black),
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceEvenly,
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  const BorderRadius.all(
+                                                Radius.circular(12),
+                                              ),
+                                              border: Border.all(
+                                                width: 3,
+                                                color: Colors.black26,
+                                                style: BorderStyle.solid,
+                                              ),
+                                            ),
+                                            child: Text(
+                                              "HP:" +
+                                                  documents
+                                                      .get('hp')
+                                                      .toString(),
+                                              style: const TextStyle(
+                                                  fontSize: 20,
+                                                  color: Colors.black),
+                                            ),
+                                          ),
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                const BorderRadius.all(
+                                              Radius.circular(12),
+                                            ),
+                                            border: Border.all(
+                                              width: 3,
+                                              color: Colors.black26,
+                                              style: BorderStyle.solid,
+                                            ),
+                                          ),
+                                          child: Text(
+                                            "CA:" +
+                                                documents.get('hp').toString(),
+                                            style: const TextStyle(
+                                                fontSize: 20,
+                                                color: Colors.black),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            child: Text(
+                                              "RFE:" +
+                                                  documents
+                                                      .get('hp')
+                                                      .toString(),
+                                              style: const TextStyle(
+                                                  fontSize: 20,
+                                                  color: Colors.black),
+                                            ),
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  const BorderRadius.all(
+                                                Radius.circular(12),
+                                              ),
+                                              border: Border.all(
+                                                width: 3,
+                                                color: Colors.black26,
+                                                style: BorderStyle.solid,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Text(
+                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c",
+                                      style: const TextStyle(
+                                          fontSize: 15, color: Colors.black),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ),

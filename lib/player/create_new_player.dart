@@ -1,4 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 Future<String> createNewPlayer(String name, String campaingDocId) async {
   CollectionReference players = FirebaseFirestore.instance
@@ -7,6 +9,7 @@ Future<String> createNewPlayer(String name, String campaingDocId) async {
       .collection('players');
 
   Map<String, dynamic> mapPlayer = <String, dynamic>{
+    "user_id": FirebaseAuth.instance.currentUser!.uid,
     "name": name,
     "hp": 15,
     "hp_temp": 0,

@@ -1,5 +1,25 @@
 android.annotation.SuppressLint
 android.annotation.TargetApi
+android.support.customtabs.ICustomTabsCallback$Default
+android.support.customtabs.ICustomTabsCallback$Stub$Proxy
+android.support.customtabs.ICustomTabsCallback$Stub
+android.support.customtabs.ICustomTabsCallback
+android.support.customtabs.ICustomTabsService$Default
+android.support.customtabs.ICustomTabsService$Stub$Proxy
+android.support.customtabs.ICustomTabsService$Stub
+android.support.customtabs.ICustomTabsService
+android.support.customtabs.IPostMessageService$Default
+android.support.customtabs.IPostMessageService$Stub$Proxy
+android.support.customtabs.IPostMessageService$Stub
+android.support.customtabs.IPostMessageService
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Default
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Stub$Proxy
+android.support.customtabs.trusted.ITrustedWebActivityCallback$Stub
+android.support.customtabs.trusted.ITrustedWebActivityCallback
+android.support.customtabs.trusted.ITrustedWebActivityService$Default
+android.support.customtabs.trusted.ITrustedWebActivityService$Stub$Proxy
+android.support.customtabs.trusted.ITrustedWebActivityService$Stub
+android.support.customtabs.trusted.ITrustedWebActivityService
 android.support.v4.app.INotificationSideChannel$Default
 android.support.v4.app.INotificationSideChannel$Stub$Proxy
 android.support.v4.app.INotificationSideChannel$Stub
@@ -116,6 +136,185 @@ androidx.arch.core.executor.DefaultTaskExecutor$1:
 androidx.arch.core.executor.TaskExecutor:
     public void executeOnMainThread(java.lang.Runnable)
 androidx.arch.core.util.Function
+androidx.browser.R$color
+androidx.browser.R$dimen:
+    private void <init>()
+androidx.browser.R$id
+androidx.browser.R$layout
+androidx.browser.R$string
+androidx.browser.R$xml
+androidx.browser.R
+androidx.browser.browseractions.BrowserActionItem
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter$1
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter$2
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter$ViewHolderItem
+androidx.browser.browseractions.BrowserActionsFallbackMenuAdapter
+androidx.browser.browseractions.BrowserActionsFallbackMenuDialog$1
+androidx.browser.browseractions.BrowserActionsFallbackMenuDialog
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$1
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$2
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$3
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi$BrowserActionsFallMenuUiListener
+androidx.browser.browseractions.BrowserActionsFallbackMenuUi
+androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsFallDialogListener
+androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsItemId
+androidx.browser.browseractions.BrowserActionsIntent$BrowserActionsUrlType
+androidx.browser.browseractions.BrowserActionsIntent$Builder
+androidx.browser.browseractions.BrowserActionsIntent
+androidx.browser.browseractions.BrowserServiceFileProvider$1
+androidx.browser.browseractions.BrowserServiceFileProvider$FileCleanupTask
+androidx.browser.browseractions.BrowserServiceFileProvider$FileSaveTask
+androidx.browser.browseractions.BrowserServiceFileProvider
+androidx.browser.customtabs.CustomTabColorSchemeParams$Builder:
+    public androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setNavigationBarColor(int)
+    public androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setNavigationBarDividerColor(int)
+    public androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setSecondaryToolbarColor(int)
+    public androidx.browser.customtabs.CustomTabColorSchemeParams$Builder setToolbarColor(int)
+androidx.browser.customtabs.CustomTabColorSchemeParams:
+    static androidx.browser.customtabs.CustomTabColorSchemeParams fromBundle(android.os.Bundle)
+    androidx.browser.customtabs.CustomTabColorSchemeParams withDefaults(androidx.browser.customtabs.CustomTabColorSchemeParams)
+androidx.browser.customtabs.CustomTabsCallback
+androidx.browser.customtabs.CustomTabsClient$1
+androidx.browser.customtabs.CustomTabsClient$2$1
+androidx.browser.customtabs.CustomTabsClient$2$2
+androidx.browser.customtabs.CustomTabsClient$2$3
+androidx.browser.customtabs.CustomTabsClient$2$4
+androidx.browser.customtabs.CustomTabsClient$2$5
+androidx.browser.customtabs.CustomTabsClient$2
+androidx.browser.customtabs.CustomTabsClient
+androidx.browser.customtabs.CustomTabsIntent$Builder:
+    public void <init>(androidx.browser.customtabs.CustomTabsSession)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder addDefaultShareMenuItem()
+    public androidx.browser.customtabs.CustomTabsIntent$Builder addMenuItem(java.lang.String,android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder addToolbarItem(int,android.graphics.Bitmap,java.lang.String,android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder enableUrlBarHiding()
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setActionButton(android.graphics.Bitmap,java.lang.String,android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setActionButton(android.graphics.Bitmap,java.lang.String,android.app.PendingIntent,boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setCloseButtonIcon(android.graphics.Bitmap)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setColorScheme(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setColorSchemeParams(int,androidx.browser.customtabs.CustomTabColorSchemeParams)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setDefaultColorSchemeParams(androidx.browser.customtabs.CustomTabColorSchemeParams)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setDefaultShareMenuItemEnabled(boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setExitAnimations(android.content.Context,int,int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setInstantAppsEnabled(boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setNavigationBarColor(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setNavigationBarDividerColor(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setPendingSession(androidx.browser.customtabs.CustomTabsSession$PendingSession)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setSecondaryToolbarColor(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setSecondaryToolbarViews(android.widget.RemoteViews,int[],android.app.PendingIntent)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setSession(androidx.browser.customtabs.CustomTabsSession)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setShareState(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setShowTitle(boolean)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setStartAnimations(android.content.Context,int,int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setToolbarColor(int)
+    public androidx.browser.customtabs.CustomTabsIntent$Builder setUrlBarHidingEnabled(boolean)
+androidx.browser.customtabs.CustomTabsIntent$ColorScheme
+androidx.browser.customtabs.CustomTabsIntent$ShareState
+androidx.browser.customtabs.CustomTabsIntent:
+    public static final int COLOR_SCHEME_DARK
+    public static final int COLOR_SCHEME_LIGHT
+    private static final int COLOR_SCHEME_MAX
+    public static final int COLOR_SCHEME_SYSTEM
+    public static final java.lang.String EXTRA_ACTION_BUTTON_BUNDLE
+    public static final java.lang.String EXTRA_CLOSE_BUTTON_ICON
+    public static final java.lang.String EXTRA_COLOR_SCHEME
+    public static final java.lang.String EXTRA_COLOR_SCHEME_PARAMS
+    public static final java.lang.String EXTRA_DEFAULT_SHARE_MENU_ITEM
+    public static final java.lang.String EXTRA_ENABLE_INSTANT_APPS
+    public static final java.lang.String EXTRA_ENABLE_URLBAR_HIDING
+    public static final java.lang.String EXTRA_EXIT_ANIMATION_BUNDLE
+    public static final java.lang.String EXTRA_MENU_ITEMS
+    public static final java.lang.String EXTRA_NAVIGATION_BAR_COLOR
+    public static final java.lang.String EXTRA_NAVIGATION_BAR_DIVIDER_COLOR
+    public static final java.lang.String EXTRA_REMOTEVIEWS
+    public static final java.lang.String EXTRA_REMOTEVIEWS_CLICKED_ID
+    public static final java.lang.String EXTRA_REMOTEVIEWS_PENDINGINTENT
+    public static final java.lang.String EXTRA_REMOTEVIEWS_VIEW_IDS
+    public static final java.lang.String EXTRA_SECONDARY_TOOLBAR_COLOR
+    public static final java.lang.String EXTRA_SESSION
+    public static final java.lang.String EXTRA_SESSION_ID
+    public static final java.lang.String EXTRA_SHARE_STATE
+    public static final java.lang.String EXTRA_TINT_ACTION_BUTTON
+    public static final java.lang.String EXTRA_TITLE_VISIBILITY_STATE
+    public static final java.lang.String EXTRA_TOOLBAR_COLOR
+    public static final java.lang.String EXTRA_TOOLBAR_ITEMS
+    private static final java.lang.String EXTRA_USER_OPT_OUT_FROM_CUSTOM_TABS
+    public static final java.lang.String KEY_DESCRIPTION
+    public static final java.lang.String KEY_ICON
+    public static final java.lang.String KEY_ID
+    public static final java.lang.String KEY_MENU_ITEM_TITLE
+    public static final java.lang.String KEY_PENDING_INTENT
+    private static final int MAX_TOOLBAR_ITEMS
+    public static final int NO_TITLE
+    public static final int SHARE_STATE_DEFAULT
+    private static final int SHARE_STATE_MAX
+    public static final int SHARE_STATE_OFF
+    public static final int SHARE_STATE_ON
+    public static final int SHOW_PAGE_TITLE
+    public static final int TOOLBAR_ACTION_BUTTON_ID
+    public static androidx.browser.customtabs.CustomTabColorSchemeParams getColorSchemeParams(android.content.Intent,int)
+    public static int getMaxToolbarItems()
+    public static android.content.Intent setAlwaysUseBrowserUI(android.content.Intent)
+    public static boolean shouldAlwaysUseBrowserUI(android.content.Intent)
+androidx.browser.customtabs.CustomTabsService$1
+androidx.browser.customtabs.CustomTabsService$FilePurpose
+androidx.browser.customtabs.CustomTabsService$Relation
+androidx.browser.customtabs.CustomTabsService$Result
+androidx.browser.customtabs.CustomTabsService
+androidx.browser.customtabs.CustomTabsServiceConnection$1
+androidx.browser.customtabs.CustomTabsServiceConnection
+androidx.browser.customtabs.CustomTabsSession$MockSession
+androidx.browser.customtabs.CustomTabsSession$PendingSession
+androidx.browser.customtabs.CustomTabsSession
+androidx.browser.customtabs.CustomTabsSessionToken$1
+androidx.browser.customtabs.CustomTabsSessionToken$MockCallback
+androidx.browser.customtabs.CustomTabsSessionToken
+androidx.browser.customtabs.PostMessageBackend
+androidx.browser.customtabs.PostMessageService$1
+androidx.browser.customtabs.PostMessageService
+androidx.browser.customtabs.PostMessageServiceConnection
+androidx.browser.customtabs.TrustedWebUtils
+androidx.browser.trusted.ConnectionHolder$WrapperFactory
+androidx.browser.trusted.ConnectionHolder
+androidx.browser.trusted.FutureUtils
+androidx.browser.trusted.NotificationApiHelperForM
+androidx.browser.trusted.NotificationApiHelperForO
+androidx.browser.trusted.PackageIdentityUtils$Api28Implementation
+androidx.browser.trusted.PackageIdentityUtils$Pre28Implementation
+androidx.browser.trusted.PackageIdentityUtils$SignaturesCompat
+androidx.browser.trusted.PackageIdentityUtils
+androidx.browser.trusted.ScreenOrientation$LockType
+androidx.browser.trusted.ScreenOrientation
+androidx.browser.trusted.Token
+androidx.browser.trusted.TokenContents
+androidx.browser.trusted.TokenStore
+androidx.browser.trusted.TrustedWebActivityCallback
+androidx.browser.trusted.TrustedWebActivityCallbackRemote
+androidx.browser.trusted.TrustedWebActivityDisplayMode$-CC
+androidx.browser.trusted.TrustedWebActivityDisplayMode$DefaultMode
+androidx.browser.trusted.TrustedWebActivityDisplayMode$ImmersiveMode
+androidx.browser.trusted.TrustedWebActivityDisplayMode
+androidx.browser.trusted.TrustedWebActivityIntent
+androidx.browser.trusted.TrustedWebActivityIntentBuilder
+androidx.browser.trusted.TrustedWebActivityService$1
+androidx.browser.trusted.TrustedWebActivityService
+androidx.browser.trusted.TrustedWebActivityServiceConnection$1
+androidx.browser.trusted.TrustedWebActivityServiceConnection$ActiveNotificationsArgs
+androidx.browser.trusted.TrustedWebActivityServiceConnection$CancelNotificationArgs
+androidx.browser.trusted.TrustedWebActivityServiceConnection$NotificationsEnabledArgs
+androidx.browser.trusted.TrustedWebActivityServiceConnection$NotifyNotificationArgs
+androidx.browser.trusted.TrustedWebActivityServiceConnection$ResultArgs
+androidx.browser.trusted.TrustedWebActivityServiceConnection
+androidx.browser.trusted.TrustedWebActivityServiceConnectionPool$BindToServiceAsyncTask
+androidx.browser.trusted.TrustedWebActivityServiceConnectionPool
+androidx.browser.trusted.sharing.ShareData
+androidx.browser.trusted.sharing.ShareTarget$EncodingType
+androidx.browser.trusted.sharing.ShareTarget$FileFormField
+androidx.browser.trusted.sharing.ShareTarget$Params
+androidx.browser.trusted.sharing.ShareTarget$RequestMethod
+androidx.browser.trusted.sharing.ShareTarget
+androidx.browser.trusted.splashscreens.SplashScreenParamKey
+androidx.browser.trusted.splashscreens.SplashScreenVersion
 androidx.collection.ArrayMap:
     public void <init>(androidx.collection.SimpleArrayMap)
     public boolean containsAll(java.util.Collection)
@@ -160,6 +359,25 @@ androidx.collection.SparseArrayCompat:
     public java.lang.Object replace(int,java.lang.Object)
     public boolean replace(int,java.lang.Object,java.lang.Object)
     public void setValueAt(int,java.lang.Object)
+androidx.concurrent.futures.AbstractResolvableFuture$1
+androidx.concurrent.futures.AbstractResolvableFuture$AtomicHelper
+androidx.concurrent.futures.AbstractResolvableFuture$Cancellation
+androidx.concurrent.futures.AbstractResolvableFuture$Failure$1
+androidx.concurrent.futures.AbstractResolvableFuture$Failure
+androidx.concurrent.futures.AbstractResolvableFuture$Listener
+androidx.concurrent.futures.AbstractResolvableFuture$SafeAtomicHelper
+androidx.concurrent.futures.AbstractResolvableFuture$SetFuture
+androidx.concurrent.futures.AbstractResolvableFuture$SynchronizedHelper
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter
+androidx.concurrent.futures.AbstractResolvableFuture
+androidx.concurrent.futures.CallbackToFutureAdapter$Completer
+androidx.concurrent.futures.CallbackToFutureAdapter$FutureGarbageCollectedException
+androidx.concurrent.futures.CallbackToFutureAdapter$Resolver
+androidx.concurrent.futures.CallbackToFutureAdapter$SafeFuture$1
+androidx.concurrent.futures.CallbackToFutureAdapter$SafeFuture
+androidx.concurrent.futures.CallbackToFutureAdapter
+androidx.concurrent.futures.DirectExecutor
+androidx.concurrent.futures.ResolvableFuture
 androidx.core.R$attr
 androidx.core.R$color
 androidx.core.R$dimen
@@ -247,13 +465,27 @@ androidx.core.app.ActivityRecreator
 androidx.core.app.AlarmManagerCompat
 androidx.core.app.AppComponentFactory
 androidx.core.app.AppLaunchChecker
-androidx.core.app.AppOpsManagerCompat
-androidx.core.app.BundleCompat$BundleCompatBaseImpl
-androidx.core.app.BundleCompat
+androidx.core.app.AppOpsManagerCompat:
+    public static final int MODE_ALLOWED
+    public static final int MODE_DEFAULT
+    public static final int MODE_ERRORED
+    public static final int MODE_IGNORED
+    private void <init>()
+    public static int noteOp(android.content.Context,java.lang.String,int,java.lang.String)
+    public static int noteOpNoThrow(android.content.Context,java.lang.String,int,java.lang.String)
+    public static int noteProxyOp(android.content.Context,java.lang.String,java.lang.String)
+androidx.core.app.BundleCompat$BundleCompatBaseImpl:
+    private static final java.lang.String TAG
+    private static java.lang.reflect.Method sGetIBinderMethod
+    private static boolean sGetIBinderMethodFetched
+    private void <init>()
+    public static android.os.IBinder getBinder(android.os.Bundle,java.lang.String)
+androidx.core.app.BundleCompat:
+    private void <init>()
+    public static android.os.IBinder getBinder(android.os.Bundle,java.lang.String)
 androidx.core.app.ComponentActivity$ExtraData
 androidx.core.app.ComponentActivity:
     public androidx.core.app.ComponentActivity$ExtraData getExtraData(java.lang.Class)
-    public androidx.lifecycle.Lifecycle getLifecycle()
     public void putExtraData(androidx.core.app.ComponentActivity$ExtraData)
 androidx.core.app.DialogCompat
 androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl$1
@@ -688,7 +920,8 @@ androidx.core.app.TaskStackBuilder$SupportParentable
 androidx.core.app.TaskStackBuilder
 androidx.core.content.ContentProviderCompat
 androidx.core.content.ContentResolverCompat
-androidx.core.content.ContextCompat$Api16Impl
+androidx.core.content.ContextCompat$Api16Impl:
+    private void <init>()
 androidx.core.content.ContextCompat$Api19Impl
 androidx.core.content.ContextCompat$Api21Impl
 androidx.core.content.ContextCompat$Api23Impl
@@ -720,7 +953,6 @@ androidx.core.content.ContextCompat:
     public static boolean isDeviceProtectedStorage(android.content.Context)
     public static boolean startActivities(android.content.Context,android.content.Intent[])
     public static boolean startActivities(android.content.Context,android.content.Intent[],android.os.Bundle)
-    public static void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
     public static void startForegroundService(android.content.Context,android.content.Intent)
 androidx.core.content.FileProvider$PathStrategy
 androidx.core.content.FileProvider$SimplePathStrategy
@@ -739,7 +971,13 @@ androidx.core.content.LocusIdCompat:
     public java.lang.String toString()
 androidx.core.content.MimeTypeFilter
 androidx.core.content.PermissionChecker$PermissionResult
-androidx.core.content.PermissionChecker
+androidx.core.content.PermissionChecker:
+    public static final int PERMISSION_DENIED
+    public static final int PERMISSION_DENIED_APP_OP
+    public static final int PERMISSION_GRANTED
+    private void <init>()
+    public static int checkCallingOrSelfPermission(android.content.Context,java.lang.String)
+    public static int checkCallingPermission(android.content.Context,java.lang.String,java.lang.String)
 androidx.core.content.SharedPreferencesCompat$EditorCompat$Helper
 androidx.core.content.SharedPreferencesCompat$EditorCompat
 androidx.core.content.SharedPreferencesCompat
@@ -982,7 +1220,9 @@ androidx.core.os.LocaleListPlatformWrapper:
     public int size()
     public java.lang.String toLanguageTags()
 androidx.core.os.MessageCompat
-androidx.core.os.OperationCanceledException
+androidx.core.os.OperationCanceledException:
+    public void <init>()
+    public void <init>(java.lang.String)
 androidx.core.os.ParcelCompat
 androidx.core.os.ParcelableCompat$ParcelableCompatCreatorHoneycombMR2
 androidx.core.os.ParcelableCompat
@@ -1084,7 +1324,13 @@ androidx.core.util.Preconditions:
     public static varargs java.lang.CharSequence checkStringNotEmpty(java.lang.CharSequence,java.lang.String,java.lang.Object[])
 androidx.core.util.Predicate
 androidx.core.util.Supplier
-androidx.core.util.TimeUtils
+androidx.core.util.TimeUtils:
+    public static final int HUNDRED_DAY_FIELD_LEN
+    private static final int SECONDS_PER_DAY
+    private static final int SECONDS_PER_HOUR
+    private static final int SECONDS_PER_MINUTE
+    private void <init>()
+    public static void formatDuration(long,java.lang.StringBuilder)
 androidx.core.view.AccessibilityDelegateCompat$AccessibilityDelegateAdapter
 androidx.core.view.AccessibilityDelegateCompat
 androidx.core.view.ActionProvider$SubUiVisibilityListener
@@ -1731,7 +1977,6 @@ androidx.fragment.app.FragmentActivity:
     private static final java.lang.String TAG
     boolean mRequestedPermissionsFromFragment
     public void <init>(int)
-    public androidx.loader.app.LoaderManager getSupportLoaderManager()
     void requestPermissionsFromFragment(androidx.fragment.app.Fragment,java.lang.String[],int)
     public void setEnterSharedElementCallback(androidx.core.app.SharedElementCallback)
     public void setExitSharedElementCallback(androidx.core.app.SharedElementCallback)
@@ -1890,6 +2135,11 @@ androidx.fragment.app.FragmentTransition:
 androidx.fragment.app.ListFragment$1
 androidx.fragment.app.ListFragment$2
 androidx.fragment.app.ListFragment
+androidx.interpolator.R
+androidx.interpolator.view.animation.FastOutLinearInInterpolator
+androidx.interpolator.view.animation.FastOutSlowInInterpolator
+androidx.interpolator.view.animation.LinearOutSlowInInterpolator
+androidx.interpolator.view.animation.LookupTableInterpolator
 androidx.lifecycle.AndroidViewModel
 androidx.lifecycle.ClassesInfoCache:
     private static final int CALL_TYPE_NO_ARG
@@ -1917,14 +2167,11 @@ androidx.lifecycle.LiveData:
     int getVersion()
     public boolean hasObservers()
     public void observeForever(androidx.lifecycle.Observer)
-    protected void postValue(java.lang.Object)
     public void removeObservers(androidx.lifecycle.LifecycleOwner)
 androidx.lifecycle.MediatorLiveData$Source
 androidx.lifecycle.MediatorLiveData
 androidx.lifecycle.MethodCallsLogger:
     public boolean approveCall(java.lang.String,int)
-androidx.lifecycle.MutableLiveData:
-    public void postValue(java.lang.Object)
 androidx.lifecycle.R
 androidx.lifecycle.ReportFragment:
     private static final java.lang.String REPORT_FRAGMENT_TAG
@@ -1958,91 +2205,61 @@ androidx.loader.R$string
 androidx.loader.R$style
 androidx.loader.R$styleable
 androidx.loader.R
-androidx.loader.app.LoaderManager$LoaderCallbacks
 androidx.loader.app.LoaderManager:
     public abstract void destroyLoader(int)
     public static void enableDebugLogging(boolean)
     public abstract androidx.loader.content.Loader getLoader(int)
     public boolean hasRunningLoaders()
-    public abstract androidx.loader.content.Loader initLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
     public abstract androidx.loader.content.Loader restartLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
 androidx.loader.app.LoaderManagerImpl$LoaderInfo:
-    void <init>(int,android.os.Bundle,androidx.loader.content.Loader,androidx.loader.content.Loader)
     boolean isCallbackWaitingForData()
-    public void onLoadComplete(androidx.loader.content.Loader,java.lang.Object)
-    androidx.loader.content.Loader setCallback(androidx.lifecycle.LifecycleOwner,androidx.loader.app.LoaderManager$LoaderCallbacks)
-androidx.loader.app.LoaderManagerImpl$LoaderObserver:
-    private final androidx.loader.app.LoaderManager$LoaderCallbacks mCallback
-    private boolean mDeliveredData
-    private final androidx.loader.content.Loader mLoader
-    void <init>(androidx.loader.content.Loader,androidx.loader.app.LoaderManager$LoaderCallbacks)
-    public void onChanged(java.lang.Object)
-    public java.lang.String toString()
 androidx.loader.app.LoaderManagerImpl$LoaderViewModel:
-    void finishCreatingLoader()
-    androidx.loader.app.LoaderManagerImpl$LoaderInfo getLoader(int)
     boolean hasRunningLoaders()
-    boolean isCreatingLoader()
-    void putLoader(int,androidx.loader.app.LoaderManagerImpl$LoaderInfo)
     void removeLoader(int)
-    void startCreatingLoader()
 androidx.loader.app.LoaderManagerImpl:
     static final java.lang.String TAG
-    private androidx.loader.content.Loader createAndInstallLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks,androidx.loader.content.Loader)
     public void destroyLoader(int)
     public androidx.loader.content.Loader getLoader(int)
     public boolean hasRunningLoaders()
-    public androidx.loader.content.Loader initLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
     public androidx.loader.content.Loader restartLoader(int,android.os.Bundle,androidx.loader.app.LoaderManager$LoaderCallbacks)
-androidx.loader.content.AsyncTaskLoader$LoadTask
-androidx.loader.content.AsyncTaskLoader
+androidx.loader.content.AsyncTaskLoader$LoadTask:
+    public void waitForLoader()
+androidx.loader.content.AsyncTaskLoader:
+    static final boolean DEBUG
+    static final java.lang.String TAG
+    public boolean isLoadInBackgroundCanceled()
+    public void setUpdateThrottle(long)
+    public void waitForLoader()
 androidx.loader.content.CursorLoader
 androidx.loader.content.Loader$ForceLoadContentObserver
-androidx.loader.content.Loader$OnLoadCanceledListener
-androidx.loader.content.Loader$OnLoadCompleteListener:
-    public abstract void onLoadComplete(androidx.loader.content.Loader,java.lang.Object)
 androidx.loader.content.Loader:
-    boolean mAbandoned
-    boolean mContentChanged
-    android.content.Context mContext
-    int mId
-    androidx.loader.content.Loader$OnLoadCompleteListener mListener
-    androidx.loader.content.Loader$OnLoadCanceledListener mOnLoadCanceledListener
-    boolean mProcessingChange
-    boolean mReset
-    boolean mStarted
-    public void <init>(android.content.Context)
-    public void commitContentChanged()
-    public void deliverCancellation()
-    public void deliverResult(java.lang.Object)
-    public void forceLoad()
     public android.content.Context getContext()
     public int getId()
-    public boolean isAbandoned()
     public boolean isReset()
     public boolean isStarted()
-    protected void onAbandon()
-    protected boolean onCancelLoad()
-    public void onContentChanged()
-    protected void onForceLoad()
-    protected void onReset()
-    protected void onStartLoading()
-    protected void onStopLoading()
-    public void registerListener(int,androidx.loader.content.Loader$OnLoadCompleteListener)
     public void registerOnLoadCanceledListener(androidx.loader.content.Loader$OnLoadCanceledListener)
-    public void rollbackContentChanged()
     public boolean takeContentChanged()
-    public java.lang.String toString()
     public void unregisterOnLoadCanceledListener(androidx.loader.content.Loader$OnLoadCanceledListener)
-androidx.loader.content.ModernAsyncTask$1
-androidx.loader.content.ModernAsyncTask$2
-androidx.loader.content.ModernAsyncTask$3
-androidx.loader.content.ModernAsyncTask$4
-androidx.loader.content.ModernAsyncTask$AsyncTaskResult
-androidx.loader.content.ModernAsyncTask$InternalHandler
-androidx.loader.content.ModernAsyncTask$Status
-androidx.loader.content.ModernAsyncTask$WorkerRunnable
-androidx.loader.content.ModernAsyncTask
+androidx.loader.content.ModernAsyncTask:
+    private static final int CORE_POOL_SIZE
+    private static final int KEEP_ALIVE
+    private static final java.lang.String LOG_TAG
+    private static final int MAXIMUM_POOL_SIZE
+    private static final int MESSAGE_POST_PROGRESS
+    private static final int MESSAGE_POST_RESULT
+    public final varargs androidx.loader.content.ModernAsyncTask execute(java.lang.Object[])
+    public static void execute(java.lang.Runnable)
+    public final java.lang.Object get()
+    public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
+    public final androidx.loader.content.ModernAsyncTask$Status getStatus()
+    protected final varargs void publishProgress(java.lang.Object[])
+    public static void setDefaultExecutor(java.util.concurrent.Executor)
+androidx.localbroadcastmanager.R
+androidx.localbroadcastmanager.content.LocalBroadcastManager:
+    private static final boolean DEBUG
+    static final int MSG_EXEC_PENDING_BROADCASTS
+    private static final java.lang.String TAG
+    public void sendBroadcastSync(android.content.Intent)
 androidx.multidex.BuildConfig
 androidx.multidex.MultiDex$V19:
     private void <init>()
@@ -2277,6 +2494,18 @@ androidx.viewpager.widget.ViewPager$SavedState
 androidx.viewpager.widget.ViewPager$SimpleOnPageChangeListener
 androidx.viewpager.widget.ViewPager$ViewPositionComparator
 androidx.viewpager.widget.ViewPager
+com.example.desktop_webview_auth.BuildConfig
+com.example.desktop_webview_auth.R$attr
+com.example.desktop_webview_auth.R$color
+com.example.desktop_webview_auth.R$dimen
+com.example.desktop_webview_auth.R$drawable
+com.example.desktop_webview_auth.R$id
+com.example.desktop_webview_auth.R$integer
+com.example.desktop_webview_auth.R$layout
+com.example.desktop_webview_auth.R$string
+com.example.desktop_webview_auth.R$style
+com.example.desktop_webview_auth.R$styleable
+com.example.desktop_webview_auth.R
 com.example.mobile_rpg.BuildConfig
 com.example.mobile_rpg.R$attr
 com.example.mobile_rpg.R$color
@@ -2290,38 +2519,292 @@ com.example.mobile_rpg.R$raw
 com.example.mobile_rpg.R$string
 com.example.mobile_rpg.R$style
 com.example.mobile_rpg.R$styleable
+com.example.mobile_rpg.R$xml
 com.example.mobile_rpg.R
 com.google.android.gms.actions.ItemListIntents
 com.google.android.gms.actions.NoteIntents
 com.google.android.gms.actions.ReserveIntents
 com.google.android.gms.actions.SearchIntents
+com.google.android.gms.auth.AccountChangeEvent
+com.google.android.gms.auth.AccountChangeEventsRequest
+com.google.android.gms.auth.AccountChangeEventsResponse
+com.google.android.gms.auth.CookieUtil
+com.google.android.gms.auth.GoogleAuthException:
+    public void <init>()
+    public void <init>(java.lang.Throwable)
+com.google.android.gms.auth.GoogleAuthUtil:
+    public static final int CHANGE_TYPE_ACCOUNT_ADDED
+    public static final int CHANGE_TYPE_ACCOUNT_REMOVED
+    public static final int CHANGE_TYPE_ACCOUNT_RENAMED_FROM
+    public static final int CHANGE_TYPE_ACCOUNT_RENAMED_TO
+    public static final java.lang.String GOOGLE_ACCOUNT_TYPE
+    public static final java.lang.String KEY_SUPPRESS_PROGRESS_SCREEN
+    public static final java.lang.String WORK_ACCOUNT_TYPE
+    private void <init>()
+    public static java.util.List getAccountChangeEvents(android.content.Context,int,java.lang.String)
+    public static java.lang.String getAccountId(android.content.Context,java.lang.String)
+    public static java.lang.String getToken(android.content.Context,android.accounts.Account,java.lang.String,android.os.Bundle)
+    public static java.lang.String getToken(android.content.Context,java.lang.String,java.lang.String)
+    public static java.lang.String getToken(android.content.Context,java.lang.String,java.lang.String,android.os.Bundle)
+    public static java.lang.String getTokenWithNotification(android.content.Context,android.accounts.Account,java.lang.String,android.os.Bundle)
+    public static java.lang.String getTokenWithNotification(android.content.Context,android.accounts.Account,java.lang.String,android.os.Bundle,android.content.Intent)
+    public static java.lang.String getTokenWithNotification(android.content.Context,android.accounts.Account,java.lang.String,android.os.Bundle,java.lang.String,android.os.Bundle)
+    public static java.lang.String getTokenWithNotification(android.content.Context,java.lang.String,java.lang.String,android.os.Bundle)
+    public static java.lang.String getTokenWithNotification(android.content.Context,java.lang.String,java.lang.String,android.os.Bundle,android.content.Intent)
+    public static java.lang.String getTokenWithNotification(android.content.Context,java.lang.String,java.lang.String,android.os.Bundle,java.lang.String,android.os.Bundle)
+    public static void invalidateToken(android.content.Context,java.lang.String)
+    public static android.os.Bundle removeAccount(android.content.Context,android.accounts.Account)
+    public static java.lang.Boolean requestGoogleAccountsAccess(android.content.Context)
+    private static com.google.android.gms.auth.TokenData zzg(android.content.Context,android.accounts.Account,java.lang.String,android.os.Bundle)
+com.google.android.gms.auth.GooglePlayServicesAvailabilityException:
+    public int getConnectionStatusCode()
+com.google.android.gms.auth.R
+com.google.android.gms.auth.UserRecoverableNotifiedException
+com.google.android.gms.auth.account.WorkAccount
+com.google.android.gms.auth.account.WorkAccountApi$AddAccountResult
+com.google.android.gms.auth.account.WorkAccountApi
+com.google.android.gms.auth.account.WorkAccountClient
+com.google.android.gms.auth.account.zza
+com.google.android.gms.auth.account.zzb
+com.google.android.gms.auth.account.zzc
+com.google.android.gms.auth.account.zzd
+com.google.android.gms.auth.account.zze
+com.google.android.gms.auth.account.zzf
+com.google.android.gms.auth.account.zzg
+com.google.android.gms.auth.api.Auth$AuthCredentialsOptions$Builder:
+    public com.google.android.gms.auth.api.Auth$AuthCredentialsOptions$Builder forceEnableSaveDialog()
+com.google.android.gms.auth.api.Auth$AuthCredentialsOptions:
+    public final java.lang.String zbd()
+com.google.android.gms.auth.api.Auth:
+    private void <init>()
+com.google.android.gms.auth.api.AuthProxy:
+    public void <init>()
+    public static com.google.android.gms.auth.api.proxy.ProxyClient getClient(android.app.Activity,com.google.android.gms.auth.api.AuthProxyOptions)
+    public static com.google.android.gms.auth.api.proxy.ProxyClient getClient(android.content.Context,com.google.android.gms.auth.api.AuthProxyOptions)
+com.google.android.gms.auth.api.R$attr
+com.google.android.gms.auth.api.R$color
+com.google.android.gms.auth.api.R$dimen
+com.google.android.gms.auth.api.R$drawable
+com.google.android.gms.auth.api.R$id
+com.google.android.gms.auth.api.R$integer
+com.google.android.gms.auth.api.R$layout
+com.google.android.gms.auth.api.R$string
+com.google.android.gms.auth.api.R$style
+com.google.android.gms.auth.api.R$styleable
+com.google.android.gms.auth.api.R
+com.google.android.gms.auth.api.accounttransfer.AccountTransfer
+com.google.android.gms.auth.api.accounttransfer.AccountTransferClient
+com.google.android.gms.auth.api.accounttransfer.AccountTransferException
+com.google.android.gms.auth.api.accounttransfer.AccountTransferStatusCodes
+com.google.android.gms.auth.api.accounttransfer.AuthenticatorTransferCompletionStatus
+com.google.android.gms.auth.api.accounttransfer.DeviceMetaData
+com.google.android.gms.auth.api.accounttransfer.zza
+com.google.android.gms.auth.api.accounttransfer.zzb
+com.google.android.gms.auth.api.accounttransfer.zzc
+com.google.android.gms.auth.api.accounttransfer.zzd
+com.google.android.gms.auth.api.accounttransfer.zze
+com.google.android.gms.auth.api.accounttransfer.zzf
+com.google.android.gms.auth.api.accounttransfer.zzg
+com.google.android.gms.auth.api.accounttransfer.zzh
+com.google.android.gms.auth.api.accounttransfer.zzi
+com.google.android.gms.auth.api.accounttransfer.zzj
+com.google.android.gms.auth.api.accounttransfer.zzk
+com.google.android.gms.auth.api.accounttransfer.zzl
+com.google.android.gms.auth.api.accounttransfer.zzm
+com.google.android.gms.auth.api.accounttransfer.zzn
+com.google.android.gms.auth.api.accounttransfer.zzo
+com.google.android.gms.auth.api.accounttransfer.zzp
+com.google.android.gms.auth.api.accounttransfer.zzq
+com.google.android.gms.auth.api.accounttransfer.zzr
+com.google.android.gms.auth.api.accounttransfer.zzs
+com.google.android.gms.auth.api.accounttransfer.zzt
+com.google.android.gms.auth.api.accounttransfer.zzu
+com.google.android.gms.auth.api.accounttransfer.zzv
+com.google.android.gms.auth.api.accounttransfer.zzw
+com.google.android.gms.auth.api.accounttransfer.zzx
+com.google.android.gms.auth.api.accounttransfer.zzy
+com.google.android.gms.auth.api.credentials.Credential$Builder
+com.google.android.gms.auth.api.credentials.Credential
+com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Builder
+com.google.android.gms.auth.api.credentials.CredentialPickerConfig$Prompt
+com.google.android.gms.auth.api.credentials.CredentialPickerConfig
+com.google.android.gms.auth.api.credentials.CredentialRequest$Builder
+com.google.android.gms.auth.api.credentials.CredentialRequest
+com.google.android.gms.auth.api.credentials.CredentialRequestResponse
+com.google.android.gms.auth.api.credentials.CredentialRequestResult
+com.google.android.gms.auth.api.credentials.Credentials
+com.google.android.gms.auth.api.credentials.CredentialsApi:
+    public static final int ACTIVITY_RESULT_ADD_ACCOUNT
+    public static final int ACTIVITY_RESULT_NO_HINTS_AVAILABLE
+    public static final int ACTIVITY_RESULT_OTHER_ACCOUNT
+    public static final int CREDENTIAL_PICKER_REQUEST_CODE
+    public abstract com.google.android.gms.common.api.PendingResult delete(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
+    public abstract com.google.android.gms.common.api.PendingResult disableAutoSignIn(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract android.app.PendingIntent getHintPickerIntent(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.HintRequest)
+    public abstract com.google.android.gms.common.api.PendingResult request(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.CredentialRequest)
+    public abstract com.google.android.gms.common.api.PendingResult save(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
+com.google.android.gms.auth.api.credentials.CredentialsClient
+com.google.android.gms.auth.api.credentials.CredentialsOptions$Builder
+com.google.android.gms.auth.api.credentials.CredentialsOptions
+com.google.android.gms.auth.api.credentials.HintRequest$Builder
+com.google.android.gms.auth.api.credentials.HintRequest
+com.google.android.gms.auth.api.credentials.IdToken
+com.google.android.gms.auth.api.credentials.IdentityProviders
+com.google.android.gms.auth.api.credentials.zba
+com.google.android.gms.auth.api.credentials.zbb
+com.google.android.gms.auth.api.credentials.zbc
+com.google.android.gms.auth.api.credentials.zbd
+com.google.android.gms.auth.api.credentials.zbe
+com.google.android.gms.auth.api.credentials.zbf
+com.google.android.gms.auth.api.identity.BeginSignInRequest$Builder
+com.google.android.gms.auth.api.identity.BeginSignInRequest$GoogleIdTokenRequestOptions$Builder
+com.google.android.gms.auth.api.identity.BeginSignInRequest$GoogleIdTokenRequestOptions
+com.google.android.gms.auth.api.identity.BeginSignInRequest$PasskeysRequestOptions$Builder
+com.google.android.gms.auth.api.identity.BeginSignInRequest$PasskeysRequestOptions
+com.google.android.gms.auth.api.identity.BeginSignInRequest$PasswordRequestOptions$Builder
+com.google.android.gms.auth.api.identity.BeginSignInRequest$PasswordRequestOptions
+com.google.android.gms.auth.api.identity.BeginSignInRequest
+com.google.android.gms.auth.api.identity.BeginSignInResult
+com.google.android.gms.auth.api.identity.CredentialSavingClient
+com.google.android.gms.auth.api.identity.GetPhoneNumberHintIntentRequest$Builder
+com.google.android.gms.auth.api.identity.GetPhoneNumberHintIntentRequest
+com.google.android.gms.auth.api.identity.GetSignInIntentRequest$Builder
+com.google.android.gms.auth.api.identity.GetSignInIntentRequest
+com.google.android.gms.auth.api.identity.Identity
+com.google.android.gms.auth.api.identity.SaveAccountLinkingTokenRequest$Builder
+com.google.android.gms.auth.api.identity.SaveAccountLinkingTokenRequest
+com.google.android.gms.auth.api.identity.SaveAccountLinkingTokenResult
+com.google.android.gms.auth.api.identity.SavePasswordRequest$Builder
+com.google.android.gms.auth.api.identity.SavePasswordRequest
+com.google.android.gms.auth.api.identity.SavePasswordResult
+com.google.android.gms.auth.api.identity.SignInClient
+com.google.android.gms.auth.api.identity.SignInCredential
+com.google.android.gms.auth.api.identity.SignInPassword
+com.google.android.gms.auth.api.identity.zba
+com.google.android.gms.auth.api.identity.zbb
+com.google.android.gms.auth.api.identity.zbc
+com.google.android.gms.auth.api.identity.zbd
+com.google.android.gms.auth.api.identity.zbe
+com.google.android.gms.auth.api.identity.zbf
+com.google.android.gms.auth.api.identity.zbg
+com.google.android.gms.auth.api.identity.zbh
+com.google.android.gms.auth.api.identity.zbi
+com.google.android.gms.auth.api.identity.zbj
+com.google.android.gms.auth.api.identity.zbk
+com.google.android.gms.auth.api.identity.zbl
+com.google.android.gms.auth.api.identity.zbm
+com.google.android.gms.auth.api.identity.zbn
+com.google.android.gms.auth.api.identity.zbo
+com.google.android.gms.auth.api.identity.zbp
+com.google.android.gms.auth.api.phone.R
+com.google.android.gms.auth.api.phone.SmsCodeAutofillClient$PermissionState
+com.google.android.gms.auth.api.phone.SmsCodeAutofillClient
+com.google.android.gms.auth.api.phone.SmsCodeBrowserClient
+com.google.android.gms.auth.api.phone.SmsCodeRetriever
+com.google.android.gms.auth.api.phone.SmsRetriever:
+    public static final java.lang.String EXTRA_CONSENT_INTENT
+    public static final java.lang.String EXTRA_SIM_SUBSCRIPTION_ID
+    public static final java.lang.String EXTRA_SMS_MESSAGE
+    public static final java.lang.String EXTRA_STATUS
+    public static final java.lang.String SEND_PERMISSION
+    public static final java.lang.String SMS_RETRIEVED_ACTION
+    private void <init>()
+    public static com.google.android.gms.auth.api.phone.SmsRetrieverClient getClient(android.app.Activity)
+com.google.android.gms.auth.api.phone.SmsRetrieverApi
+com.google.android.gms.auth.api.phone.SmsRetrieverClient:
+    public void <init>(android.app.Activity)
+    public abstract com.google.android.gms.tasks.Task startSmsUserConsent(java.lang.String)
+com.google.android.gms.auth.api.phone.SmsRetrieverStatusCodes
+com.google.android.gms.auth.api.proxy.AuthApiStatusCodes
+com.google.android.gms.auth.api.proxy.ProxyApi$ProxyResult
+com.google.android.gms.auth.api.proxy.ProxyApi$SpatulaHeaderResult
+com.google.android.gms.auth.api.proxy.ProxyApi:
+    public abstract com.google.android.gms.common.api.PendingResult getSpatulaHeader(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult performProxyRequest(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.proxy.ProxyRequest)
+com.google.android.gms.auth.api.proxy.ProxyClient
+com.google.android.gms.auth.api.proxy.ProxyRequest$Builder
+com.google.android.gms.auth.api.proxy.ProxyRequest
+com.google.android.gms.auth.api.proxy.ProxyResponse
+com.google.android.gms.auth.api.proxy.zza
+com.google.android.gms.auth.api.proxy.zzb
+com.google.android.gms.auth.api.signin.GoogleSignIn:
+    private void <init>()
+    public static com.google.android.gms.auth.api.signin.GoogleSignInAccount getAccountForExtension(android.content.Context,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static varargs com.google.android.gms.auth.api.signin.GoogleSignInAccount getAccountForScopes(android.content.Context,com.google.android.gms.common.api.Scope,com.google.android.gms.common.api.Scope[])
+    public static com.google.android.gms.auth.api.signin.GoogleSignInClient getClient(android.app.Activity,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
+    public static boolean hasPermissions(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static void requestPermissions(android.app.Activity,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static void requestPermissions(androidx.fragment.app.Fragment,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public static varargs void requestPermissions(androidx.fragment.app.Fragment,int,com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.common.api.Scope[])
+    private static com.google.android.gms.common.api.Scope[] zbb(java.util.List)
 com.google.android.gms.auth.api.signin.GoogleSignInAccount:
     public static com.google.android.gms.auth.api.signin.GoogleSignInAccount createDefault()
     public static com.google.android.gms.auth.api.signin.GoogleSignInAccount fromAccount(android.accounts.Account)
-    public java.util.Set getGrantedScopes()
-    public boolean isExpired()
     public varargs com.google.android.gms.auth.api.signin.GoogleSignInAccount requestExtraScopes(com.google.android.gms.common.api.Scope[])
-    public final java.lang.String zac()
-    public final java.lang.String zad()
     private static com.google.android.gms.auth.api.signin.GoogleSignInAccount zae(android.accounts.Account,java.util.Set)
-com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder
-com.google.android.gms.auth.api.signin.GoogleSignInOptions
+com.google.android.gms.auth.api.signin.GoogleSignInApi:
+    public static final java.lang.String EXTRA_SIGN_IN_ACCOUNT
+    public abstract android.content.Intent getSignInIntent(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.auth.api.signin.GoogleSignInResult getSignInResultFromIntent(android.content.Intent)
+    public abstract com.google.android.gms.common.api.PendingResult revokeAccess(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult signOut(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.OptionalPendingResult silentSignIn(com.google.android.gms.common.api.GoogleApiClient)
+com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder:
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder addExtension(com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
+    public com.google.android.gms.auth.api.signin.GoogleSignInOptions$Builder requestServerAuthCode(java.lang.String)
+com.google.android.gms.auth.api.signin.GoogleSignInOptions:
+    public com.google.android.gms.common.api.Scope[] getScopeArray()
 com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension
-com.google.android.gms.auth.api.signin.internal.GoogleSignInOptionsExtensionParcelable
-com.google.android.gms.auth.api.signin.internal.HashAccumulator
+com.google.android.gms.auth.api.signin.GoogleSignInResult:
+    public boolean isSuccess()
+com.google.android.gms.auth.api.signin.GoogleSignInStatusCodes
+com.google.android.gms.auth.api.signin.internal.GoogleSignInOptionsExtensionParcelable:
+    public void <init>(com.google.android.gms.auth.api.signin.GoogleSignInOptionsExtension)
 com.google.android.gms.auth.api.signin.internal.Storage:
-    public void clear()
-    public com.google.android.gms.auth.api.signin.GoogleSignInOptions getSavedDefaultGoogleSignInOptions()
-    public java.lang.String getSavedRefreshToken()
-    public void saveDefaultGoogleSignInAccount(com.google.android.gms.auth.api.signin.GoogleSignInAccount,com.google.android.gms.auth.api.signin.GoogleSignInOptions)
     protected final void zab(java.lang.String)
     public final void zac()
-    protected final void zad(java.lang.String,java.lang.String)
-com.google.android.gms.auth.api.signin.internal.zaa
-com.google.android.gms.auth.api.signin.zaa
-com.google.android.gms.auth.api.signin.zac
-com.google.android.gms.auth.api.signin.zad
-com.google.android.gms.auth.api.signin.zae
+com.google.android.gms.auth.api.signin.internal.zbc:
+    public final void onComplete()
+com.google.android.gms.auth.api.signin.internal.zbd:
+    public final android.content.Intent getSignInIntent(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.auth.api.signin.GoogleSignInResult getSignInResultFromIntent(android.content.Intent)
+    public final com.google.android.gms.common.api.PendingResult revokeAccess(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.common.api.PendingResult signOut(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.common.api.OptionalPendingResult silentSignIn(com.google.android.gms.common.api.GoogleApiClient)
+    private static final com.google.android.gms.auth.api.signin.GoogleSignInOptions zba(com.google.android.gms.common.api.GoogleApiClient)
+com.google.android.gms.auth.api.signin.internal.zbe:
+    public final android.content.Intent getSignInIntent()
+    public final boolean providesSignIn()
+com.google.android.gms.auth.api.signin.internal.zbl:
+    public final synthetic bridge void setResult(java.lang.Object)
+com.google.android.gms.auth.api.signin.zbb:
+    private void <init>()
+com.google.android.gms.auth.api.zbb:
+    public final synthetic bridge java.util.List getImpliedScopes(java.lang.Object)
+com.google.android.gms.auth.zza
+com.google.android.gms.auth.zzb
+com.google.android.gms.auth.zzc
+com.google.android.gms.auth.zzg
+com.google.android.gms.auth.zzi
+com.google.android.gms.auth.zzj
+com.google.android.gms.auth.zzl:
+    public static final int CHANGE_TYPE_ACCOUNT_ADDED
+    public static final int CHANGE_TYPE_ACCOUNT_REMOVED
+    public static final int CHANGE_TYPE_ACCOUNT_RENAMED_FROM
+    public static final int CHANGE_TYPE_ACCOUNT_RENAMED_TO
+    public static final java.lang.String GOOGLE_ACCOUNT_TYPE
+    public static final java.lang.String KEY_SUPPRESS_PROGRESS_SCREEN
+    public static final java.lang.String WORK_ACCOUNT_TYPE
+    void <init>()
+    public static java.util.List getAccountChangeEvents(android.content.Context,int,java.lang.String)
+    public static java.lang.String getAccountId(android.content.Context,java.lang.String)
+    public static java.lang.String getToken(android.content.Context,java.lang.String,java.lang.String)
+    public static java.lang.String getToken(android.content.Context,java.lang.String,java.lang.String,android.os.Bundle)
+    public static void invalidateToken(android.content.Context,java.lang.String)
+    public static android.os.Bundle removeAccount(android.content.Context,android.accounts.Account)
+    public static java.lang.Boolean requestGoogleAccountsAccess(android.content.Context)
+    static synthetic bridge com.google.android.gms.common.logging.Logger zzc()
+    static void zzf(android.content.Intent)
 com.google.android.gms.base.R$attr
 com.google.android.gms.base.R$color
 com.google.android.gms.base.R$drawable:
@@ -2356,7 +2839,8 @@ com.google.android.gms.base.R
 com.google.android.gms.common.AccountPicker$AccountChooserOptions$Builder
 com.google.android.gms.common.AccountPicker$AccountChooserOptions
 com.google.android.gms.common.AccountPicker
-com.google.android.gms.common.BlockingServiceConnection
+com.google.android.gms.common.BlockingServiceConnection:
+    public android.os.IBinder getServiceWithTimeout(long,java.util.concurrent.TimeUnit)
 com.google.android.gms.common.ConnectionResult:
     public static final int API_DISABLED
     public static final int API_DISABLED_FOR_CONNECTION
@@ -2415,8 +2899,6 @@ com.google.android.gms.common.GoogleApiAvailabilityLight:
 com.google.android.gms.common.GooglePlayServicesManifestException:
     public int getActualVersion()
     public int getExpectedVersion()
-com.google.android.gms.common.GooglePlayServicesRepairableException:
-    public int getConnectionStatusCode()
 com.google.android.gms.common.GooglePlayServicesUtil:
     public static final java.lang.String GMS_ERROR_DIALOG
     public static final java.lang.String GOOGLE_PLAY_SERVICES_PACKAGE
@@ -2447,7 +2929,6 @@ com.google.android.gms.common.GooglePlayServicesUtilLight:
     public static int getClientVersion(android.content.Context)
     public static android.app.PendingIntent getErrorPendingIntent(int,android.content.Context,int)
     public static android.content.Intent getGooglePlayServicesAvailabilityRecoveryIntent(int)
-    public static boolean honorsDebugCertificates(android.content.Context)
     public static int isGooglePlayServicesAvailable(android.content.Context)
     public static boolean isGooglePlayServicesUid(android.content.Context,int)
     public static boolean isPlayStorePossiblyUpdating(android.content.Context,int)
@@ -2456,7 +2937,6 @@ com.google.android.gms.common.GooglePlayServicesUtilLight:
 com.google.android.gms.common.GoogleSignatureVerifier:
     private static volatile java.util.Set zzb
     private volatile java.lang.String zzd
-    public boolean isGooglePublicSignedPackage(android.content.pm.PackageInfo)
     public boolean isPackageGoogleSigned(java.lang.String)
     public boolean isUidGoogleSigned(int)
     private final com.google.android.gms.common.zzx zzc(java.lang.String,boolean,boolean)
@@ -2475,19 +2955,13 @@ com.google.android.gms.common.SignInButton$ColorScheme
 com.google.android.gms.common.SignInButton
 com.google.android.gms.common.SupportErrorDialogFragment:
     public static com.google.android.gms.common.SupportErrorDialogFragment newInstance(android.app.Dialog)
-com.google.android.gms.common.UserRecoverableException:
-    public android.content.Intent getIntent()
 com.google.android.gms.common.annotation.KeepForSdk
 com.google.android.gms.common.annotation.KeepForSdkWithFieldsAndMethods
 com.google.android.gms.common.annotation.KeepForSdkWithMembers
 com.google.android.gms.common.annotation.NonNullApi
 com.google.android.gms.common.api.Api$ApiOptions$HasOptions
-com.google.android.gms.common.api.Api$ApiOptions$NoOptions
 com.google.android.gms.common.api.Api$ApiOptions$NotRequiredOptions
 com.google.android.gms.common.api.Api$ApiOptions$Optional
-com.google.android.gms.common.api.Api$ApiOptions:
-    public static final com.google.android.gms.common.api.Api$ApiOptions$NoOptions NO_OPTIONS
-    static void <clinit>()
 com.google.android.gms.common.api.Api$BaseClientBuilder:
     public static final int API_PRIORITY_GAMES
     public static final int API_PRIORITY_OTHER
@@ -2502,10 +2976,8 @@ com.google.android.gms.common.api.Api$Client:
     public abstract boolean providesSignIn()
     public abstract boolean requiresAccount()
 com.google.android.gms.common.api.Api:
-    public final com.google.android.gms.common.api.Api$AnyClientKey zab()
     public final com.google.android.gms.common.api.Api$BaseClientBuilder zac()
 com.google.android.gms.common.api.ApiException:
-    public int getStatusCode()
     public java.lang.String getStatusMessage()
 com.google.android.gms.common.api.AvailabilityException:
     public com.google.android.gms.common.ConnectionResult getConnectionResult(com.google.android.gms.common.api.GoogleApi)
@@ -2537,31 +3009,17 @@ com.google.android.gms.common.api.CommonStatusCodes:
     public static final int TIMEOUT
     protected void <init>()
 com.google.android.gms.common.api.DataBufferResponse
-com.google.android.gms.common.api.GoogleApi$Settings$Builder:
-    public com.google.android.gms.common.api.GoogleApi$Settings$Builder setLooper(android.os.Looper)
-    public com.google.android.gms.common.api.GoogleApi$Settings$Builder setMapper(com.google.android.gms.common.api.internal.StatusExceptionMapper)
 com.google.android.gms.common.api.GoogleApi:
-    public void <init>(android.app.Activity,com.google.android.gms.common.api.Api,com.google.android.gms.common.api.Api$ApiOptions,com.google.android.gms.common.api.GoogleApi$Settings)
-    public void <init>(android.app.Activity,com.google.android.gms.common.api.Api,com.google.android.gms.common.api.Api$ApiOptions,com.google.android.gms.common.api.internal.StatusExceptionMapper)
     public void <init>(android.content.Context,com.google.android.gms.common.api.Api,com.google.android.gms.common.api.Api$ApiOptions,android.os.Looper,com.google.android.gms.common.api.internal.StatusExceptionMapper)
-    public void <init>(android.content.Context,com.google.android.gms.common.api.Api,com.google.android.gms.common.api.Api$ApiOptions,com.google.android.gms.common.api.internal.StatusExceptionMapper)
-    public com.google.android.gms.common.api.GoogleApiClient asGoogleApiClient()
     protected com.google.android.gms.tasks.Task disconnectService()
     public com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl doBestEffortWrite(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
-    public com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl doRead(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
     public com.google.android.gms.tasks.Task doRead(com.google.android.gms.common.api.internal.TaskApiCall)
     public com.google.android.gms.tasks.Task doRegisterEventListener(com.google.android.gms.common.api.internal.RegisterListenerMethod,com.google.android.gms.common.api.internal.UnregisterListenerMethod)
     public com.google.android.gms.tasks.Task doRegisterEventListener(com.google.android.gms.common.api.internal.RegistrationMethods)
     public com.google.android.gms.tasks.Task doUnregisterEventListener(com.google.android.gms.common.api.internal.ListenerHolder$ListenerKey)
     public com.google.android.gms.tasks.Task doUnregisterEventListener(com.google.android.gms.common.api.internal.ListenerHolder$ListenerKey,int)
-    public com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl doWrite(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
-    public com.google.android.gms.tasks.Task doWrite(com.google.android.gms.common.api.internal.TaskApiCall)
-    public com.google.android.gms.common.api.Api$ApiOptions getApiOptions()
-    public android.content.Context getApplicationContext()
     protected java.lang.String getContextFeatureId()
-    public android.os.Looper getLooper()
     public com.google.android.gms.common.api.internal.ListenerHolder registerListener(java.lang.Object,java.lang.String)
-    private final com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl zad(int,com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
 com.google.android.gms.common.api.GoogleApiClient$Builder
 com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks:
     public static final int CAUSE_NETWORK_LOST
@@ -2578,21 +3036,15 @@ com.google.android.gms.common.api.GoogleApiClient:
     public abstract void disconnect()
     public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
     public static void dumpAll(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
-    public com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl enqueue(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
-    public com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl execute(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
-    public static java.util.Set getAllClients()
     public com.google.android.gms.common.api.Api$Client getClient(com.google.android.gms.common.api.Api$AnyClientKey)
     public abstract com.google.android.gms.common.ConnectionResult getConnectionResult(com.google.android.gms.common.api.Api)
     public android.content.Context getContext()
-    public android.os.Looper getLooper()
     public boolean hasApi(com.google.android.gms.common.api.Api)
     public abstract boolean hasConnectedApi(com.google.android.gms.common.api.Api)
     public abstract boolean isConnected()
     public abstract boolean isConnecting()
     public abstract boolean isConnectionCallbacksRegistered(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
     public abstract boolean isConnectionFailedListenerRegistered(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
-    public boolean maybeSignIn(com.google.android.gms.common.api.internal.SignInConnectionListener)
-    public void maybeSignOut()
     public abstract void reconnect()
     public abstract void registerConnectionCallbacks(com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks)
     public abstract void registerConnectionFailedListener(com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener)
@@ -2604,68 +3056,73 @@ com.google.android.gms.common.api.GoogleApiClient:
     public void zap(com.google.android.gms.common.api.internal.zada)
     static synthetic bridge java.util.Set zaq()
 com.google.android.gms.common.api.HasApiKey
-com.google.android.gms.common.api.OptionalPendingResult
+com.google.android.gms.common.api.OptionalPendingResult:
+    public abstract com.google.android.gms.common.api.Result get()
+    public abstract boolean isDone()
 com.google.android.gms.common.api.PendingResult:
-    public void addStatusListener(com.google.android.gms.common.api.PendingResult$StatusListener)
     public abstract com.google.android.gms.common.api.Result await()
-    public abstract com.google.android.gms.common.api.Result await(long,java.util.concurrent.TimeUnit)
     public abstract void cancel()
     public abstract boolean isCanceled()
     public abstract void setResultCallback(com.google.android.gms.common.api.ResultCallback)
     public abstract void setResultCallback(com.google.android.gms.common.api.ResultCallback,long,java.util.concurrent.TimeUnit)
     public com.google.android.gms.common.api.TransformedResult then(com.google.android.gms.common.api.ResultTransform)
-com.google.android.gms.common.api.PendingResults
+com.google.android.gms.common.api.PendingResults:
+    private void <init>()
+    public static com.google.android.gms.common.api.PendingResult canceledPendingResult()
+    public static com.google.android.gms.common.api.PendingResult canceledPendingResult(com.google.android.gms.common.api.Result)
+    public static com.google.android.gms.common.api.OptionalPendingResult immediatePendingResult(com.google.android.gms.common.api.Result)
+    public static com.google.android.gms.common.api.PendingResult immediatePendingResult(com.google.android.gms.common.api.Status)
 com.google.android.gms.common.api.ResolvableApiException:
     public android.app.PendingIntent getResolution()
     public void startResolutionForResult(android.app.Activity,int)
 com.google.android.gms.common.api.ResolvingResultCallbacks
-com.google.android.gms.common.api.Response
+com.google.android.gms.common.api.Response:
+    protected void <init>(com.google.android.gms.common.api.Result)
 com.google.android.gms.common.api.ResultCallbacks
 com.google.android.gms.common.api.ResultTransform
 com.google.android.gms.common.api.Status:
-    public void <init>(int,java.lang.String,android.app.PendingIntent)
     public android.app.PendingIntent getResolution()
     public boolean isCanceled()
     public boolean isInterrupted()
-    public boolean isSuccess()
     public void startResolutionForResult(android.app.Activity,int)
-com.google.android.gms.common.api.TransformedResult
+com.google.android.gms.common.api.TransformedResult:
+    public void <init>()
+    public abstract void andFinally(com.google.android.gms.common.api.ResultCallbacks)
+    public abstract com.google.android.gms.common.api.TransformedResult then(com.google.android.gms.common.api.ResultTransform)
 com.google.android.gms.common.api.internal.ActivityLifecycleObserver
-com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl
+com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl:
+    protected void <init>(com.google.android.gms.common.api.Api$AnyClientKey,com.google.android.gms.common.api.GoogleApiClient)
+    protected void <init>(com.google.android.gms.common.api.internal.BasePendingResult$CallbackHandler)
+    public final com.google.android.gms.common.api.Api getApi()
+    public final com.google.android.gms.common.api.Api$AnyClientKey getClientKey()
+    public synthetic bridge void setResult(java.lang.Object)
 com.google.android.gms.common.api.internal.BaseImplementation$ResultHolder
 com.google.android.gms.common.api.internal.BaseImplementation
 com.google.android.gms.common.api.internal.BasePendingResult$CallbackHandler:
     public void <init>()
 com.google.android.gms.common.api.internal.BasePendingResult:
-    private volatile com.google.android.gms.common.api.internal.zada zap
     protected void <init>(android.os.Looper)
-    protected void <init>(com.google.android.gms.common.api.GoogleApiClient)
     protected void <init>(com.google.android.gms.common.api.internal.BasePendingResult$CallbackHandler)
-    public final void addStatusListener(com.google.android.gms.common.api.PendingResult$StatusListener)
     public final com.google.android.gms.common.api.Result await()
-    public final com.google.android.gms.common.api.Result await(long,java.util.concurrent.TimeUnit)
     public void cancel()
     public final boolean isCanceled()
     protected final void setCancelToken(com.google.android.gms.common.internal.ICancelToken)
     public final void setResultCallback(com.google.android.gms.common.api.ResultCallback)
     public final void setResultCallback(com.google.android.gms.common.api.ResultCallback,long,java.util.concurrent.TimeUnit)
     public final com.google.android.gms.common.api.TransformedResult then(com.google.android.gms.common.api.ResultTransform)
-    public final void zak()
     public final boolean zam()
     public final void zan(com.google.android.gms.common.api.internal.zadb)
 com.google.android.gms.common.api.internal.DataHolderNotifier
 com.google.android.gms.common.api.internal.DataHolderResult
 com.google.android.gms.common.api.internal.GoogleApiManager:
-    public static void reportSignOut()
     public static com.google.android.gms.common.api.internal.GoogleApiManager zal()
     public final com.google.android.gms.tasks.Task zao(java.lang.Iterable)
     public final com.google.android.gms.tasks.Task zap(com.google.android.gms.common.api.GoogleApi)
     public final com.google.android.gms.tasks.Task zaq(com.google.android.gms.common.api.GoogleApi,com.google.android.gms.common.api.internal.RegisterListenerMethod,com.google.android.gms.common.api.internal.UnregisterListenerMethod,java.lang.Runnable)
     public final com.google.android.gms.tasks.Task zar(com.google.android.gms.common.api.GoogleApi,com.google.android.gms.common.api.internal.ListenerHolder$ListenerKey,int)
-    public final void zaw(com.google.android.gms.common.api.GoogleApi,int,com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
 com.google.android.gms.common.api.internal.GoogleServices
-com.google.android.gms.common.api.internal.IStatusCallback$Stub
-com.google.android.gms.common.api.internal.IStatusCallback
+com.google.android.gms.common.api.internal.IStatusCallback$Stub:
+    public static com.google.android.gms.common.api.internal.IStatusCallback asInterface(android.os.IBinder)
 com.google.android.gms.common.api.internal.LifecycleActivity:
     public void <init>(android.content.ContextWrapper)
 com.google.android.gms.common.api.internal.LifecycleCallback:
@@ -2690,7 +3147,15 @@ com.google.android.gms.common.api.internal.NonGmsServiceBrokerClient:
     public final android.content.Intent getSignInIntent()
     public final boolean providesSignIn()
     public final boolean requiresAccount()
-com.google.android.gms.common.api.internal.OptionalPendingResultImpl
+com.google.android.gms.common.api.internal.OptionalPendingResultImpl:
+    public final com.google.android.gms.common.api.Result await()
+    public final void cancel()
+    public final com.google.android.gms.common.api.Result get()
+    public final boolean isCanceled()
+    public final boolean isDone()
+    public final void setResultCallback(com.google.android.gms.common.api.ResultCallback)
+    public final void setResultCallback(com.google.android.gms.common.api.ResultCallback,long,java.util.concurrent.TimeUnit)
+    public final com.google.android.gms.common.api.TransformedResult then(com.google.android.gms.common.api.ResultTransform)
 com.google.android.gms.common.api.internal.PendingResultFacade
 com.google.android.gms.common.api.internal.RegisterListenerMethod:
     private final com.google.android.gms.common.api.internal.ListenerHolder zaa
@@ -2704,26 +3169,25 @@ com.google.android.gms.common.api.internal.RegisterListenerMethod:
     public final int zaa()
 com.google.android.gms.common.api.internal.RegistrationMethods$Builder
 com.google.android.gms.common.api.internal.RegistrationMethods
-com.google.android.gms.common.api.internal.SignInConnectionListener
+com.google.android.gms.common.api.internal.SignInConnectionListener:
+    public abstract void onComplete()
 com.google.android.gms.common.api.internal.StatusCallback
-com.google.android.gms.common.api.internal.StatusPendingResult
+com.google.android.gms.common.api.internal.StatusPendingResult:
+    public void <init>(android.os.Looper)
 com.google.android.gms.common.api.internal.TaskApiCall$Builder:
     private void <init>()
     public com.google.android.gms.common.api.internal.TaskApiCall$Builder execute(com.google.android.gms.common.util.BiConsumer)
-    public com.google.android.gms.common.api.internal.TaskApiCall$Builder setMethodKey(int)
 com.google.android.gms.common.api.internal.TaskApiCall:
     public void <init>()
-com.google.android.gms.common.api.internal.TaskUtil
+com.google.android.gms.common.api.internal.TaskUtil:
+    public void <init>()
+    public static com.google.android.gms.tasks.Task toVoidTaskThatFailsOnFalse(com.google.android.gms.tasks.Task)
 com.google.android.gms.common.api.internal.UnregisterListenerMethod:
     private final com.google.android.gms.common.api.internal.ListenerHolder$ListenerKey zaa
     protected void <init>(com.google.android.gms.common.api.internal.ListenerHolder$ListenerKey)
     public com.google.android.gms.common.api.internal.ListenerHolder$ListenerKey getListenerKey()
 com.google.android.gms.common.api.internal.zaa
 com.google.android.gms.common.api.internal.zaaa
-com.google.android.gms.common.api.internal.zaab
-com.google.android.gms.common.api.internal.zaad:
-    static synthetic bridge java.util.Map zaa(com.google.android.gms.common.api.internal.zaad)
-    final void zac(com.google.android.gms.common.api.internal.BasePendingResult,boolean)
 com.google.android.gms.common.api.internal.zaaf:
     public void <init>(com.google.android.gms.common.api.internal.ApiKey)
 com.google.android.gms.common.api.internal.zaag:
@@ -2778,10 +3242,7 @@ com.google.android.gms.common.api.internal.zabj
 com.google.android.gms.common.api.internal.zabq:
     public final void zaa(com.google.android.gms.common.ConnectionResult,com.google.android.gms.common.api.Api,boolean)
 com.google.android.gms.common.api.internal.zabv:
-    public final com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl enqueue(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
-    public final com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl execute(com.google.android.gms.common.api.internal.BaseImplementation$ApiMethodImpl)
     public final android.content.Context getContext()
-    public final android.os.Looper getLooper()
     public final void zao(com.google.android.gms.common.api.internal.zada)
     public final void zap(com.google.android.gms.common.api.internal.zada)
 com.google.android.gms.common.api.internal.zaby
@@ -2804,7 +3265,34 @@ com.google.android.gms.common.api.internal.zacy
 com.google.android.gms.common.api.internal.zacz
 com.google.android.gms.common.api.internal.zad:
     public void zag(com.google.android.gms.common.api.internal.zaad,boolean)
-com.google.android.gms.common.api.internal.zada
+com.google.android.gms.common.api.internal.zada:
+    private com.google.android.gms.common.api.ResultTransform zaa
+    private com.google.android.gms.common.api.internal.zada zab
+    private volatile com.google.android.gms.common.api.ResultCallbacks zac
+    private com.google.android.gms.common.api.PendingResult zad
+    private final java.lang.Object zae
+    private com.google.android.gms.common.api.Status zaf
+    private final java.lang.ref.WeakReference zag
+    private final com.google.android.gms.common.api.internal.zacz zah
+    private boolean zai
+    public void <init>(java.lang.ref.WeakReference)
+    public final void andFinally(com.google.android.gms.common.api.ResultCallbacks)
+    public final void onResult(com.google.android.gms.common.api.Result)
+    public final com.google.android.gms.common.api.TransformedResult then(com.google.android.gms.common.api.ResultTransform)
+    static synthetic bridge com.google.android.gms.common.api.ResultTransform zaa(com.google.android.gms.common.api.internal.zada)
+    static synthetic bridge com.google.android.gms.common.api.internal.zacz zab(com.google.android.gms.common.api.internal.zada)
+    static synthetic bridge com.google.android.gms.common.api.internal.zada zac(com.google.android.gms.common.api.internal.zada)
+    static synthetic bridge java.lang.Object zad(com.google.android.gms.common.api.internal.zada)
+    static synthetic bridge java.lang.ref.WeakReference zae(com.google.android.gms.common.api.internal.zada)
+    static synthetic bridge void zaf(com.google.android.gms.common.api.internal.zada,com.google.android.gms.common.api.Result)
+    static synthetic bridge void zag(com.google.android.gms.common.api.internal.zada,com.google.android.gms.common.api.Status)
+    final void zah()
+    public final void zai(com.google.android.gms.common.api.PendingResult)
+    private final void zaj(com.google.android.gms.common.api.Status)
+    private final void zak()
+    private final void zal(com.google.android.gms.common.api.Status)
+    private final boolean zam()
+    private static final void zan(com.google.android.gms.common.api.Result)
 com.google.android.gms.common.api.internal.zadb:
     void <init>(com.google.android.gms.common.api.internal.zadc)
 com.google.android.gms.common.api.internal.zadc:
@@ -2814,7 +3302,6 @@ com.google.android.gms.common.api.internal.zadc:
     public void <init>()
     final void zaa(com.google.android.gms.common.api.internal.BasePendingResult)
     public final void zab()
-com.google.android.gms.common.api.internal.zae
 com.google.android.gms.common.api.internal.zaf
 com.google.android.gms.common.api.internal.zaj
 com.google.android.gms.common.api.internal.zak
@@ -2834,13 +3321,10 @@ com.google.android.gms.common.api.internal.zzb:
 com.google.android.gms.common.api.internal.zzd:
     public final boolean isCreated()
     public final boolean isStarted()
-com.google.android.gms.common.api.zaa
 com.google.android.gms.common.api.zab
 com.google.android.gms.common.api.zac
 com.google.android.gms.common.api.zad
 com.google.android.gms.common.api.zaf
-com.google.android.gms.common.api.zag
-com.google.android.gms.common.api.zah
 com.google.android.gms.common.config.GservicesValue
 com.google.android.gms.common.config.zza
 com.google.android.gms.common.config.zzb
@@ -2857,18 +3341,45 @@ com.google.android.gms.common.data.DataBufferObserverSet
 com.google.android.gms.common.data.DataBufferRef
 com.google.android.gms.common.data.DataBufferSafeParcelable
 com.google.android.gms.common.data.DataBufferUtils
-com.google.android.gms.common.data.DataHolder$Builder
-com.google.android.gms.common.data.DataHolder
+com.google.android.gms.common.data.DataHolder$Builder:
+    public com.google.android.gms.common.data.DataHolder build(int)
+    public com.google.android.gms.common.data.DataHolder build(int,android.os.Bundle)
+    public com.google.android.gms.common.data.DataHolder$Builder withRow(android.content.ContentValues)
+    public com.google.android.gms.common.data.DataHolder$Builder zaa(java.util.HashMap)
+    static synthetic bridge java.util.ArrayList zab(com.google.android.gms.common.data.DataHolder$Builder)
+    static synthetic bridge java.lang.String[] zac(com.google.android.gms.common.data.DataHolder$Builder)
+com.google.android.gms.common.data.DataHolder:
+    public void <init>(android.database.Cursor,int,android.os.Bundle)
+    private void <init>(com.google.android.gms.common.data.DataHolder$Builder,int,android.os.Bundle)
+    synthetic void <init>(com.google.android.gms.common.data.DataHolder$Builder,int,android.os.Bundle,int,com.google.android.gms.common.data.zae)
+    synthetic void <init>(com.google.android.gms.common.data.DataHolder$Builder,int,android.os.Bundle,com.google.android.gms.common.data.zae)
+    public void <init>(java.lang.String[],android.database.CursorWindow[],int,android.os.Bundle)
+    public static com.google.android.gms.common.data.DataHolder$Builder builder(java.lang.String[])
+    public static com.google.android.gms.common.data.DataHolder empty(int)
+    public boolean getBoolean(java.lang.String,int,int)
+    public byte[] getByteArray(java.lang.String,int,int)
+    public int getCount()
+    public int getInteger(java.lang.String,int,int)
+    public long getLong(java.lang.String,int,int)
+    public java.lang.String getString(java.lang.String,int,int)
+    public int getWindowIndex(int)
+    public boolean hasColumn(java.lang.String)
+    public boolean hasNull(java.lang.String,int,int)
+    public final double zaa(java.lang.String,int,int)
+    public final float zab(java.lang.String,int,int)
+    public final void zac(java.lang.String,int,int,android.database.CharArrayBuffer)
+    private final void zae(java.lang.String,int)
+    private static android.database.CursorWindow[] zaf(com.google.android.gms.common.data.DataHolder$Builder,int)
 com.google.android.gms.common.data.EntityBuffer
 com.google.android.gms.common.data.Freezable
 com.google.android.gms.common.data.FreezableUtils
 com.google.android.gms.common.data.SingleRefDataBufferIterator
 com.google.android.gms.common.data.zaa
-com.google.android.gms.common.data.zab
-com.google.android.gms.common.data.zac
+com.google.android.gms.common.data.zab:
+    public final com.google.android.gms.common.data.DataHolder$Builder withRow(android.content.ContentValues)
+    public final com.google.android.gms.common.data.DataHolder$Builder zaa(java.util.HashMap)
 com.google.android.gms.common.data.zad
 com.google.android.gms.common.data.zae
-com.google.android.gms.common.data.zaf
 com.google.android.gms.common.images.ImageManager$ImageReceiver
 com.google.android.gms.common.images.ImageManager$OnImageLoadedListener
 com.google.android.gms.common.images.ImageManager
@@ -2912,8 +3423,6 @@ com.google.android.gms.common.internal.ClientIdentity
 com.google.android.gms.common.internal.ClientSettings:
     public void <init>(android.accounts.Account,java.util.Set,java.util.Map,int,android.view.View,java.lang.String,java.lang.String,com.google.android.gms.signin.SignInOptions)
     public static com.google.android.gms.common.internal.ClientSettings createDefault(android.content.Context)
-    public java.lang.String getAccountName()
-    public java.util.Set getApplicableScopes(com.google.android.gms.common.api.Api)
     public int getGravityForPopups()
     public android.view.View getViewForPopups()
     public final java.util.Map zad()
@@ -2925,15 +3434,25 @@ com.google.android.gms.common.internal.GetServiceRequest:
 com.google.android.gms.common.internal.GmsClient:
     protected void <init>(android.content.Context,android.os.Handler,int,com.google.android.gms.common.internal.ClientSettings)
     protected void <init>(android.content.Context,android.os.Looper,int,com.google.android.gms.common.internal.ClientSettings)
-    protected final com.google.android.gms.common.internal.ClientSettings getClientSettings()
     public com.google.android.gms.common.Feature[] getRequiredFeatures()
 com.google.android.gms.common.internal.GmsClientSupervisor:
-    public boolean bindService(android.content.ComponentName,android.content.ServiceConnection,java.lang.String)
     public boolean bindService(java.lang.String,android.content.ServiceConnection,java.lang.String)
     public static void setUseHandlerThreadForCallbacks()
-    public void unbindService(android.content.ComponentName,android.content.ServiceConnection,java.lang.String)
     public void unbindService(java.lang.String,android.content.ServiceConnection,java.lang.String)
-com.google.android.gms.common.internal.GmsLogger
+com.google.android.gms.common.internal.GmsLogger:
+    public boolean canLogPii()
+    public void d(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void e(java.lang.String,java.lang.String)
+    public varargs void efmt(java.lang.String,java.lang.String,java.lang.Object[])
+    public void i(java.lang.String,java.lang.String)
+    public void i(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void pii(java.lang.String,java.lang.String)
+    public void pii(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void v(java.lang.String,java.lang.String,java.lang.Throwable)
+    public void w(java.lang.String,java.lang.String,java.lang.Throwable)
+    public varargs void wfmt(java.lang.String,java.lang.String,java.lang.Object[])
+    public void wtf(java.lang.String,java.lang.String,java.lang.Throwable)
+    private final varargs java.lang.String zzb(java.lang.String,java.lang.Object[])
 com.google.android.gms.common.internal.HideFirstParty
 com.google.android.gms.common.internal.IAccountAccessor$Stub:
     public void <init>()
@@ -2943,17 +3462,14 @@ com.google.android.gms.common.internal.ICancelToken:
     public abstract void cancel()
 com.google.android.gms.common.internal.IGmsServiceBroker$Stub
 com.google.android.gms.common.internal.ImagesContract
-com.google.android.gms.common.internal.LibraryVersion
 com.google.android.gms.common.internal.MethodInvocation:
     public void <init>(int,int,int,long,long,java.lang.String,java.lang.String,int)
 com.google.android.gms.common.internal.Objects:
     private void <init>()
-    public static boolean checkBundlesEquality(android.os.Bundle,android.os.Bundle)
-com.google.android.gms.common.internal.PendingResultUtil$ResultConverter
-com.google.android.gms.common.internal.PendingResultUtil
+com.google.android.gms.common.internal.PendingResultUtil:
+    public void <init>()
 com.google.android.gms.common.internal.Preconditions:
     private void <init>()
-    public static varargs void checkArgument(boolean,java.lang.String,java.lang.Object[])
     public static void checkHandlerThread(android.os.Handler,java.lang.String)
     public static void checkMainThread()
     public static void checkMainThread(java.lang.String)
@@ -2983,7 +3499,6 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelReader:
     public static java.math.BigInteger[] createBigIntegerArray(android.os.Parcel,int)
     public static boolean[] createBooleanArray(android.os.Parcel,int)
     public static java.util.ArrayList createBooleanList(android.os.Parcel,int)
-    public static byte[] createByteArray(android.os.Parcel,int)
     public static byte[][] createByteArrayArray(android.os.Parcel,int)
     public static android.util.SparseArray createByteArraySparseArray(android.os.Parcel,int)
     public static char[] createCharArray(android.os.Parcel,int)
@@ -3006,10 +3521,8 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelReader:
     public static android.util.SparseBooleanArray createSparseBooleanArray(android.os.Parcel,int)
     public static android.util.SparseIntArray createSparseIntArray(android.os.Parcel,int)
     public static android.util.SparseLongArray createSparseLongArray(android.os.Parcel,int)
-    public static java.lang.String[] createStringArray(android.os.Parcel,int)
     public static android.util.SparseArray createStringSparseArray(android.os.Parcel,int)
     public static android.util.SparseArray createTypedSparseArray(android.os.Parcel,int,android.os.Parcelable$Creator)
-    public static java.lang.Boolean readBooleanObject(android.os.Parcel,int)
     public static byte readByte(android.os.Parcel,int)
     public static char readChar(android.os.Parcel,int)
     public static double readDouble(android.os.Parcel,int)
@@ -3018,10 +3531,8 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelReader:
     public static java.lang.Float readFloatObject(android.os.Parcel,int)
     public static java.lang.Integer readIntegerObject(android.os.Parcel,int)
     public static void readList(android.os.Parcel,int,java.util.List,java.lang.ClassLoader)
-    public static java.lang.Long readLongObject(android.os.Parcel,int)
     public static android.app.PendingIntent readPendingIntent(android.os.Parcel,int)
     public static short readShort(android.os.Parcel,int)
-    private static void zza(android.os.Parcel,int,int,int)
 com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     private void <init>()
     public static void writeBigDecimal(android.os.Parcel,int,java.math.BigDecimal,boolean)
@@ -3030,9 +3541,7 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     public static void writeBigIntegerArray(android.os.Parcel,int,java.math.BigInteger[],boolean)
     public static void writeBooleanArray(android.os.Parcel,int,boolean[],boolean)
     public static void writeBooleanList(android.os.Parcel,int,java.util.List,boolean)
-    public static void writeBooleanObject(android.os.Parcel,int,java.lang.Boolean,boolean)
     public static void writeByte(android.os.Parcel,int,byte)
-    public static void writeByteArray(android.os.Parcel,int,byte[],boolean)
     public static void writeByteArrayArray(android.os.Parcel,int,byte[][],boolean)
     public static void writeByteArraySparseArray(android.os.Parcel,int,android.util.SparseArray,boolean)
     public static void writeChar(android.os.Parcel,int,char)
@@ -3055,7 +3564,6 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     public static void writeList(android.os.Parcel,int,java.util.List,boolean)
     public static void writeLongArray(android.os.Parcel,int,long[],boolean)
     public static void writeLongList(android.os.Parcel,int,java.util.List,boolean)
-    public static void writeLongObject(android.os.Parcel,int,java.lang.Long,boolean)
     public static void writeParcel(android.os.Parcel,int,android.os.Parcel,boolean)
     public static void writeParcelArray(android.os.Parcel,int,android.os.Parcel[],boolean)
     public static void writeParcelList(android.os.Parcel,int,java.util.List,boolean)
@@ -3065,7 +3573,6 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelWriter:
     public static void writeSparseBooleanArray(android.os.Parcel,int,android.util.SparseBooleanArray,boolean)
     public static void writeSparseIntArray(android.os.Parcel,int,android.util.SparseIntArray,boolean)
     public static void writeSparseLongArray(android.os.Parcel,int,android.util.SparseLongArray,boolean)
-    public static void writeStringArray(android.os.Parcel,int,java.lang.String[],boolean)
     public static void writeStringSparseArray(android.os.Parcel,int,android.util.SparseArray,boolean)
     public static void writeTypedSparseArray(android.os.Parcel,int,android.util.SparseArray,boolean)
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Class
@@ -3076,8 +3583,18 @@ com.google.android.gms.common.internal.safeparcel.SafeParcelable$Param
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$RemovedParam
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$Reserved
 com.google.android.gms.common.internal.safeparcel.SafeParcelable$VersionField
-com.google.android.gms.common.internal.safeparcel.SafeParcelable
-com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer
+com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer:
+    private void <init>()
+    public static java.util.ArrayList deserializeIterableFromBundle(android.os.Bundle,java.lang.String,android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromBundleSafe(android.os.Bundle,java.lang.String,android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromBytes(byte[],android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromIntentExtra(android.content.Intent,java.lang.String,android.os.Parcelable$Creator)
+    public static java.util.ArrayList deserializeIterableFromIntentExtraSafe(android.content.Intent,java.lang.String,android.os.Parcelable$Creator)
+    public static void serializeIterableToBundle(java.lang.Iterable,android.os.Bundle,java.lang.String)
+    public static void serializeIterableToBundleSafe(java.lang.Iterable,android.os.Bundle,java.lang.String)
+    public static void serializeIterableToIntentExtra(java.lang.Iterable,android.content.Intent,java.lang.String)
+    public static void serializeIterableToIntentExtraSafe(java.lang.Iterable,android.content.Intent,java.lang.String)
+    private static byte[] zza(java.lang.Iterable)
 com.google.android.gms.common.internal.service.Common
 com.google.android.gms.common.internal.service.zaa
 com.google.android.gms.common.internal.service.zab
@@ -3102,11 +3619,6 @@ com.google.android.gms.common.internal.zak
 com.google.android.gms.common.internal.zal:
     public void <init>()
 com.google.android.gms.common.internal.zam
-com.google.android.gms.common.internal.zao
-com.google.android.gms.common.internal.zap
-com.google.android.gms.common.internal.zaq
-com.google.android.gms.common.internal.zar
-com.google.android.gms.common.internal.zas
 com.google.android.gms.common.internal.zav:
     public final boolean zac()
     public final boolean zad()
@@ -3124,7 +3636,6 @@ com.google.android.gms.common.internal.zzak
 com.google.android.gms.common.internal.zzh
 com.google.android.gms.common.internal.zzi
 com.google.android.gms.common.internal.zzn:
-    public void <init>(android.content.ComponentName,int)
     public void <init>(java.lang.String,int,boolean)
 com.google.android.gms.common.internal.zzr:
     final void zzi(android.os.Looper)
@@ -3132,7 +3643,9 @@ com.google.android.gms.common.internal.zzw
 com.google.android.gms.common.internal.zzx
 com.google.android.gms.common.internal.zzy:
     public static com.google.android.gms.common.internal.zzz zzg(android.os.IBinder)
-com.google.android.gms.common.logging.Logger
+com.google.android.gms.common.logging.Logger:
+    public java.lang.String getTag()
+    public varargs void v(java.lang.String,java.lang.Throwable,java.lang.Object[])
 com.google.android.gms.common.providers.PooledExecutorsProvider$PooledExecutorFactory
 com.google.android.gms.common.providers.PooledExecutorsProvider
 com.google.android.gms.common.providers.zza
@@ -3179,7 +3692,8 @@ com.google.android.gms.common.stats.StatsUtils
 com.google.android.gms.common.stats.WakeLockEvent
 com.google.android.gms.common.stats.WakeLockTracker
 com.google.android.gms.common.stats.zza
-com.google.android.gms.common.util.AndroidUtilsLight
+com.google.android.gms.common.util.AndroidUtilsLight:
+    public void <init>()
 com.google.android.gms.common.util.ArrayUtils:
     private void <init>()
     public static varargs java.lang.Object[] concat(java.lang.Object[][])
@@ -3199,16 +3713,11 @@ com.google.android.gms.common.util.ArrayUtils:
 com.google.android.gms.common.util.Base64Utils:
     public void <init>()
     public static byte[] decode(java.lang.String)
-    public static byte[] decodeUrlSafe(java.lang.String)
-    public static byte[] decodeUrlSafeNoPadding(java.lang.String)
-    public static java.lang.String encode(byte[])
-    public static java.lang.String encodeUrlSafe(byte[])
 com.google.android.gms.common.util.BiConsumer
 com.google.android.gms.common.util.ClientLibraryUtils
 com.google.android.gms.common.util.Clock$-CC
 com.google.android.gms.common.util.Clock:
     public abstract long currentThreadTimeMillis()
-    public abstract long currentTimeMillis()
     public abstract long elapsedRealtime()
     public abstract long nanoTime()
 com.google.android.gms.common.util.CollectionUtils
@@ -3217,7 +3726,6 @@ com.google.android.gms.common.util.CrashUtils:
 com.google.android.gms.common.util.DataUtils
 com.google.android.gms.common.util.DefaultClock:
     public final long currentThreadTimeMillis()
-    public final long currentTimeMillis()
     public final long elapsedRealtime()
     public final long nanoTime()
 com.google.android.gms.common.util.DeviceProperties:
@@ -3238,10 +3746,12 @@ com.google.android.gms.common.util.DeviceProperties:
     public static boolean isTablet(android.content.Context)
     public static boolean isTablet(android.content.res.Resources)
     public static boolean isTv(android.content.Context)
-    public static boolean isUserBuild()
     public static boolean zzc(android.content.res.Resources)
 com.google.android.gms.common.util.GmsVersion
-com.google.android.gms.common.util.Hex
+com.google.android.gms.common.util.Hex:
+    public void <init>()
+    public static java.lang.String bytesToStringLowercase(byte[])
+    public static byte[] stringToBytes(java.lang.String)
 com.google.android.gms.common.util.HexDumpUtils
 com.google.android.gms.common.util.HttpUtils
 com.google.android.gms.common.util.IOUtils:
@@ -3263,7 +3773,6 @@ com.google.android.gms.common.util.PlatformVersion:
     public static boolean isAtLeastHoneycombMR1()
     public static boolean isAtLeastIceCreamSandwichMR1()
     public static boolean isAtLeastJellyBeanMR1()
-    public static boolean isAtLeastKitKat()
     public static boolean isAtLeastLollipopMR1()
     public static boolean isAtLeastM()
     public static boolean isAtLeastP()
@@ -3278,8 +3787,8 @@ com.google.android.gms.common.util.ScopeUtil
 com.google.android.gms.common.util.SharedPreferencesUtils
 com.google.android.gms.common.util.Strings:
     private void <init>()
-    public static java.lang.String emptyToNull(java.lang.String)
-com.google.android.gms.common.util.UidVerifier
+com.google.android.gms.common.util.UidVerifier:
+    private void <init>()
 com.google.android.gms.common.util.VisibleForTesting
 com.google.android.gms.common.util.WorkSourceUtil
 com.google.android.gms.common.util.concurrent.HandlerExecutor
@@ -3294,7 +3803,6 @@ com.google.android.gms.common.wrappers.PackageManagerWrapper:
     public int checkPermission(java.lang.String,java.lang.String)
     public androidx.core.util.Pair getApplicationLabelAndIcon(java.lang.String)
     public boolean isCallerInstantApp()
-    public final boolean zza(int,java.lang.String)
 com.google.android.gms.common.zaa
 com.google.android.gms.common.zab
 com.google.android.gms.common.zza
@@ -3353,6 +3861,403 @@ com.google.android.gms.dynamite.DynamiteModule:
     public static final int REMOTE
     public static int getRemoteVersion(android.content.Context,java.lang.String)
     public android.os.IBinder instantiate(java.lang.String)
+com.google.android.gms.fido.Fido
+com.google.android.gms.fido.R
+com.google.android.gms.fido.common.Transport$UnsupportedTransportException
+com.google.android.gms.fido.common.Transport
+com.google.android.gms.fido.common.zza
+com.google.android.gms.fido.fido2.Fido2ApiClient
+com.google.android.gms.fido.fido2.Fido2PendingIntent
+com.google.android.gms.fido.fido2.Fido2PrivilegedApiClient
+com.google.android.gms.fido.fido2.api.common.Algorithm
+com.google.android.gms.fido.fido2.api.common.Attachment$UnsupportedAttachmentException
+com.google.android.gms.fido.fido2.api.common.Attachment
+com.google.android.gms.fido.fido2.api.common.AttestationConveyancePreference$UnsupportedAttestationConveyancePreferenceException
+com.google.android.gms.fido.fido2.api.common.AttestationConveyancePreference
+com.google.android.gms.fido.fido2.api.common.AuthenticationExtensions$Builder
+com.google.android.gms.fido.fido2.api.common.AuthenticationExtensions
+com.google.android.gms.fido.fido2.api.common.AuthenticationExtensionsClientOutputs$Builder
+com.google.android.gms.fido.fido2.api.common.AuthenticationExtensionsClientOutputs
+com.google.android.gms.fido.fido2.api.common.AuthenticatorAssertionResponse
+com.google.android.gms.fido.fido2.api.common.AuthenticatorAttestationResponse
+com.google.android.gms.fido.fido2.api.common.AuthenticatorErrorResponse
+com.google.android.gms.fido.fido2.api.common.AuthenticatorResponse
+com.google.android.gms.fido.fido2.api.common.AuthenticatorSelectionCriteria$Builder
+com.google.android.gms.fido.fido2.api.common.AuthenticatorSelectionCriteria
+com.google.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialCreationOptions$Builder
+com.google.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialCreationOptions
+com.google.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialRequestOptions$Builder
+com.google.android.gms.fido.fido2.api.common.BrowserPublicKeyCredentialRequestOptions
+com.google.android.gms.fido.fido2.api.common.BrowserRequestOptions
+com.google.android.gms.fido.fido2.api.common.COSEAlgorithmIdentifier$UnsupportedAlgorithmIdentifierException
+com.google.android.gms.fido.fido2.api.common.COSEAlgorithmIdentifier
+com.google.android.gms.fido.fido2.api.common.DevicePublicKeyStringDef
+com.google.android.gms.fido.fido2.api.common.EC2Algorithm
+com.google.android.gms.fido.fido2.api.common.ErrorCode$UnsupportedErrorCodeException
+com.google.android.gms.fido.fido2.api.common.ErrorCode
+com.google.android.gms.fido.fido2.api.common.FidoAppIdExtension
+com.google.android.gms.fido.fido2.api.common.FidoCredentialDetails
+com.google.android.gms.fido.fido2.api.common.GoogleThirdPartyPaymentExtension
+com.google.android.gms.fido.fido2.api.common.KeyProtectionTypes
+com.google.android.gms.fido.fido2.api.common.MatcherProtectionTypes
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredential$Builder
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredential
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialCreationOptions$Builder
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialCreationOptions
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor$UnsupportedPubKeyCredDescriptorException
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialDescriptor
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialParameters
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialRequestOptions$Builder
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialRequestOptions
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialRpEntity
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialType$UnsupportedPublicKeyCredTypeException
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialType
+com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialUserEntity
+com.google.android.gms.fido.fido2.api.common.RSAAlgorithm
+com.google.android.gms.fido.fido2.api.common.RequestOptions
+com.google.android.gms.fido.fido2.api.common.ResidentKeyRequirement$UnsupportedResidentKeyRequirementException
+com.google.android.gms.fido.fido2.api.common.ResidentKeyRequirement
+com.google.android.gms.fido.fido2.api.common.TokenBinding$TokenBindingStatus
+com.google.android.gms.fido.fido2.api.common.TokenBinding$UnsupportedTokenBindingStatusException
+com.google.android.gms.fido.fido2.api.common.TokenBinding
+com.google.android.gms.fido.fido2.api.common.UserVerificationMethodExtension
+com.google.android.gms.fido.fido2.api.common.UserVerificationMethods
+com.google.android.gms.fido.fido2.api.common.UvmEntries$Builder
+com.google.android.gms.fido.fido2.api.common.UvmEntries
+com.google.android.gms.fido.fido2.api.common.UvmEntry$Builder
+com.google.android.gms.fido.fido2.api.common.UvmEntry
+com.google.android.gms.fido.fido2.api.common.zza
+com.google.android.gms.fido.fido2.api.common.zzaa
+com.google.android.gms.fido.fido2.api.common.zzab
+com.google.android.gms.fido.fido2.api.common.zzac
+com.google.android.gms.fido.fido2.api.common.zzad
+com.google.android.gms.fido.fido2.api.common.zzae
+com.google.android.gms.fido.fido2.api.common.zzaf
+com.google.android.gms.fido.fido2.api.common.zzag
+com.google.android.gms.fido.fido2.api.common.zzah
+com.google.android.gms.fido.fido2.api.common.zzai
+com.google.android.gms.fido.fido2.api.common.zzaj
+com.google.android.gms.fido.fido2.api.common.zzak
+com.google.android.gms.fido.fido2.api.common.zzal
+com.google.android.gms.fido.fido2.api.common.zzam
+com.google.android.gms.fido.fido2.api.common.zzan
+com.google.android.gms.fido.fido2.api.common.zzao
+com.google.android.gms.fido.fido2.api.common.zzap
+com.google.android.gms.fido.fido2.api.common.zzaq
+com.google.android.gms.fido.fido2.api.common.zzar
+com.google.android.gms.fido.fido2.api.common.zzas
+com.google.android.gms.fido.fido2.api.common.zzat
+com.google.android.gms.fido.fido2.api.common.zzau
+com.google.android.gms.fido.fido2.api.common.zzav
+com.google.android.gms.fido.fido2.api.common.zzb
+com.google.android.gms.fido.fido2.api.common.zzc
+com.google.android.gms.fido.fido2.api.common.zzd
+com.google.android.gms.fido.fido2.api.common.zze
+com.google.android.gms.fido.fido2.api.common.zzf
+com.google.android.gms.fido.fido2.api.common.zzg
+com.google.android.gms.fido.fido2.api.common.zzh
+com.google.android.gms.fido.fido2.api.common.zzi
+com.google.android.gms.fido.fido2.api.common.zzj
+com.google.android.gms.fido.fido2.api.common.zzk
+com.google.android.gms.fido.fido2.api.common.zzl
+com.google.android.gms.fido.fido2.api.common.zzm
+com.google.android.gms.fido.fido2.api.common.zzn
+com.google.android.gms.fido.fido2.api.common.zzo
+com.google.android.gms.fido.fido2.api.common.zzp
+com.google.android.gms.fido.fido2.api.common.zzq
+com.google.android.gms.fido.fido2.api.common.zzr
+com.google.android.gms.fido.fido2.api.common.zzs
+com.google.android.gms.fido.fido2.api.common.zzt
+com.google.android.gms.fido.fido2.api.common.zzu
+com.google.android.gms.fido.fido2.api.common.zzv
+com.google.android.gms.fido.fido2.api.common.zzw
+com.google.android.gms.fido.fido2.api.common.zzx
+com.google.android.gms.fido.fido2.api.common.zzy
+com.google.android.gms.fido.fido2.api.common.zzz
+com.google.android.gms.fido.fido2.zza
+com.google.android.gms.fido.fido2.zzb
+com.google.android.gms.fido.fido2.zzc
+com.google.android.gms.fido.fido2.zzd
+com.google.android.gms.fido.fido2.zze
+com.google.android.gms.fido.fido2.zzf
+com.google.android.gms.fido.fido2.zzg
+com.google.android.gms.fido.fido2.zzh
+com.google.android.gms.fido.fido2.zzi
+com.google.android.gms.fido.fido2.zzj
+com.google.android.gms.fido.fido2.zzk
+com.google.android.gms.fido.fido2.zzl
+com.google.android.gms.fido.fido2.zzm
+com.google.android.gms.fido.fido2.zzn
+com.google.android.gms.fido.fido2.zzo
+com.google.android.gms.fido.fido2.zzp
+com.google.android.gms.fido.fido2.zzq
+com.google.android.gms.fido.fido2.zzr
+com.google.android.gms.fido.fido2.zzs
+com.google.android.gms.fido.fido2.zzt
+com.google.android.gms.fido.fido2.zzu
+com.google.android.gms.fido.fido2.zzv
+com.google.android.gms.fido.sourcedevice.SourceDirectTransferClient
+com.google.android.gms.fido.sourcedevice.SourceDirectTransferResult
+com.google.android.gms.fido.sourcedevice.SourceStartDirectTransferOptions
+com.google.android.gms.fido.sourcedevice.zza
+com.google.android.gms.fido.sourcedevice.zzb
+com.google.android.gms.fido.u2f.U2fApiClient
+com.google.android.gms.fido.u2f.U2fPendingIntent
+com.google.android.gms.fido.u2f.api.common.ChannelIdValue$ChannelIdValueType
+com.google.android.gms.fido.u2f.api.common.ChannelIdValue$UnsupportedChannelIdValueTypeException
+com.google.android.gms.fido.u2f.api.common.ChannelIdValue
+com.google.android.gms.fido.u2f.api.common.ClientData$Builder
+com.google.android.gms.fido.u2f.api.common.ClientData
+com.google.android.gms.fido.u2f.api.common.Error
+com.google.android.gms.fido.u2f.api.common.ErrorCode
+com.google.android.gms.fido.u2f.api.common.ErrorResponseData
+com.google.android.gms.fido.u2f.api.common.KeyHandle
+com.google.android.gms.fido.u2f.api.common.ProtocolVersion$UnsupportedProtocolException
+com.google.android.gms.fido.u2f.api.common.ProtocolVersion
+com.google.android.gms.fido.u2f.api.common.RegisterRequest
+com.google.android.gms.fido.u2f.api.common.RegisterRequestParams$Builder
+com.google.android.gms.fido.u2f.api.common.RegisterRequestParams
+com.google.android.gms.fido.u2f.api.common.RegisterResponseData
+com.google.android.gms.fido.u2f.api.common.RegisteredKey
+com.google.android.gms.fido.u2f.api.common.RequestParams
+com.google.android.gms.fido.u2f.api.common.ResponseData
+com.google.android.gms.fido.u2f.api.common.SignRequestParams$Builder
+com.google.android.gms.fido.u2f.api.common.SignRequestParams
+com.google.android.gms.fido.u2f.api.common.SignResponseData
+com.google.android.gms.fido.u2f.api.common.zza
+com.google.android.gms.fido.u2f.api.common.zzb
+com.google.android.gms.fido.u2f.api.common.zzc
+com.google.android.gms.fido.u2f.api.common.zzd
+com.google.android.gms.fido.u2f.api.common.zze
+com.google.android.gms.fido.u2f.api.common.zzf
+com.google.android.gms.fido.u2f.api.common.zzg
+com.google.android.gms.fido.u2f.api.common.zzh
+com.google.android.gms.fido.u2f.api.common.zzi
+com.google.android.gms.fido.u2f.api.common.zzj
+com.google.android.gms.fido.u2f.api.common.zzk
+com.google.android.gms.fido.u2f.api.common.zzl
+com.google.android.gms.fido.u2f.api.messagebased.RequestType$UnsupportedRequestTypeException
+com.google.android.gms.fido.u2f.api.messagebased.RequestType
+com.google.android.gms.fido.u2f.api.messagebased.ResponseType
+com.google.android.gms.fido.u2f.zza
+com.google.android.gms.fido.u2f.zzb
+com.google.android.gms.fido.u2f.zzc
+com.google.android.gms.fido.u2f.zzd
+com.google.android.gms.fido.zza
+com.google.android.gms.internal.auth-api-phone.zzaa
+com.google.android.gms.internal.auth-api-phone.zzab:
+    public void <init>(android.app.Activity)
+    public final com.google.android.gms.tasks.Task startSmsUserConsent(java.lang.String)
+com.google.android.gms.internal.auth-api-phone.zzc:
+    public static boolean zzc(android.os.Parcel)
+com.google.android.gms.internal.auth-api-phone.zzd
+com.google.android.gms.internal.auth-api-phone.zze
+com.google.android.gms.internal.auth-api-phone.zzf
+com.google.android.gms.internal.auth-api-phone.zzg
+com.google.android.gms.internal.auth-api-phone.zzh:
+    public final void zzc(com.google.android.gms.internal.auth-api-phone.zze)
+    public final void zzd(java.lang.String,com.google.android.gms.internal.auth-api-phone.zzg)
+    public final void zze(com.google.android.gms.common.api.internal.IStatusCallback)
+    public final void zzf(com.google.android.gms.common.api.internal.IStatusCallback)
+    public final void zzh(java.lang.String,com.google.android.gms.internal.auth-api-phone.zzj)
+com.google.android.gms.internal.auth-api-phone.zzk
+com.google.android.gms.internal.auth-api-phone.zzl
+com.google.android.gms.internal.auth-api-phone.zzm
+com.google.android.gms.internal.auth-api-phone.zzn
+com.google.android.gms.internal.auth-api-phone.zzo
+com.google.android.gms.internal.auth-api-phone.zzp
+com.google.android.gms.internal.auth-api-phone.zzq
+com.google.android.gms.internal.auth-api-phone.zzr
+com.google.android.gms.internal.auth-api-phone.zzs
+com.google.android.gms.internal.auth-api-phone.zzt
+com.google.android.gms.internal.auth-api-phone.zzu
+com.google.android.gms.internal.auth-api-phone.zzv
+com.google.android.gms.internal.auth-api-phone.zzy
+com.google.android.gms.internal.auth-api.zbaa
+com.google.android.gms.internal.auth-api.zbab
+com.google.android.gms.internal.auth-api.zbac
+com.google.android.gms.internal.auth-api.zbad
+com.google.android.gms.internal.auth-api.zbae
+com.google.android.gms.internal.auth-api.zbaf
+com.google.android.gms.internal.auth-api.zbag
+com.google.android.gms.internal.auth-api.zbah
+com.google.android.gms.internal.auth-api.zbai
+com.google.android.gms.internal.auth-api.zbaj
+com.google.android.gms.internal.auth-api.zbak
+com.google.android.gms.internal.auth-api.zbal
+com.google.android.gms.internal.auth-api.zbam
+com.google.android.gms.internal.auth-api.zban
+com.google.android.gms.internal.auth-api.zbao
+com.google.android.gms.internal.auth-api.zbap
+com.google.android.gms.internal.auth-api.zbaq
+com.google.android.gms.internal.auth-api.zbar
+com.google.android.gms.internal.auth-api.zbas
+com.google.android.gms.internal.auth-api.zbat
+com.google.android.gms.internal.auth-api.zbau
+com.google.android.gms.internal.auth-api.zbav
+com.google.android.gms.internal.auth-api.zbaw
+com.google.android.gms.internal.auth-api.zbax
+com.google.android.gms.internal.auth-api.zbay
+com.google.android.gms.internal.auth-api.zbaz
+com.google.android.gms.internal.auth-api.zbba
+com.google.android.gms.internal.auth-api.zbbc
+com.google.android.gms.internal.auth-api.zbd
+com.google.android.gms.internal.auth-api.zbe
+com.google.android.gms.internal.auth-api.zbf
+com.google.android.gms.internal.auth-api.zbg
+com.google.android.gms.internal.auth-api.zbh
+com.google.android.gms.internal.auth-api.zbi
+com.google.android.gms.internal.auth-api.zbj
+com.google.android.gms.internal.auth-api.zbk
+com.google.android.gms.internal.auth-api.zbl:
+    public final com.google.android.gms.common.api.PendingResult delete(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
+    public final com.google.android.gms.common.api.PendingResult disableAutoSignIn(com.google.android.gms.common.api.GoogleApiClient)
+    public final android.app.PendingIntent getHintPickerIntent(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.HintRequest)
+    public final com.google.android.gms.common.api.PendingResult request(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.CredentialRequest)
+    public final com.google.android.gms.common.api.PendingResult save(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.credentials.Credential)
+com.google.android.gms.internal.auth-api.zbm
+com.google.android.gms.internal.auth-api.zbn
+com.google.android.gms.internal.auth-api.zbo:
+    final com.google.android.gms.auth.api.Auth$AuthCredentialsOptions zba()
+com.google.android.gms.internal.auth-api.zbp
+com.google.android.gms.internal.auth-api.zbq
+com.google.android.gms.internal.auth-api.zbr
+com.google.android.gms.internal.auth-api.zbs
+com.google.android.gms.internal.auth-api.zbt:
+    public final void zbc(com.google.android.gms.internal.auth-api.zbs,com.google.android.gms.internal.auth-api.zbp)
+    public final void zbd(com.google.android.gms.internal.auth-api.zbs,com.google.android.gms.auth.api.credentials.CredentialRequest)
+    public final void zbe(com.google.android.gms.internal.auth-api.zbs,com.google.android.gms.internal.auth-api.zbu)
+    public final void zbf(com.google.android.gms.internal.auth-api.zbs)
+com.google.android.gms.internal.auth-api.zbu
+com.google.android.gms.internal.auth-api.zbv
+com.google.android.gms.internal.auth-api.zbw
+com.google.android.gms.internal.auth-api.zbx
+com.google.android.gms.internal.auth-api.zby
+com.google.android.gms.internal.auth-api.zbz
+com.google.android.gms.internal.auth.zzaa
+com.google.android.gms.internal.auth.zzab:
+    public final com.google.android.gms.tasks.Task zzb(com.google.android.gms.auth.AccountChangeEventsRequest)
+    public final com.google.android.gms.tasks.Task zzd(android.accounts.Account)
+    public final com.google.android.gms.tasks.Task zze(java.lang.String)
+com.google.android.gms.internal.auth.zzac
+com.google.android.gms.internal.auth.zzad
+com.google.android.gms.internal.auth.zzae
+com.google.android.gms.internal.auth.zzaf
+com.google.android.gms.internal.auth.zzag
+com.google.android.gms.internal.auth.zzah
+com.google.android.gms.internal.auth.zzai
+com.google.android.gms.internal.auth.zzaj
+com.google.android.gms.internal.auth.zzak
+com.google.android.gms.internal.auth.zzal
+com.google.android.gms.internal.auth.zzam
+com.google.android.gms.internal.auth.zzan
+com.google.android.gms.internal.auth.zzao
+com.google.android.gms.internal.auth.zzap
+com.google.android.gms.internal.auth.zzaq
+com.google.android.gms.internal.auth.zzar
+com.google.android.gms.internal.auth.zzas
+com.google.android.gms.internal.auth.zzat
+com.google.android.gms.internal.auth.zzau
+com.google.android.gms.internal.auth.zzav
+com.google.android.gms.internal.auth.zzaw
+com.google.android.gms.internal.auth.zzax
+com.google.android.gms.internal.auth.zzay
+com.google.android.gms.internal.auth.zzaz
+com.google.android.gms.internal.auth.zzba
+com.google.android.gms.internal.auth.zzbb
+com.google.android.gms.internal.auth.zzbc
+com.google.android.gms.internal.auth.zzbd
+com.google.android.gms.internal.auth.zzbf
+com.google.android.gms.internal.auth.zzbg
+com.google.android.gms.internal.auth.zzbh:
+    public final void zzd(com.google.android.gms.internal.auth.zzbg)
+    public final void zze(com.google.android.gms.internal.auth.zzbg,com.google.android.gms.auth.api.proxy.ProxyRequest)
+com.google.android.gms.internal.auth.zzbi
+com.google.android.gms.internal.auth.zzbj
+com.google.android.gms.internal.auth.zzbk
+com.google.android.gms.internal.auth.zzbl
+com.google.android.gms.internal.auth.zzbm
+com.google.android.gms.internal.auth.zzbn
+com.google.android.gms.internal.auth.zzbo
+com.google.android.gms.internal.auth.zzbp
+com.google.android.gms.internal.auth.zzbq
+com.google.android.gms.internal.auth.zzbr
+com.google.android.gms.internal.auth.zzbs
+com.google.android.gms.internal.auth.zzbt:
+    public final com.google.android.gms.common.api.PendingResult getSpatulaHeader(com.google.android.gms.common.api.GoogleApiClient)
+    public final com.google.android.gms.common.api.PendingResult performProxyRequest(com.google.android.gms.common.api.GoogleApiClient,com.google.android.gms.auth.api.proxy.ProxyRequest)
+com.google.android.gms.internal.auth.zzbu
+com.google.android.gms.internal.auth.zzbv
+com.google.android.gms.internal.auth.zzbz
+com.google.android.gms.internal.auth.zzc:
+    public static void zzc(android.os.Parcel,boolean)
+    public static boolean zzf(android.os.Parcel)
+com.google.android.gms.internal.auth.zzd:
+    public final android.os.Bundle zzf(android.accounts.Account)
+    public final android.os.Bundle zzg(java.lang.String)
+    public final com.google.android.gms.auth.AccountChangeEventsResponse zzh(com.google.android.gms.auth.AccountChangeEventsRequest)
+com.google.android.gms.internal.auth.zzdo:
+    public synthetic bridge java.lang.Object clone()
+    public abstract com.google.android.gms.internal.auth.zzdo zza()
+com.google.android.gms.internal.auth.zzdq:
+    public void add(int,java.lang.Object)
+    public java.lang.Object set(int,java.lang.Object)
+com.google.android.gms.internal.auth.zzds:
+    void <init>()
+com.google.android.gms.internal.auth.zzed:
+    private void <init>()
+com.google.android.gms.internal.auth.zzek:
+    public static final synthetic int zzb
+    void <init>()
+com.google.android.gms.internal.auth.zzes:
+    public final synthetic bridge com.google.android.gms.internal.auth.zzdo zza()
+com.google.android.gms.internal.auth.zzf:
+    public abstract android.os.Bundle zzf(android.accounts.Account)
+    public abstract android.os.Bundle zzg(java.lang.String)
+    public abstract com.google.android.gms.auth.AccountChangeEventsResponse zzh(com.google.android.gms.auth.AccountChangeEventsRequest)
+com.google.android.gms.internal.auth.zzfb:
+    public final boolean equals(java.lang.Object)
+    public final int hashCode()
+    public final java.lang.String toString()
+com.google.android.gms.internal.auth.zzfc:
+    private static final com.google.android.gms.internal.auth.zzek zza
+    static void <clinit>()
+    public boolean equals(java.lang.Object)
+    public int hashCode()
+com.google.android.gms.internal.auth.zzfg:
+    private void <init>()
+com.google.android.gms.internal.auth.zzfi:
+    private void <init>()
+com.google.android.gms.internal.auth.zzg:
+    public abstract com.google.android.gms.tasks.Task zzb(com.google.android.gms.auth.AccountChangeEventsRequest)
+    public abstract com.google.android.gms.tasks.Task zzd(android.accounts.Account)
+    public abstract com.google.android.gms.tasks.Task zze(java.lang.String)
+com.google.android.gms.internal.auth.zzgf:
+    void <init>()
+com.google.android.gms.internal.auth.zzhp:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.auth.zzhq:
+    private void <init>()
+com.google.android.gms.internal.auth.zzhs:
+    public static boolean zzd()
+com.google.android.gms.internal.auth.zzht:
+    public abstract boolean zzb()
+com.google.android.gms.internal.auth.zzhv:
+    public final boolean zzb()
+com.google.android.gms.internal.auth.zzj
+com.google.android.gms.internal.auth.zzk
+com.google.android.gms.internal.auth.zzl
+com.google.android.gms.internal.auth.zzm
+com.google.android.gms.internal.auth.zzp:
+    public final void zze(com.google.android.gms.internal.auth.zzm,com.google.android.gms.auth.AccountChangeEventsRequest)
+    public final void zzg(com.google.android.gms.internal.auth.zzk,android.accounts.Account)
+    public final void zzh(com.google.android.gms.internal.auth.zzk,java.lang.String)
+com.google.android.gms.internal.auth.zzq
+com.google.android.gms.internal.auth.zzr
+com.google.android.gms.internal.auth.zzu
+com.google.android.gms.internal.auth.zzy
+com.google.android.gms.internal.auth.zzz
 com.google.android.gms.internal.base.zaa:
     protected final android.os.Parcel zab(int,android.os.Parcel)
 com.google.android.gms.internal.base.zac:
@@ -3411,8 +4316,399 @@ com.google.android.gms.internal.common.zzw
 com.google.android.gms.internal.common.zzx
 com.google.android.gms.internal.common.zzy
 com.google.android.gms.internal.common.zzz
+com.google.android.gms.internal.fido.zza
+com.google.android.gms.internal.fido.zzaa
+com.google.android.gms.internal.fido.zzab
+com.google.android.gms.internal.fido.zzac
+com.google.android.gms.internal.fido.zzad
+com.google.android.gms.internal.fido.zzae
+com.google.android.gms.internal.fido.zzaf
+com.google.android.gms.internal.fido.zzag
+com.google.android.gms.internal.fido.zzah
+com.google.android.gms.internal.fido.zzai
+com.google.android.gms.internal.fido.zzaj
+com.google.android.gms.internal.fido.zzak
+com.google.android.gms.internal.fido.zzal
+com.google.android.gms.internal.fido.zzam
+com.google.android.gms.internal.fido.zzan
+com.google.android.gms.internal.fido.zzao
+com.google.android.gms.internal.fido.zzap
+com.google.android.gms.internal.fido.zzaq
+com.google.android.gms.internal.fido.zzar
+com.google.android.gms.internal.fido.zzas
+com.google.android.gms.internal.fido.zzat
+com.google.android.gms.internal.fido.zzau
+com.google.android.gms.internal.fido.zzav
+com.google.android.gms.internal.fido.zzaw
+com.google.android.gms.internal.fido.zzax
+com.google.android.gms.internal.fido.zzay
+com.google.android.gms.internal.fido.zzaz
+com.google.android.gms.internal.fido.zzb
+com.google.android.gms.internal.fido.zzba
+com.google.android.gms.internal.fido.zzbb
+com.google.android.gms.internal.fido.zzbc
+com.google.android.gms.internal.fido.zzbd
+com.google.android.gms.internal.fido.zzbe
+com.google.android.gms.internal.fido.zzbf
+com.google.android.gms.internal.fido.zzbg
+com.google.android.gms.internal.fido.zzbh
+com.google.android.gms.internal.fido.zzbi
+com.google.android.gms.internal.fido.zzbj
+com.google.android.gms.internal.fido.zzbk
+com.google.android.gms.internal.fido.zzbl
+com.google.android.gms.internal.fido.zzbm
+com.google.android.gms.internal.fido.zzbn
+com.google.android.gms.internal.fido.zzbo
+com.google.android.gms.internal.fido.zzbp
+com.google.android.gms.internal.fido.zzbq
+com.google.android.gms.internal.fido.zzc
+com.google.android.gms.internal.fido.zzd
+com.google.android.gms.internal.fido.zze
+com.google.android.gms.internal.fido.zzf
+com.google.android.gms.internal.fido.zzg
+com.google.android.gms.internal.fido.zzh
+com.google.android.gms.internal.fido.zzi
+com.google.android.gms.internal.fido.zzj
+com.google.android.gms.internal.fido.zzk
+com.google.android.gms.internal.fido.zzl
+com.google.android.gms.internal.fido.zzm
+com.google.android.gms.internal.fido.zzn
+com.google.android.gms.internal.fido.zzo
+com.google.android.gms.internal.fido.zzp
+com.google.android.gms.internal.fido.zzq
+com.google.android.gms.internal.fido.zzr
+com.google.android.gms.internal.fido.zzs
+com.google.android.gms.internal.fido.zzt
+com.google.android.gms.internal.fido.zzu
+com.google.android.gms.internal.fido.zzv
+com.google.android.gms.internal.fido.zzw
+com.google.android.gms.internal.fido.zzx
+com.google.android.gms.internal.fido.zzy
+com.google.android.gms.internal.fido.zzz
+com.google.android.gms.internal.firebase-auth-api.zzabl:
+    public synthetic bridge java.lang.Object clone()
+    public abstract com.google.android.gms.internal.firebase-auth-api.zzabl zzf()
+com.google.android.gms.internal.firebase-auth-api.zzabn:
+    public void add(int,java.lang.Object)
+    public java.lang.Object set(int,java.lang.Object)
+com.google.android.gms.internal.firebase-auth-api.zzabp:
+    void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzacb:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzack:
+    void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzacs:
+    public static final synthetic int zzb
+    void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzadb:
+    public final synthetic com.google.android.gms.internal.firebase-auth-api.zzaek zzL()
+    public final synthetic bridge com.google.android.gms.internal.firebase-auth-api.zzabl zzf()
+com.google.android.gms.internal.firebase-auth-api.zzade
+com.google.android.gms.internal.firebase-auth-api.zzadp:
+    public final boolean equals(java.lang.Object)
+    public final int hashCode()
+    public final java.lang.String toString()
+com.google.android.gms.internal.firebase-auth-api.zzadu:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzadw:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzaet:
+    void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzai:
+    public synthetic bridge java.util.Iterator iterator()
+    public abstract com.google.android.gms.internal.firebase-auth-api.zzan zzd()
+com.google.android.gms.internal.firebase-auth-api.zzal:
+    public final com.google.android.gms.internal.firebase-auth-api.zzan zzd()
+com.google.android.gms.internal.firebase-auth-api.zze:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzg:
+    public void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzgi:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzgl:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzhl:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzhs:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzic:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzij:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzjl:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzjo:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzjr:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzju:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzjx:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzka:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzkd:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzkg:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzkj:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzkm:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzkp:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzks:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzkv:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzky:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzlb:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzle:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzlh:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzlk:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzln:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzlo:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzls:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzlv:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzly:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzmb:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzme:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzmh:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzmm:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzmr:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzmu:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzmx:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zznc:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zznf:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzni:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zznl:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzno:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zznv:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzny:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zznz:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzob:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzog:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzol:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzoo:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzop:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzor:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzou:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzov:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzoz:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzpa:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzpc:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzpf:
+    static final synthetic int[] zza
+    static void <clinit>()
+com.google.android.gms.internal.firebase-auth-api.zzpg:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzsi
+com.google.android.gms.internal.firebase-auth-api.zzsj
+com.google.android.gms.internal.firebase-auth-api.zzuw
+com.google.android.gms.internal.firebase-auth-api.zzvf:
+    public final void zzy(java.lang.String,com.google.android.gms.internal.firebase-auth-api.zzxa)
+com.google.android.gms.internal.firebase-auth-api.zzvu
+com.google.android.gms.internal.firebase-auth-api.zzvw
+com.google.android.gms.internal.firebase-auth-api.zzvy
+com.google.android.gms.internal.firebase-auth-api.zzw:
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzwa
+com.google.android.gms.internal.firebase-auth-api.zzwf
+com.google.android.gms.internal.firebase-auth-api.zzwy:
+    public final com.google.android.gms.tasks.Task zzk(com.google.firebase.FirebaseApp,com.google.firebase.auth.FirebaseUser,com.google.firebase.auth.AuthCredential,java.lang.String,com.google.firebase.auth.internal.zzbk)
+    public final com.google.android.gms.tasks.Task zzm(com.google.firebase.FirebaseApp,com.google.firebase.auth.FirebaseUser,com.google.firebase.auth.EmailAuthCredential,com.google.firebase.auth.internal.zzbk)
+    public final com.google.android.gms.tasks.Task zzo(com.google.firebase.FirebaseApp,com.google.firebase.auth.FirebaseUser,java.lang.String,java.lang.String,java.lang.String,com.google.firebase.auth.internal.zzbk)
+    public final com.google.android.gms.tasks.Task zzq(com.google.firebase.FirebaseApp,com.google.firebase.auth.FirebaseUser,com.google.firebase.auth.PhoneAuthCredential,java.lang.String,com.google.firebase.auth.internal.zzbk)
+    public final com.google.android.gms.tasks.Task zzw(java.lang.String)
+com.google.android.gms.internal.firebase-auth-api.zzwz:
+    public abstract void zzm()
+com.google.android.gms.internal.firebase-auth-api.zzxa:
+    public final void zzm()
+com.google.android.gms.internal.firebase-auth-api.zzxb:
+    public final void zzs(com.google.android.gms.internal.firebase-auth-api.zzsi,com.google.android.gms.internal.firebase-auth-api.zzwz)
+com.google.android.gms.internal.firebase-auth-api.zzxp:
+    public final void zzm(java.lang.String,com.google.android.gms.internal.firebase-auth-api.zzyg)
+com.google.android.gms.internal.firebase-auth-api.zzxq:
+    public final void zzb(java.lang.String)
+com.google.android.gms.internal.firebase-auth-api.zzxy:
+    public final void zzm()
+com.google.android.gms.internal.firebase-auth-api.zzyh:
+    public abstract void zzm(java.lang.String,com.google.android.gms.internal.firebase-auth-api.zzyg)
+com.google.android.gms.internal.safetynet.zze:
+    public void zza(com.google.android.gms.common.api.Status,com.google.android.gms.safetynet.zza)
+com.google.android.gms.internal.safetynet.zzi:
+    public abstract void zza(com.google.android.gms.internal.safetynet.zzg)
+    public abstract void zza(com.google.android.gms.internal.safetynet.zzg,java.lang.String)
+    public abstract void zza(com.google.android.gms.internal.safetynet.zzg,java.lang.String,int[],int,java.lang.String)
+    public abstract void zzb()
+    public abstract void zzb(com.google.android.gms.internal.safetynet.zzg)
+    public abstract void zzc(com.google.android.gms.internal.safetynet.zzg)
+    public abstract void zzd(com.google.android.gms.internal.safetynet.zzg)
+com.google.android.gms.internal.safetynet.zzj:
+    public final void zza(com.google.android.gms.internal.safetynet.zzg)
+    public final void zza(com.google.android.gms.internal.safetynet.zzg,java.lang.String)
+    public final void zza(com.google.android.gms.internal.safetynet.zzg,java.lang.String,int[],int,java.lang.String)
+    public final void zzb()
+    public final void zzb(com.google.android.gms.internal.safetynet.zzg)
+    public final void zzc(com.google.android.gms.internal.safetynet.zzg)
+    public final void zzd(com.google.android.gms.internal.safetynet.zzg)
+com.google.android.gms.internal.safetynet.zzk$zzc
+com.google.android.gms.internal.safetynet.zzk$zzd
+com.google.android.gms.internal.safetynet.zzk$zze
+com.google.android.gms.internal.safetynet.zzk$zzf
+com.google.android.gms.internal.safetynet.zzk$zzg
+com.google.android.gms.internal.safetynet.zzk$zzh
+com.google.android.gms.internal.safetynet.zzk$zzi
+com.google.android.gms.internal.safetynet.zzk$zzj
+com.google.android.gms.internal.safetynet.zzk:
+    public com.google.android.gms.common.api.PendingResult attest(com.google.android.gms.common.api.GoogleApiClient,byte[])
+    public com.google.android.gms.common.api.PendingResult enableVerifyApps(com.google.android.gms.common.api.GoogleApiClient)
+    public com.google.android.gms.common.api.PendingResult isVerifyAppsEnabled(com.google.android.gms.common.api.GoogleApiClient)
+    public boolean isVerifyAppsEnabled(android.content.Context)
+    public com.google.android.gms.common.api.PendingResult listHarmfulApps(com.google.android.gms.common.api.GoogleApiClient)
+    public varargs com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,java.lang.String,int[])
+    public com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.util.List,java.lang.String)
+    public com.google.android.gms.common.api.PendingResult verifyWithRecaptcha(com.google.android.gms.common.api.GoogleApiClient,java.lang.String)
+    public static varargs com.google.android.gms.common.api.PendingResult zza(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,int,java.lang.String,int[])
+com.google.android.gms.internal.safetynet.zzm
+com.google.android.gms.internal.safetynet.zzn
+com.google.android.gms.internal.safetynet.zzo
+com.google.android.gms.internal.safetynet.zzp
+com.google.android.gms.internal.safetynet.zzq
+com.google.android.gms.internal.safetynet.zzr
+com.google.android.gms.internal.safetynet.zzt
+com.google.android.gms.internal.safetynet.zzu
+com.google.android.gms.internal.safetynet.zzv
+com.google.android.gms.internal.safetynet.zzw
+com.google.android.gms.internal.safetynet.zzx:
+    public final void zza(com.google.android.gms.internal.safetynet.zzg,java.util.List,int,java.lang.String,java.lang.String)
 com.google.android.gms.internal.tasks.zza:
     public void <init>()
+com.google.android.gms.safetynet.R
+com.google.android.gms.safetynet.SafeBrowsingData:
+    public void <init>(long,byte[])
+    public void <init>(java.lang.String)
+    public void <init>(java.lang.String,com.google.android.gms.common.data.DataHolder)
+    public byte[] getBlacklists()
+    public void setBlacklists(byte[])
+    public void setTempDir(java.io.File)
+com.google.android.gms.safetynet.SafeBrowsingThreat
+com.google.android.gms.safetynet.SafetyNet:
+    private void <init>()
+    public static com.google.android.gms.safetynet.SafetyNetClient getClient(android.app.Activity)
+com.google.android.gms.safetynet.SafetyNetApi$HarmfulAppsResponse
+com.google.android.gms.safetynet.SafetyNetApi$RecaptchaTokenResponse
+com.google.android.gms.safetynet.SafetyNetApi$RecaptchaTokenResult
+com.google.android.gms.safetynet.SafetyNetApi$SafeBrowsingResponse
+com.google.android.gms.safetynet.SafetyNetApi$SafeBrowsingResult
+com.google.android.gms.safetynet.SafetyNetApi$VerifyAppsUserResponse
+com.google.android.gms.safetynet.SafetyNetApi$zzb
+com.google.android.gms.safetynet.SafetyNetApi$zzc
+com.google.android.gms.safetynet.SafetyNetApi:
+    public abstract com.google.android.gms.common.api.PendingResult attest(com.google.android.gms.common.api.GoogleApiClient,byte[])
+    public abstract com.google.android.gms.common.api.PendingResult enableVerifyApps(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract com.google.android.gms.common.api.PendingResult isVerifyAppsEnabled(com.google.android.gms.common.api.GoogleApiClient)
+    public abstract boolean isVerifyAppsEnabled(android.content.Context)
+    public abstract com.google.android.gms.common.api.PendingResult listHarmfulApps(com.google.android.gms.common.api.GoogleApiClient)
+    public varargs abstract com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.lang.String,java.lang.String,int[])
+    public abstract com.google.android.gms.common.api.PendingResult lookupUri(com.google.android.gms.common.api.GoogleApiClient,java.util.List,java.lang.String)
+    public abstract com.google.android.gms.common.api.PendingResult verifyWithRecaptcha(com.google.android.gms.common.api.GoogleApiClient,java.lang.String)
+com.google.android.gms.safetynet.SafetyNetClient:
+    void <init>(android.app.Activity)
+    public com.google.android.gms.tasks.Task enableVerifyApps()
+    public com.google.android.gms.tasks.Task initSafeBrowsing()
+    public com.google.android.gms.tasks.Task isVerifyAppsEnabled()
+    public com.google.android.gms.tasks.Task listHarmfulApps()
+    public varargs com.google.android.gms.tasks.Task lookupUri(java.lang.String,java.lang.String,int[])
+    public com.google.android.gms.tasks.Task shutdownSafeBrowsing()
+    public com.google.android.gms.tasks.Task verifyWithRecaptcha(java.lang.String)
+com.google.android.gms.safetynet.SafetyNetStatusCodes
+com.google.android.gms.safetynet.VerifyAppsConstants
+com.google.android.gms.safetynet.zzf:
+    public final java.lang.String getTokenResult()
+com.google.android.gms.safetynet.zzl
+com.google.android.gms.safetynet.zzm
+com.google.android.gms.safetynet.zzn
 com.google.android.gms.security.ProviderInstaller$ProviderInstallListener
 com.google.android.gms.security.ProviderInstaller:
     public static final java.lang.String PROVIDER_NAME
@@ -3443,8 +4739,6 @@ com.google.android.gms.tasks.Task:
     public com.google.android.gms.tasks.Task addOnCompleteListener(android.app.Activity,com.google.android.gms.tasks.OnCompleteListener)
     public abstract com.google.android.gms.tasks.Task addOnFailureListener(android.app.Activity,com.google.android.gms.tasks.OnFailureListener)
     public abstract com.google.android.gms.tasks.Task addOnSuccessListener(android.app.Activity,com.google.android.gms.tasks.OnSuccessListener)
-    public com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
-    public abstract java.lang.Object getResult(java.lang.Class)
     public com.google.android.gms.tasks.Task onSuccessTask(com.google.android.gms.tasks.SuccessContinuation)
     public com.google.android.gms.tasks.Task onSuccessTask(java.util.concurrent.Executor,com.google.android.gms.tasks.SuccessContinuation)
 com.google.android.gms.tasks.TaskCompletionSource:
@@ -3493,8 +4787,6 @@ com.google.android.gms.tasks.zzw:
     public final com.google.android.gms.tasks.Task addOnCompleteListener(android.app.Activity,com.google.android.gms.tasks.OnCompleteListener)
     public final com.google.android.gms.tasks.Task addOnFailureListener(android.app.Activity,com.google.android.gms.tasks.OnFailureListener)
     public final com.google.android.gms.tasks.Task addOnSuccessListener(android.app.Activity,com.google.android.gms.tasks.OnSuccessListener)
-    public final com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
-    public final java.lang.Object getResult(java.lang.Class)
     public final com.google.android.gms.tasks.Task onSuccessTask(com.google.android.gms.tasks.SuccessContinuation)
     public final com.google.android.gms.tasks.Task onSuccessTask(java.util.concurrent.Executor,com.google.android.gms.tasks.SuccessContinuation)
 com.google.android.gms.tasks.zzx
@@ -4106,7 +5398,6 @@ com.google.common.base.Platform$JdkPatternCompiler:
 com.google.common.base.Platform:
     static void checkGwtRpcEnabled()
     static com.google.common.base.CommonPattern compilePattern(java.lang.String)
-    static java.lang.String emptyToNull(java.lang.String)
     static com.google.common.base.Optional getEnumIfPresent(java.lang.Class,java.lang.String)
     private static void logPatternCompilerError(java.util.ServiceConfigurationError)
     static java.lang.String nullToEmpty(java.lang.String)
@@ -4239,7 +5530,6 @@ com.google.common.base.Strings:
     private void <init>()
     public static java.lang.String commonPrefix(java.lang.CharSequence,java.lang.CharSequence)
     public static java.lang.String commonSuffix(java.lang.CharSequence,java.lang.CharSequence)
-    public static java.lang.String emptyToNull(java.lang.String)
     public static java.lang.String nullToEmpty(java.lang.String)
     public static java.lang.String padEnd(java.lang.String,int,char)
     public static java.lang.String padStart(java.lang.String,int,char)
@@ -6340,75 +7630,12 @@ com.google.common.util.concurrent.AbstractExecutionThreadService$1$2
 com.google.common.util.concurrent.AbstractExecutionThreadService$1
 com.google.common.util.concurrent.AbstractExecutionThreadService$2
 com.google.common.util.concurrent.AbstractExecutionThreadService
-com.google.common.util.concurrent.AbstractFuture$1
-com.google.common.util.concurrent.AbstractFuture$AtomicHelper
-com.google.common.util.concurrent.AbstractFuture$Cancellation
-com.google.common.util.concurrent.AbstractFuture$Failure$1
-com.google.common.util.concurrent.AbstractFuture$Failure
-com.google.common.util.concurrent.AbstractFuture$Listener
-com.google.common.util.concurrent.AbstractFuture$SafeAtomicHelper
-com.google.common.util.concurrent.AbstractFuture$SetFuture
-com.google.common.util.concurrent.AbstractFuture$SynchronizedHelper
-com.google.common.util.concurrent.AbstractFuture$Trusted
-com.google.common.util.concurrent.AbstractFuture$TrustedFuture:
-    void <init>()
-    public final void addListener(java.lang.Runnable,java.util.concurrent.Executor)
-    public final boolean cancel(boolean)
-    public final java.lang.Object get()
-    public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
-    public final boolean isCancelled()
-    public final boolean isDone()
-com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper$1
-com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
-com.google.common.util.concurrent.AbstractFuture$Waiter
+com.google.common.util.concurrent.AbstractFuture$SetFuture:
+    void <init>(com.google.common.util.concurrent.AbstractFuture,com.google.common.util.concurrent.ListenableFuture)
 com.google.common.util.concurrent.AbstractFuture:
-    private static final com.google.common.util.concurrent.AbstractFuture$AtomicHelper ATOMIC_HELPER
-    static final boolean GENERATE_CANCELLATION_CAUSES
-    private static final java.lang.Object NULL
     private static final long SPIN_THRESHOLD_NANOS
-    private volatile com.google.common.util.concurrent.AbstractFuture$Listener listeners
-    private static final java.util.logging.Logger log
-    private volatile java.lang.Object value
-    private volatile com.google.common.util.concurrent.AbstractFuture$Waiter waiters
-    static void <clinit>()
-    protected void <init>()
-    static synthetic com.google.common.util.concurrent.AbstractFuture$AtomicHelper access$200()
-    static synthetic java.lang.Object access$300(com.google.common.util.concurrent.AbstractFuture)
-    static synthetic java.lang.Object access$302(com.google.common.util.concurrent.AbstractFuture,java.lang.Object)
-    static synthetic java.lang.Object access$400(com.google.common.util.concurrent.ListenableFuture)
-    static synthetic void access$500(com.google.common.util.concurrent.AbstractFuture)
-    static synthetic com.google.common.util.concurrent.AbstractFuture$Listener access$700(com.google.common.util.concurrent.AbstractFuture)
-    static synthetic com.google.common.util.concurrent.AbstractFuture$Listener access$702(com.google.common.util.concurrent.AbstractFuture,com.google.common.util.concurrent.AbstractFuture$Listener)
-    static synthetic com.google.common.util.concurrent.AbstractFuture$Waiter access$800(com.google.common.util.concurrent.AbstractFuture)
-    static synthetic com.google.common.util.concurrent.AbstractFuture$Waiter access$802(com.google.common.util.concurrent.AbstractFuture,com.google.common.util.concurrent.AbstractFuture$Waiter)
-    private void addDoneString(java.lang.StringBuilder)
-    public void addListener(java.lang.Runnable,java.util.concurrent.Executor)
-    private void addPendingString(java.lang.StringBuilder)
-    protected void afterDone()
-    private void appendResultObject(java.lang.StringBuilder,java.lang.Object)
-    private void appendUserObject(java.lang.StringBuilder,java.lang.Object)
-    public boolean cancel(boolean)
-    private static java.util.concurrent.CancellationException cancellationExceptionWithCause(java.lang.String,java.lang.Throwable)
-    private com.google.common.util.concurrent.AbstractFuture$Listener clearListeners(com.google.common.util.concurrent.AbstractFuture$Listener)
-    private static void complete(com.google.common.util.concurrent.AbstractFuture)
-    private static void executeListener(java.lang.Runnable,java.util.concurrent.Executor)
-    public java.lang.Object get()
-    public java.lang.Object get(long,java.util.concurrent.TimeUnit)
-    private java.lang.Object getDoneValue(java.lang.Object)
-    private static java.lang.Object getFutureValue(com.google.common.util.concurrent.ListenableFuture)
-    private static java.lang.Object getUninterruptibly(java.util.concurrent.Future)
-    protected void interruptTask()
-    public boolean isCancelled()
-    public boolean isDone()
     final void maybePropagateCancellationTo(java.util.concurrent.Future)
-    protected java.lang.String pendingToString()
-    private void releaseWaiters()
-    private void removeWaiter(com.google.common.util.concurrent.AbstractFuture$Waiter)
-    protected boolean set(java.lang.Object)
-    protected boolean setException(java.lang.Throwable)
     protected boolean setFuture(com.google.common.util.concurrent.ListenableFuture)
-    public java.lang.String toString()
-    protected final java.lang.Throwable tryInternalFastPathGetFailure()
     protected final boolean wasInterrupted()
 com.google.common.util.concurrent.AbstractIdleService$1
 com.google.common.util.concurrent.AbstractIdleService$DelegateService$1
@@ -6587,7 +7814,6 @@ com.google.common.util.concurrent.InterruptibleTask$DoNothingRunnable
 com.google.common.util.concurrent.InterruptibleTask
 com.google.common.util.concurrent.JdkFutureAdapters$ListenableFutureAdapter
 com.google.common.util.concurrent.JdkFutureAdapters
-com.google.common.util.concurrent.ListenableFuture
 com.google.common.util.concurrent.ListenableFutureTask
 com.google.common.util.concurrent.ListenableScheduledFuture
 com.google.common.util.concurrent.ListenerCallQueue$Event
@@ -6634,8 +7860,12 @@ com.google.common.util.concurrent.MoreExecutors:
     public static boolean shutdownAndAwaitTermination(java.util.concurrent.ExecutorService,long,java.util.concurrent.TimeUnit)
     private static com.google.common.util.concurrent.ListenableFuture submitAndAddQueueListener(com.google.common.util.concurrent.ListeningExecutorService,java.util.concurrent.Callable,java.util.concurrent.BlockingQueue)
     private static void useDaemonThreadFactory(java.util.concurrent.ThreadPoolExecutor)
-com.google.common.util.concurrent.NullnessCasts
-com.google.common.util.concurrent.OverflowAvoidingLockSupport
+com.google.common.util.concurrent.NullnessCasts:
+    private void <init>()
+    static java.lang.Object uncheckedCastNullableTToT(java.lang.Object)
+com.google.common.util.concurrent.OverflowAvoidingLockSupport:
+    static final long MAX_NANOSECONDS_THRESHOLD
+    private void <init>()
 com.google.common.util.concurrent.ParametricNullness
 com.google.common.util.concurrent.Partially$GwtIncompatible
 com.google.common.util.concurrent.Partially
@@ -6666,9 +7896,6 @@ com.google.common.util.concurrent.ServiceManager$ServiceManagerState
 com.google.common.util.concurrent.ServiceManager
 com.google.common.util.concurrent.ServiceManagerBridge
 com.google.common.util.concurrent.SettableFuture:
-    private void <init>()
-    public static com.google.common.util.concurrent.SettableFuture create()
-    public boolean setException(java.lang.Throwable)
     public boolean setFuture(com.google.common.util.concurrent.ListenableFuture)
 com.google.common.util.concurrent.SimpleTimeLimiter$1
 com.google.common.util.concurrent.SimpleTimeLimiter
@@ -6707,10 +7934,8 @@ com.google.common.util.concurrent.UncheckedTimeoutException
 com.google.common.util.concurrent.Uninterruptibles
 com.google.common.util.concurrent.WrappingExecutorService
 com.google.common.util.concurrent.WrappingScheduledExecutorService
-com.google.common.util.concurrent.internal.InternalFutureFailureAccess:
-    protected void <init>()
-    protected abstract java.lang.Throwable tryInternalFastPathGetFailure()
-com.google.common.util.concurrent.internal.InternalFutures
+com.google.common.util.concurrent.internal.InternalFutures:
+    private void <init>()
 com.google.common.util.concurrent.package-info
 com.google.common.xml.ElementTypesAreNonnullByDefault
 com.google.common.xml.ParametricNullness
@@ -6770,7 +7995,6 @@ com.google.firebase.FirebaseError
 com.google.firebase.FirebaseException:
     protected void <init>()
 com.google.firebase.FirebaseExceptionMapper
-com.google.firebase.FirebaseNetworkException
 com.google.firebase.FirebaseOptions$Builder:
     public void <init>(com.google.firebase.FirebaseOptions)
 com.google.firebase.FirebaseOptions:
@@ -6788,7 +8012,6 @@ com.google.firebase.FirebaseOptions:
     static synthetic java.lang.String access$400(com.google.firebase.FirebaseOptions)
     static synthetic java.lang.String access$500(com.google.firebase.FirebaseOptions)
     static synthetic java.lang.String access$600(com.google.firebase.FirebaseOptions)
-com.google.firebase.FirebaseTooManyRequestsException
 com.google.firebase.R$attr
 com.google.firebase.R$color
 com.google.firebase.R$dimen
@@ -6803,6 +8026,18 @@ com.google.firebase.R$styleable
 com.google.firebase.R
 com.google.firebase.Timestamp:
     public java.util.Date toDate()
+com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle
+com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener
+com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty
+com.google.firebase.analytics.connector.AnalyticsConnector:
+    public abstract void clearConditionalUserProperty(java.lang.String,java.lang.String,android.os.Bundle)
+    public abstract java.util.List getConditionalUserProperties(java.lang.String,java.lang.String)
+    public abstract int getMaxUserProperties(java.lang.String)
+    public abstract java.util.Map getUserProperties(boolean)
+    public abstract com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorHandle registerAnalyticsConnectorListener(java.lang.String,com.google.firebase.analytics.connector.AnalyticsConnector$AnalyticsConnectorListener)
+    public abstract void setConditionalUserProperty(com.google.firebase.analytics.connector.AnalyticsConnector$ConditionalUserProperty)
+    public abstract void setUserProperty(java.lang.String,java.lang.String,java.lang.Object)
+com.google.firebase.analytics.connector.R
 com.google.firebase.annotations.DeferredApi
 com.google.firebase.annotations.PreviewApi
 com.google.firebase.annotations.PublicApi
@@ -6823,26 +8058,129 @@ com.google.firebase.appcheck.interop.R$string
 com.google.firebase.appcheck.interop.R$style
 com.google.firebase.appcheck.interop.R$styleable
 com.google.firebase.appcheck.interop.R
-com.google.firebase.auth.FirebaseAuthException
-com.google.firebase.auth.GetTokenResult:
-    private java.util.Map zzb
-    public void <init>(java.lang.String,java.util.Map)
-    public long getAuthTimestamp()
-    public java.util.Map getClaims()
-    public long getExpirationTimestamp()
-    public long getIssuedAtTimestamp()
-    public java.lang.String getSignInProvider()
-    public java.lang.String getSignInSecondFactor()
-    private final long zza(java.lang.String)
-com.google.firebase.auth.internal.IdTokenListener:
-    public abstract void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
+com.google.firebase.auth.ActionCodeMultiFactorInfo:
+    public abstract com.google.firebase.auth.MultiFactorInfo getMultiFactorInfo()
+com.google.firebase.auth.ActionCodeResult$ActionDataKey
+com.google.firebase.auth.ActionCodeResult$Operation
+com.google.firebase.auth.ActionCodeResult:
+    public static final int EMAIL
+    public static final int ERROR
+    public static final int FROM_EMAIL
+    public static final int PASSWORD_RESET
+    public static final int RECOVER_EMAIL
+    public static final int REVERT_SECOND_FACTOR_ADDITION
+    public static final int SIGN_IN_WITH_EMAIL_LINK
+    public static final int VERIFY_BEFORE_CHANGE_EMAIL
+    public static final int VERIFY_EMAIL
+    public abstract java.lang.String getData(int)
+com.google.firebase.auth.ActionCodeSettings$Builder:
+    private void <init>()
+    public java.lang.String getDynamicLinkDomain()
+    public boolean getHandleCodeInApp()
+    public java.lang.String getIOSBundleId()
+    public java.lang.String getUrl()
+com.google.firebase.auth.ActionCodeUrl:
+    public java.lang.String getApiKey()
+    public java.lang.String getContinueUrl()
+    public java.lang.String getLanguageCode()
+com.google.firebase.auth.EmailAuthProvider:
+    public static final java.lang.String EMAIL_LINK_SIGN_IN_METHOD
+    public static final java.lang.String EMAIL_PASSWORD_SIGN_IN_METHOD
+    public static final java.lang.String PROVIDER_ID
+    private void <init>()
+com.google.firebase.auth.FacebookAuthProvider:
+    public static final java.lang.String FACEBOOK_SIGN_IN_METHOD
+    public static final java.lang.String PROVIDER_ID
+    private void <init>()
+com.google.firebase.auth.FirebaseAuth:
+    public com.google.android.gms.tasks.Task getPendingAuthResult()
+    public boolean isSignInWithEmailLink(java.lang.String)
+    public com.google.android.gms.tasks.Task setFirebaseUIVersion(java.lang.String)
+    public com.google.android.gms.tasks.Task updateCurrentUser(com.google.firebase.auth.FirebaseUser)
+    public final com.google.android.gms.tasks.Task zze(com.google.firebase.auth.FirebaseUser,com.google.firebase.auth.AuthCredential)
+com.google.firebase.auth.FirebaseAuthProvider
+com.google.firebase.auth.FirebaseUser:
+    public abstract java.lang.String getProviderId()
+    public com.google.android.gms.tasks.Task reauthenticate(com.google.firebase.auth.AuthCredential)
+com.google.firebase.auth.GithubAuthProvider:
+    public static final java.lang.String GITHUB_SIGN_IN_METHOD
+    public static final java.lang.String PROVIDER_ID
+    private void <init>()
+com.google.firebase.auth.GoogleAuthProvider:
+    public static final java.lang.String GOOGLE_SIGN_IN_METHOD
+    public static final java.lang.String PROVIDER_ID
+    private void <init>()
+com.google.firebase.auth.MultiFactor:
+    public abstract com.google.android.gms.tasks.Task unenroll(com.google.firebase.auth.MultiFactorInfo)
+com.google.firebase.auth.MultiFactorAssertion:
+    public abstract java.lang.String getFactorId()
+com.google.firebase.auth.MultiFactorInfo:
+    public static final java.lang.String FACTOR_ID_KEY
+com.google.firebase.auth.MultiFactorResolver:
+    public abstract com.google.firebase.auth.FirebaseAuth getFirebaseAuth()
+com.google.firebase.auth.OAuthCredential:
+    public abstract java.lang.String getIdToken()
+    public abstract java.lang.String getSecret()
+com.google.firebase.auth.OAuthProvider$Builder:
+    public com.google.firebase.auth.OAuthProvider$Builder addCustomParameter(java.lang.String,java.lang.String)
+    public java.util.List getScopes()
+com.google.firebase.auth.OAuthProvider$CredentialBuilder:
+    public java.lang.String getAccessToken()
+    public java.lang.String getIdToken()
+com.google.firebase.auth.OAuthProvider:
+    public static com.google.firebase.auth.AuthCredential getCredential(java.lang.String,java.lang.String,java.lang.String)
+    public java.lang.String getProviderId()
+com.google.firebase.auth.PhoneAuthOptions$Builder:
+    public com.google.firebase.auth.PhoneAuthOptions$Builder requireSmsValidation(boolean)
+com.google.firebase.auth.PhoneAuthOptions:
+    public static com.google.firebase.auth.PhoneAuthOptions$Builder newBuilder()
+    public static com.google.firebase.auth.PhoneAuthOptions$Builder newBuilder(com.google.firebase.auth.FirebaseAuth)
+com.google.firebase.auth.PhoneAuthProvider:
+    public static final java.lang.String PHONE_SIGN_IN_METHOD
+    public static final java.lang.String PROVIDER_ID
+    private com.google.firebase.auth.FirebaseAuth zza
+    private void <init>(com.google.firebase.auth.FirebaseAuth)
+    public static com.google.firebase.auth.PhoneAuthProvider getInstance()
+    public static com.google.firebase.auth.PhoneAuthProvider getInstance(com.google.firebase.auth.FirebaseAuth)
+    public void verifyPhoneNumber(java.lang.String,long,java.util.concurrent.TimeUnit,android.app.Activity,com.google.firebase.auth.PhoneAuthProvider$OnVerificationStateChangedCallbacks)
+    public void verifyPhoneNumber(java.lang.String,long,java.util.concurrent.TimeUnit,android.app.Activity,com.google.firebase.auth.PhoneAuthProvider$OnVerificationStateChangedCallbacks,com.google.firebase.auth.PhoneAuthProvider$ForceResendingToken)
+com.google.firebase.auth.PhoneMultiFactorAssertion:
+    public java.lang.String getFactorId()
+com.google.firebase.auth.PhoneMultiFactorGenerator:
+    public static final java.lang.String FACTOR_ID
+    public void <init>()
+com.google.firebase.auth.PlayGamesAuthProvider
+com.google.firebase.auth.R
+com.google.firebase.auth.TwitterAuthProvider:
+    public static final java.lang.String PROVIDER_ID
+    public static final java.lang.String TWITTER_SIGN_IN_METHOD
+    private void <init>()
+com.google.firebase.auth.UserProfileChangeRequest$Builder:
+    public java.lang.String getDisplayName()
+    public android.net.Uri getPhotoUri()
 com.google.firebase.auth.internal.R
+com.google.firebase.auth.internal.zzac:
+    public final com.google.android.gms.tasks.Task unenroll(com.google.firebase.auth.MultiFactorInfo)
+com.google.firebase.auth.internal.zzae:
+    public final com.google.firebase.auth.FirebaseAuth getFirebaseAuth()
+com.google.firebase.auth.internal.zzbd:
+    public final com.google.android.gms.tasks.Task zza()
+com.google.firebase.auth.internal.zzbm:
+    public final com.google.android.gms.tasks.Task zza()
+com.google.firebase.auth.internal.zzn:
+    public final com.google.firebase.auth.MultiFactorInfo getMultiFactorInfo()
+com.google.firebase.auth.internal.zzo:
+    public final java.lang.String getData(int)
+com.google.firebase.auth.internal.zzx:
+    public static com.google.firebase.auth.FirebaseUser zzk(com.google.firebase.FirebaseApp,com.google.firebase.auth.FirebaseUser)
+com.google.firebase.auth.zze:
+    public final java.lang.String getIdToken()
+    public final java.lang.String getSecret()
+com.google.firebase.auth.zzu
 com.google.firebase.components.BuildConfig
 com.google.firebase.components.Component$Builder:
     public com.google.firebase.components.Component$Builder alwaysEager()
-    public com.google.firebase.components.Component$Builder eagerInDefaultApp()
     public com.google.firebase.components.Component$Builder publishes(java.lang.Class)
-    private com.google.firebase.components.Component$Builder setInstantiation(int)
 com.google.firebase.components.Component:
     public boolean isLazy()
     private static synthetic java.lang.Object lambda$of$0(java.lang.Object,com.google.firebase.components.ComponentContainer)
@@ -6990,12 +8328,7 @@ com.google.firebase.database.android.AndroidAppCheckTokenProvider:
     private static synthetic void lambda$addTokenChangeListener$3(com.google.firebase.database.core.TokenProvider$TokenChangeListener,com.google.firebase.appcheck.AppCheckTokenResult)
     private static synthetic void lambda$addTokenChangeListener$4(java.util.concurrent.ExecutorService,com.google.firebase.database.core.TokenProvider$TokenChangeListener,com.google.firebase.appcheck.AppCheckTokenResult)
     public void removeTokenChangeListener(com.google.firebase.database.core.TokenProvider$TokenChangeListener)
-com.google.firebase.database.android.AndroidAuthTokenProvider$$InternalSyntheticLambda$4$aaa187e0c2806dfeb45ebdbbe6acdc6e0daa6e89bad702f1bcca437b2b2d0a62$0:
-    public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
 com.google.firebase.database.android.AndroidAuthTokenProvider:
-    public static synthetic void $r8$lambda$osJYqH9k0s6WcvseFM2DDFHB78I(java.util.concurrent.ExecutorService,com.google.firebase.database.core.TokenProvider$TokenChangeListener,com.google.firebase.internal.InternalTokenResult)
-    private static synthetic void lambda$addTokenChangeListener$3(com.google.firebase.database.core.TokenProvider$TokenChangeListener,com.google.firebase.internal.InternalTokenResult)
-    private static synthetic void lambda$addTokenChangeListener$4(java.util.concurrent.ExecutorService,com.google.firebase.database.core.TokenProvider$TokenChangeListener,com.google.firebase.internal.InternalTokenResult)
     public void removeTokenChangeListener(com.google.firebase.database.core.TokenProvider$TokenChangeListener)
 com.google.firebase.database.android.AndroidEventTarget:
     public void shutdown()
@@ -7109,9 +8442,7 @@ com.google.firebase.database.connection.HostInfo:
 com.google.firebase.database.connection.PersistentConnection:
     public abstract boolean isInterrupted(java.lang.String)
     public abstract void refreshAppCheckToken()
-    public abstract void refreshAppCheckToken(java.lang.String)
     public abstract void refreshAuthToken()
-    public abstract void refreshAuthToken(java.lang.String)
     public abstract void shutdown()
 com.google.firebase.database.connection.PersistentConnectionImpl:
     private static final java.lang.String IDLE_INTERRUPT_REASON
@@ -7172,14 +8503,8 @@ com.google.firebase.database.connection.PersistentConnectionImpl:
     private static final java.lang.String TOKEN_REFRESH_INTERRUPT_REASON
     public void injectConnectionFailure()
     public void refreshAppCheckToken()
-    public void refreshAppCheckToken(java.lang.String)
     public void refreshAuthToken()
-    public void refreshAuthToken(java.lang.String)
-    private void sendUnAppCheck()
-    private void sendUnauth()
     public void shutdown()
-    private void upgradeAppCheck()
-    private void upgradeAuth()
 com.google.firebase.database.connection.WebsocketConnection$WSClientTubesock:
     public void onLogMessage(java.lang.String)
 com.google.firebase.database.connection.WebsocketConnection:
@@ -7217,17 +8542,14 @@ com.google.firebase.database.core.Platform:
     public abstract java.lang.String getPlatformVersion()
 com.google.firebase.database.core.Repo$2:
     public void onTokenChange()
-    public void onTokenChange(java.lang.String)
 com.google.firebase.database.core.Repo$3:
     public void onTokenChange()
-    public void onTokenChange(java.lang.String)
 com.google.firebase.database.core.Repo:
     private static final int GET_TIMEOUT_MS
     private static final java.lang.String INTERRUPT_REASON
     private static final int TRANSACTION_MAX_RETRIES
     private static final java.lang.String TRANSACTION_OVERRIDE_BY_SET
     private static final java.lang.String TRANSACTION_TOO_MANY_RETRIES
-    static synthetic com.google.firebase.database.logging.LogWrapper access$100(com.google.firebase.database.core.Repo)
     com.google.firebase.database.connection.PersistentConnection getConnection()
     public com.google.firebase.database.FirebaseDatabase getDatabase()
     com.google.firebase.database.core.SyncTree getInfoSyncTree()
@@ -7278,7 +8600,6 @@ com.google.firebase.database.core.ThreadPoolEventTarget$1
 com.google.firebase.database.core.ThreadPoolEventTarget
 com.google.firebase.database.core.TokenProvider$TokenChangeListener:
     public abstract void onTokenChange()
-    public abstract void onTokenChange(java.lang.String)
 com.google.firebase.database.core.TokenProvider:
     public abstract void removeTokenChangeListener(com.google.firebase.database.core.TokenProvider$TokenChangeListener)
 com.google.firebase.database.core.UserWriteRecord:
@@ -7450,6 +8771,152 @@ com.google.firebase.database.util.GAuthToken:
 com.google.firebase.database.util.JsonMapper:
     public void <init>()
 com.google.firebase.database.util.package-info
+com.google.firebase.dynamiclinks.BuildConfig
+com.google.firebase.dynamiclinks.DynamicLink$AndroidParameters$Builder:
+    public void <init>()
+    public android.net.Uri getFallbackUrl()
+    public int getMinimumVersion()
+com.google.firebase.dynamiclinks.DynamicLink$AndroidParameters:
+    public static final java.lang.String KEY_ANDROID_FALLBACK_LINK
+    public static final java.lang.String KEY_ANDROID_MIN_VERSION_CODE
+    public static final java.lang.String KEY_ANDROID_PACKAGE_NAME
+com.google.firebase.dynamiclinks.DynamicLink$Builder:
+    private static final java.lang.String APP_GOO_GL_PATTERN
+    public static final java.lang.String KEY_API_KEY
+    public static final java.lang.String KEY_DOMAIN
+    public static final java.lang.String KEY_DOMAIN_URI_PREFIX
+    public static final java.lang.String KEY_DYNAMIC_LINK
+    public static final java.lang.String KEY_DYNAMIC_LINK_PARAMETERS
+    public static final java.lang.String KEY_LINK
+    public static final java.lang.String KEY_SUFFIX
+    private static final java.lang.String PAGE_LINK_PATTERN
+    private static final java.lang.String SCHEME_PREFIX
+    public com.google.android.gms.tasks.Task buildShortDynamicLink()
+    public java.lang.String getDomainUriPrefix()
+    public android.net.Uri getLink()
+    public android.net.Uri getLongLink()
+    public com.google.firebase.dynamiclinks.DynamicLink$Builder setDynamicLinkDomain(java.lang.String)
+com.google.firebase.dynamiclinks.DynamicLink$GoogleAnalyticsParameters$Builder:
+    public void <init>(java.lang.String,java.lang.String,java.lang.String)
+    public java.lang.String getCampaign()
+    public java.lang.String getContent()
+    public java.lang.String getMedium()
+    public java.lang.String getSource()
+    public java.lang.String getTerm()
+com.google.firebase.dynamiclinks.DynamicLink$GoogleAnalyticsParameters:
+    public static final java.lang.String KEY_UTM_CAMPAIGN
+    public static final java.lang.String KEY_UTM_CONTENT
+    public static final java.lang.String KEY_UTM_MEDIUM
+    public static final java.lang.String KEY_UTM_SOURCE
+    public static final java.lang.String KEY_UTM_TERM
+com.google.firebase.dynamiclinks.DynamicLink$IosParameters$Builder:
+    public java.lang.String getAppStoreId()
+    public java.lang.String getCustomScheme()
+    public java.lang.String getIpadBundleId()
+    public android.net.Uri getIpadFallbackUrl()
+    public java.lang.String getMinimumVersion()
+com.google.firebase.dynamiclinks.DynamicLink$IosParameters:
+    public static final java.lang.String KEY_IOS_APP_STORE_ID
+    public static final java.lang.String KEY_IOS_BUNDLE_ID
+    public static final java.lang.String KEY_IOS_CUSTOM_SCHEME
+    public static final java.lang.String KEY_IOS_FALLBACK_LINK
+    public static final java.lang.String KEY_IOS_MINIMUM_VERSION
+    public static final java.lang.String KEY_IPAD_BUNDLE_ID
+    public static final java.lang.String KEY_IPAD_FALLBACK_LINK
+com.google.firebase.dynamiclinks.DynamicLink$ItunesConnectAnalyticsParameters$Builder:
+    public java.lang.String getAffiliateToken()
+    public java.lang.String getCampaignToken()
+    public java.lang.String getProviderToken()
+com.google.firebase.dynamiclinks.DynamicLink$ItunesConnectAnalyticsParameters:
+    public static final java.lang.String KEY_ITUNES_CONNECT_AT
+    public static final java.lang.String KEY_ITUNES_CONNECT_CT
+    public static final java.lang.String KEY_ITUNES_CONNECT_PT
+com.google.firebase.dynamiclinks.DynamicLink$NavigationInfoParameters$Builder:
+    public boolean getForcedRedirectEnabled()
+com.google.firebase.dynamiclinks.DynamicLink$NavigationInfoParameters:
+    public static final java.lang.String KEY_FORCED_REDIRECT
+com.google.firebase.dynamiclinks.DynamicLink$SocialMetaTagParameters$Builder:
+    public java.lang.String getDescription()
+    public android.net.Uri getImageUrl()
+    public java.lang.String getTitle()
+com.google.firebase.dynamiclinks.DynamicLink$SocialMetaTagParameters:
+    public static final java.lang.String KEY_SOCIAL_DESCRIPTION
+    public static final java.lang.String KEY_SOCIAL_IMAGE_LINK
+    public static final java.lang.String KEY_SOCIAL_TITLE
+com.google.firebase.dynamiclinks.PendingDynamicLinkData:
+    protected void <init>(java.lang.String,int,long,android.net.Uri)
+    public android.os.Bundle getExtensions()
+    public android.net.Uri getRedirectUrl()
+    public android.content.Intent getUpdateAppIntent(android.content.Context)
+com.google.firebase.dynamiclinks.R$attr
+com.google.firebase.dynamiclinks.R$color
+com.google.firebase.dynamiclinks.R$dimen
+com.google.firebase.dynamiclinks.R$drawable
+com.google.firebase.dynamiclinks.R$id
+com.google.firebase.dynamiclinks.R$integer
+com.google.firebase.dynamiclinks.R$layout
+com.google.firebase.dynamiclinks.R$raw
+com.google.firebase.dynamiclinks.R$string
+com.google.firebase.dynamiclinks.R$style
+com.google.firebase.dynamiclinks.R$styleable
+com.google.firebase.dynamiclinks.R
+com.google.firebase.dynamiclinks.ShortDynamicLink$Suffix
+com.google.firebase.dynamiclinks.ShortDynamicLink$Warning:
+    public abstract java.lang.String getCode()
+com.google.firebase.dynamiclinks.internal.DynamicLinkData:
+    public void setDeepLink(java.lang.String)
+    public void setDynamicLink(java.lang.String)
+    public void setExtensionData(android.os.Bundle)
+    public void setMinVersion(int)
+    public void setRedirectUrl(android.net.Uri)
+com.google.firebase.dynamiclinks.internal.DynamicLinkDataCreator:
+    public static final int CONTENT_DESCRIPTION
+com.google.firebase.dynamiclinks.internal.DynamicLinkUTMParams:
+    public static final java.lang.String KEY_CAMPAIGN
+    public static final java.lang.String KEY_CAMPAIGN_BUNDLE
+    public static final java.lang.String KEY_MEDIUM
+    public static final java.lang.String KEY_SCION_DATA_BUNDLE
+    public static final java.lang.String KEY_SOURCE
+    public static final java.lang.String KEY_UTM_CAMPAIGN
+    public static final java.lang.String KEY_UTM_MEDIUM
+    public static final java.lang.String KEY_UTM_SOURCE
+com.google.firebase.dynamiclinks.internal.DynamicLinksClient:
+    public static final java.lang.String ACTION_START_SERVICE
+    private static final int DYNAMIC_LINKS_API_VALUE
+    public static final java.lang.String SERVICE_DESCRIPTOR
+    private static final int V17
+com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinksImpl:
+    private static final java.lang.String ANALYTICS_FDL_ORIGIN
+    public static final java.lang.String EXTRA_DYNAMIC_LINK_DATA
+    public static final java.lang.String KEY_SCION_DATA
+    private static final java.lang.String TAG
+com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinksImplConstants
+com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks$Default
+com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks$Stub$Proxy
+com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_onCreateShortDynamicLink
+    static final int TRANSACTION_onGetDynamicLink
+    public static com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks asInterface(android.os.IBinder)
+    public static com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks getDefaultImpl()
+    public static boolean setDefaultImpl(com.google.firebase.dynamiclinks.internal.IDynamicLinksCallbacks)
+com.google.firebase.dynamiclinks.internal.IDynamicLinksService$Default
+com.google.firebase.dynamiclinks.internal.IDynamicLinksService$Stub$Proxy:
+    public java.lang.String getInterfaceDescriptor()
+com.google.firebase.dynamiclinks.internal.IDynamicLinksService$Stub:
+    private static final java.lang.String DESCRIPTOR
+    static final int TRANSACTION_createShortDynamicLink
+    static final int TRANSACTION_getDynamicLink
+    public void <init>()
+    public android.os.IBinder asBinder()
+    public boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+    public static boolean setDefaultImpl(com.google.firebase.dynamiclinks.internal.IDynamicLinksService)
+com.google.firebase.dynamiclinks.internal.ShortDynamicLinkImpl$WarningImpl:
+    public java.lang.String getCode()
+com.google.firebase.dynamiclinks.internal.ShortDynamicLinkImplCreator:
+    public static final int CONTENT_DESCRIPTION
+com.google.firebase.dynamiclinks.internal.WarningImplCreator:
+    public static final int CONTENT_DESCRIPTION
 com.google.firebase.dynamicloading.ComponentLoader:
     public abstract void discoverComponents()
 com.google.firebase.events.Event:
@@ -7556,9 +9023,6 @@ com.google.firebase.firestore.LoadBundleTask:
     public com.google.firebase.firestore.LoadBundleTask addOnProgressListener(android.app.Activity,com.google.firebase.firestore.OnProgressListener)
     public com.google.firebase.firestore.LoadBundleTask addOnProgressListener(java.util.concurrent.Executor,com.google.firebase.firestore.OnProgressListener)
     public com.google.android.gms.tasks.Task addOnSuccessListener(android.app.Activity,com.google.android.gms.tasks.OnSuccessListener)
-    public com.google.android.gms.tasks.Task continueWithTask(com.google.android.gms.tasks.Continuation)
-    public com.google.firebase.firestore.LoadBundleTaskProgress getResult(java.lang.Class)
-    public synthetic bridge java.lang.Object getResult(java.lang.Class)
     private synthetic void lambda$addOnProgressListener$0(com.google.firebase.firestore.OnProgressListener)
     public com.google.android.gms.tasks.Task onSuccessTask(com.google.android.gms.tasks.SuccessContinuation)
     public com.google.android.gms.tasks.Task onSuccessTask(java.util.concurrent.Executor,com.google.android.gms.tasks.SuccessContinuation)
@@ -7634,12 +9098,8 @@ com.google.firebase.firestore.auth.FirebaseAppCheckTokenProvider:
     public static synthetic void $r8$lambda$hu48mr03bfT6X2LDSOXJket2KbA(com.google.firebase.firestore.auth.FirebaseAppCheckTokenProvider,com.google.firebase.appcheck.AppCheckTokenResult)
     private synthetic void lambda$new$0(com.google.firebase.appcheck.AppCheckTokenResult)
     private synchronized void onTokenChanged(com.google.firebase.appcheck.AppCheckTokenResult)
-com.google.firebase.firestore.auth.FirebaseAuthCredentialsProvider$$InternalSyntheticLambda$0$f3bd05692389763fb442261d1d26eddb3329a1a768d12cb618253f6e80b8fcb5$0:
-    public final void onIdTokenChanged(com.google.firebase.internal.InternalTokenResult)
 com.google.firebase.firestore.auth.FirebaseAuthCredentialsProvider:
     private static final java.lang.String LOG_TAG
-    public static synthetic void $r8$lambda$SiEkKBu9hz30n6jbv61jv-eXGhA(com.google.firebase.firestore.auth.FirebaseAuthCredentialsProvider,com.google.firebase.internal.InternalTokenResult)
-    private synthetic void lambda$new$0(com.google.firebase.internal.InternalTokenResult)
 com.google.firebase.firestore.auth.Token
 com.google.firebase.firestore.auth.package-info
 com.google.firebase.firestore.bundle.BundleReader:
@@ -8283,15 +9743,9 @@ com.google.firebase.firestore.util.Util:
     private static synthetic java.util.Iterator lambda$values$3(java.lang.Iterable)
     public static java.lang.Iterable values(java.lang.Iterable)
 com.google.firebase.firestore.util.package-info
-com.google.firebase.heartbeatinfo.AutoValue_HeartBeatResult
 com.google.firebase.heartbeatinfo.AutoValue_SdkHeartBeatResult
-com.google.firebase.heartbeatinfo.DefaultHeartBeatController:
-    public com.google.android.gms.tasks.Task getHeartBeatsHeader()
-    private synthetic java.lang.String lambda$getHeartBeatsHeader$2()
-com.google.firebase.heartbeatinfo.HeartBeatConsumerComponent$1
-com.google.firebase.heartbeatinfo.HeartBeatConsumerComponent
-com.google.firebase.heartbeatinfo.HeartBeatController:
-    public abstract com.google.android.gms.tasks.Task getHeartBeatsHeader()
+com.google.firebase.heartbeatinfo.HeartBeatConsumerComponent:
+    private void <init>()
 com.google.firebase.heartbeatinfo.HeartBeatInfoStorage:
     private static final java.lang.String GLOBAL
     private static final java.lang.String HEARTBEAT_PREFERENCES_NAME
@@ -8300,20 +9754,13 @@ com.google.firebase.heartbeatinfo.HeartBeatInfoStorage:
     private static final java.lang.String LAST_STORED_DATE
     private static final java.lang.String PREFERENCES_NAME
     void <init>(android.content.SharedPreferences)
-    synchronized void deleteAllHeartBeats()
-    synchronized java.util.List getAllHeartBeats()
     int getHeartBeatCount()
     synchronized long getLastGlobalHeartBeat()
-    synchronized void updateGlobalHeartBeat(long)
-com.google.firebase.heartbeatinfo.HeartBeatResult
 com.google.firebase.heartbeatinfo.SdkHeartBeatResult
 com.google.firebase.internal.DataCollectionConfigStorage:
     public static final java.lang.String DATA_COLLECTION_DEFAULT_ENABLED
     private static final java.lang.String FIREBASE_APP_PREFS
 com.google.firebase.internal.InternalTokenProvider
-com.google.firebase.internal.InternalTokenResult
-com.google.firebase.internal.api.FirebaseNoSignedInUserException:
-    public void <init>(java.lang.String)
 com.google.firebase.platforminfo.GlobalLibraryVersionRegistrar:
     public void registerVersion(java.lang.String,java.lang.String)
 com.google.firebase.platforminfo.KotlinDetector:
@@ -13392,13 +14839,10 @@ io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets
     public java.lang.String getAssetFilePathBySubpath(java.lang.String)
     public java.lang.String getAssetFilePathBySubpath(java.lang.String,java.lang.String)
 io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivityPluginBinding:
-    public void addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
-    public void addOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public void addOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
     public void addOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
     public void addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
     public java.lang.Object getLifecycle()
-    public void removeActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
     public void removeOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public void removeOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
     public void removeOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
@@ -13602,13 +15046,10 @@ io.flutter.embedding.engine.plugins.PluginRegistry:
     public abstract void remove(java.util.Set)
     public abstract void removeAll()
 io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding:
-    public abstract void addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
-    public abstract void addOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public abstract void addOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
     public abstract void addOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
     public abstract void addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
     public abstract java.lang.Object getLifecycle()
-    public abstract void removeActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
     public abstract void removeOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
     public abstract void removeOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
     public abstract void removeOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
@@ -13713,13 +15154,26 @@ io.flutter.plugin.common.JSONUtil:
     private void <init>()
     public static java.lang.Object unwrap(java.lang.Object)
 io.flutter.plugin.common.MethodCall:
-    public java.lang.Object argument(java.lang.String)
     public boolean hasArgument(java.lang.String)
 io.flutter.plugin.common.MethodChannel:
     private static final java.lang.String TAG
     public void resizeChannelBuffer(int)
 io.flutter.plugin.common.PluginRegistry$PluginRegistrantCallback
-io.flutter.plugin.common.PluginRegistry$Registrar
+io.flutter.plugin.common.PluginRegistry$Registrar:
+    public abstract android.content.Context activeContext()
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar addViewDestroyListener(io.flutter.plugin.common.PluginRegistry$ViewDestroyListener)
+    public abstract android.content.Context context()
+    public abstract java.lang.String lookupKeyForAsset(java.lang.String)
+    public abstract java.lang.String lookupKeyForAsset(java.lang.String,java.lang.String)
+    public abstract io.flutter.plugin.common.BinaryMessenger messenger()
+    public abstract io.flutter.plugin.platform.PlatformViewRegistry platformViewRegistry()
+    public abstract io.flutter.plugin.common.PluginRegistry$Registrar publish(java.lang.Object)
+    public abstract io.flutter.view.TextureRegistry textures()
+    public abstract io.flutter.view.FlutterView view()
 io.flutter.plugin.common.PluginRegistry$ViewDestroyListener
 io.flutter.plugin.common.PluginRegistry
 io.flutter.plugin.common.StandardMessageCodec:
@@ -13789,6 +15243,39 @@ io.flutter.plugin.platform.SingleViewPresentation$WindowManagerHandler:
 io.flutter.plugin.platform.VirtualDisplayController:
     public void dispose()
     void onFlutterViewDetached()
+io.flutter.plugins.firebase.auth.BuildConfig
+io.flutter.plugins.firebase.auth.Constants
+io.flutter.plugins.firebase.auth.FlutterFirebaseAuthPlugin:
+    private static final java.lang.String METHOD_CHANNEL_NAME
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$GenerateInterfaces$-CC
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$GenerateInterfaces
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$GenerateInterfacesCodec
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$PigeonMultiFactorInfo:
+    public java.lang.String getDisplayName()
+    public java.lang.Double getEnrollmentTimestamp()
+    public java.lang.String getFactorId()
+    public java.lang.String getPhoneNumber()
+    public java.lang.String getUid()
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$PigeonMultiFactorSession:
+    public java.lang.String getId()
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$PigeonPhoneMultiFactorAssertion$Builder
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$PigeonPhoneMultiFactorAssertion:
+    synthetic void <init>(io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth$1)
+io.flutter.plugins.firebase.auth.GeneratedAndroidFirebaseAuth:
+    public void <init>()
+io.flutter.plugins.firebase.auth.R$attr
+io.flutter.plugins.firebase.auth.R$color
+io.flutter.plugins.firebase.auth.R$dimen
+io.flutter.plugins.firebase.auth.R$drawable
+io.flutter.plugins.firebase.auth.R$id
+io.flutter.plugins.firebase.auth.R$integer
+io.flutter.plugins.firebase.auth.R$layout
+io.flutter.plugins.firebase.auth.R$raw
+io.flutter.plugins.firebase.auth.R$string
+io.flutter.plugins.firebase.auth.R$style
+io.flutter.plugins.firebase.auth.R$styleable
+io.flutter.plugins.firebase.auth.R$xml
+io.flutter.plugins.firebase.auth.R
 io.flutter.plugins.firebase.core.BuildConfig
 io.flutter.plugins.firebase.core.GeneratedAndroidFirebaseCore$PigeonFirebaseOptions$Builder:
     public io.flutter.plugins.firebase.core.GeneratedAndroidFirebaseCore$PigeonFirebaseOptions$Builder setAndroidClientId(java.lang.String)
@@ -13845,6 +15332,25 @@ io.flutter.plugins.firebase.database.R$string
 io.flutter.plugins.firebase.database.R$style
 io.flutter.plugins.firebase.database.R$styleable
 io.flutter.plugins.firebase.database.R
+io.flutter.plugins.firebase.dynamiclinks.BuildConfig
+io.flutter.plugins.firebase.dynamiclinks.Constants
+io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseDynamicLinksPlugin:
+    private static final java.lang.String METHOD_CHANNEL_NAME
+    private static final java.lang.String TAG
+io.flutter.plugins.firebase.dynamiclinks.R$attr
+io.flutter.plugins.firebase.dynamiclinks.R$color
+io.flutter.plugins.firebase.dynamiclinks.R$dimen
+io.flutter.plugins.firebase.dynamiclinks.R$drawable
+io.flutter.plugins.firebase.dynamiclinks.R$id
+io.flutter.plugins.firebase.dynamiclinks.R$integer
+io.flutter.plugins.firebase.dynamiclinks.R$layout
+io.flutter.plugins.firebase.dynamiclinks.R$raw
+io.flutter.plugins.firebase.dynamiclinks.R$string
+io.flutter.plugins.firebase.dynamiclinks.R$style
+io.flutter.plugins.firebase.dynamiclinks.R$styleable
+io.flutter.plugins.firebase.dynamiclinks.R
+io.flutter.plugins.firebase.dynamiclinks.Utils:
+    public void <init>()
 io.flutter.plugins.firebase.firestore.BuildConfig
 io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreException:
     private static final java.lang.String ERROR_ABORTED
@@ -13900,6 +15406,49 @@ io.flutter.plugins.firebase.firestore.R$styleable
 io.flutter.plugins.firebase.firestore.R
 io.flutter.plugins.firebase.firestore.utils.ExceptionConverter:
     public void <init>()
+io.flutter.plugins.googlesignin.BuildConfig
+io.flutter.plugins.googlesignin.Executors:
+    private void <init>()
+io.flutter.plugins.googlesignin.GoogleSignInPlugin$Delegate:
+    private static final java.lang.String DEFAULT_GAMES_SIGN_IN
+    private static final java.lang.String DEFAULT_SIGN_IN
+    private static final java.lang.String ERROR_FAILURE_TO_RECOVER_AUTH
+    private static final java.lang.String ERROR_REASON_EXCEPTION
+    private static final java.lang.String ERROR_REASON_NETWORK_ERROR
+    private static final java.lang.String ERROR_REASON_SIGN_IN_CANCELED
+    private static final java.lang.String ERROR_REASON_SIGN_IN_FAILED
+    private static final java.lang.String ERROR_REASON_SIGN_IN_REQUIRED
+    private static final java.lang.String ERROR_REASON_STATUS
+    private static final java.lang.String ERROR_USER_RECOVERABLE_AUTH
+    private static final int REQUEST_CODE_RECOVER_AUTH
+    static final int REQUEST_CODE_REQUEST_SCOPE
+    private static final int REQUEST_CODE_SIGNIN
+    public void setUpRegistrar(io.flutter.plugin.common.PluginRegistry$Registrar)
+io.flutter.plugins.googlesignin.GoogleSignInPlugin$IDelegate
+io.flutter.plugins.googlesignin.GoogleSignInPlugin:
+    private static final java.lang.String CHANNEL_NAME
+    private static final java.lang.String METHOD_CLEAR_AUTH_CACHE
+    private static final java.lang.String METHOD_DISCONNECT
+    private static final java.lang.String METHOD_GET_TOKENS
+    private static final java.lang.String METHOD_INIT
+    private static final java.lang.String METHOD_IS_SIGNED_IN
+    private static final java.lang.String METHOD_REQUEST_SCOPES
+    private static final java.lang.String METHOD_SIGN_IN
+    private static final java.lang.String METHOD_SIGN_IN_SILENTLY
+    private static final java.lang.String METHOD_SIGN_OUT
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    public void setUpRegistrar(io.flutter.plugin.common.PluginRegistry$Registrar)
+io.flutter.plugins.googlesignin.R$attr
+io.flutter.plugins.googlesignin.R$color
+io.flutter.plugins.googlesignin.R$dimen
+io.flutter.plugins.googlesignin.R$drawable
+io.flutter.plugins.googlesignin.R$id
+io.flutter.plugins.googlesignin.R$integer
+io.flutter.plugins.googlesignin.R$layout
+io.flutter.plugins.googlesignin.R$string
+io.flutter.plugins.googlesignin.R$style
+io.flutter.plugins.googlesignin.R$styleable
+io.flutter.plugins.googlesignin.R
 io.flutter.util.HandlerCompat:
     public void <init>()
 io.flutter.util.PathUtils:
@@ -18871,6 +20420,7 @@ kotlin.jvm.internal.markers.KMutableMap$Entry
 kotlin.jvm.internal.markers.KMutableMap
 kotlin.jvm.internal.markers.KMutableSet
 kotlin.jvm.internal.unsafe.MonitorKt
+kotlin.jvm.jdk8.JvmRepeatableKt
 kotlin.math.Constants
 kotlin.math.MathKt
 kotlin.math.MathKt__MathHKt
@@ -19493,7 +21043,6 @@ kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$1
 kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$2
 kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$3
 kotlin.streams.jdk8.StreamsKt$asSequence$$inlined$Sequence$4
-kotlin.streams.jdk8.StreamsKt$asStream$1
 kotlin.streams.jdk8.StreamsKt
 kotlin.system.ProcessKt
 kotlin.system.TimingKt
@@ -22340,8 +23889,6 @@ org.jetbrains.annotations.NotNull
 org.jetbrains.annotations.Nullable
 org.jetbrains.annotations.PropertyKey
 org.jetbrains.annotations.TestOnly
-androidx.arch.core.internal.SafeIterableMap:
-    public java.lang.Object putIfAbsent(java.lang.Object,java.lang.Object)
 androidx.core.app.NotificationCompat$BubbleMetadata$Api29Impl
 androidx.core.app.NotificationCompat$BubbleMetadata$Api30Impl
 androidx.core.app.NotificationCompat$BubbleMetadata:
@@ -22385,34 +23932,9 @@ androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks:
     public abstract void onFragmentViewDestroyed(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
 androidx.fragment.app.FragmentTransition:
     private static java.lang.String findKeyForValue(androidx.collection.ArrayMap,java.lang.String)
-androidx.lifecycle.LiveData$LifecycleBoundObserver:
-    void <init>(androidx.lifecycle.LiveData,androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
-    boolean isAttachedTo(androidx.lifecycle.LifecycleOwner)
-androidx.lifecycle.LiveData$ObserverWrapper:
-    void <init>(androidx.lifecycle.LiveData,androidx.lifecycle.Observer)
-    boolean isAttachedTo(androidx.lifecycle.LifecycleOwner)
-androidx.lifecycle.LiveData:
-    public java.lang.Object getValue()
-    public boolean hasActiveObservers()
-    public void observe(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
-androidx.loader.app.LoaderManagerImpl$LoaderInfo:
-    private androidx.loader.app.LoaderManagerImpl$LoaderObserver mObserver
-    private androidx.loader.content.Loader mPriorLoader
-    androidx.loader.content.Loader getLoader()
-androidx.loader.app.LoaderManagerImpl$LoaderObserver
-androidx.loader.content.Loader$OnLoadCompleteListener
-androidx.loader.content.Loader:
-    public void abandon()
-    public boolean cancelLoad()
-    public java.lang.String dataToString(java.lang.Object)
-    public void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
-    public void reset()
-    public final void startLoading()
-    public void stopLoading()
-    public void unregisterListener(androidx.loader.content.Loader$OnLoadCompleteListener)
-com.google.android.gms.common.GooglePlayServicesUtilLight:
-    static boolean zza
-    private static boolean zzb
+com.google.android.gms.common.api.TransformedResult
+com.google.android.gms.common.api.internal.BasePendingResult:
+    private volatile com.google.android.gms.common.api.internal.zada zap
 com.google.android.gms.common.api.internal.RegisterListenerMethod:
     public abstract void clearListener()
     public abstract com.google.android.gms.common.Feature[] getRequiredFeatures()
@@ -22421,16 +23943,44 @@ com.google.android.gms.common.api.internal.RegisterListenerMethod:
 com.google.android.gms.common.api.internal.UnregisterListenerMethod
 com.google.android.gms.common.api.internal.zaci:
     public final com.google.android.gms.common.api.internal.UnregisterListenerMethod zab
+com.google.android.gms.common.api.internal.zada
 com.google.android.gms.common.api.internal.zadb:
     final synthetic com.google.android.gms.common.api.internal.zadc zaa
 com.google.android.gms.common.api.internal.zadc
 com.google.android.gms.common.internal.GmsClient:
     private static volatile java.util.concurrent.Executor zaa
-com.google.common.util.concurrent.SettableFuture:
-    public boolean set(java.lang.Object)
+com.google.android.gms.common.util.AndroidUtilsLight:
+    private static volatile int zza
+com.google.android.gms.internal.auth.zzdc:
+    private static volatile boolean zzf
+com.google.android.gms.internal.auth.zzdd:
+    private final android.content.SharedPreferences$OnSharedPreferenceChangeListener zzc
+com.google.android.gms.internal.auth.zzei:
+    private static volatile int zzb
+com.google.android.gms.internal.auth.zzek:
+    private static volatile boolean zzc
+com.google.android.gms.internal.auth.zzew
+com.google.android.gms.internal.auth.zzfb
+com.google.android.gms.internal.auth.zzfc
+com.google.android.gms.internal.firebase-auth-api.zzacs:
+    private static volatile boolean zzc
+com.google.android.gms.internal.firebase-auth-api.zzadp
+com.google.android.gms.internal.firebase-auth-api.zzxl:
+    private static final java.lang.String zza
+    private void <init>()
+com.google.android.gms.internal.firebase-auth-api.zzzg:
+    private static final java.lang.String zza
+com.google.android.gms.internal.firebase-auth-api.zzzw:
+    private static final java.lang.String zza
+com.google.android.gms.internal.safetynet.zzb:
+    private static com.google.android.gms.internal.safetynet.zzd zzc
+com.google.android.gms.internal.safetynet.zzd
+com.google.android.gms.internal.safetynet.zzk:
+    private static final java.lang.String TAG
+com.google.firebase.auth.internal.zzbf:
+    private void <init>()
 com.google.firebase.heartbeatinfo.HeartBeatInfoStorage:
     private static com.google.firebase.heartbeatinfo.HeartBeatInfoStorage instance
-com.google.firebase.internal.api.FirebaseNoSignedInUserException
 com.google.protobuf.ExtensionRegistryLite:
     private static volatile boolean eagerlyParseMessageSets
 com.google.protobuf.FieldInfo:

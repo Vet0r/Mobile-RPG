@@ -1,6 +1,7 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_rpg/player/create_new_player.dart';
 import 'package:mobile_rpg/player/player.dart';
@@ -109,36 +110,47 @@ class _ChoseYourNameState extends State<ChoseYourName> {
                     .doc(doc.id)
                     .get();
                 if (fields.exists) {
-                  if (fields["name"] == nameController.text) {
-                    verify2 = true;
+                  if (fields["name"] == nameController.text &&
+                      fields["user_id"] ==
+                          FirebaseAuth.instance.currentUser!.uid) {
                     isLoading = false;
                     playerId = doc.id;
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Player(
+                          playerId: playerId,
+                          campaignId: campingDocId,
+                        ),
+                      ),
+                    );
                     break;
+                  } else if (fields["name"] == nameController.text &&
+                      fields["user_id"] !=
+                          FirebaseAuth.instance.currentUser!.uid) {
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return const AlertDialog(
+                          content:
+                              Text("Esse nome já está em uso nessa campanha"),
+                        );
+                      },
+                    );
+                  } else {
+                    playerId = await createNewPlayer(
+                        nameController.text, campingDocId);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Player(
+                          playerId: playerId,
+                          campaignId: campingDocId,
+                        ),
+                      ),
+                    );
                   }
                 }
-              }
-              if (verify2) {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Player(
-                      playerId: playerId,
-                      campaignId: campingDocId,
-                    ),
-                  ),
-                );
-              } else {
-                playerId =
-                    await createNewPlayer(nameController.text, campingDocId);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => Player(
-                      playerId: playerId,
-                      campaignId: campingDocId,
-                    ),
-                  ),
-                );
               }
             } else {
               showDialog(

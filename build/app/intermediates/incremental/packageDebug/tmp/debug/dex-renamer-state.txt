@@ -1,4 +1,4 @@
-#Mon Nov 14 16:08:32 BRT 2022
+#Wed Nov 23 17:38:28 BRT 2022
 base.2=/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
 path.2=classes3.dex
 base.1=/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex

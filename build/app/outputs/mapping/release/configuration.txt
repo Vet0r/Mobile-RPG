@@ -130,10 +130,16 @@
 # The proguard configuration file for the following section is /home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class com.example.mobile_rpg.MainActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.firebase.auth.internal.GenericIdpActivity { <init>(); }
+-keep class com.google.firebase.auth.internal.RecaptchaActivity { <init>(); }
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 -keep class io.flutter.app.FlutterMultiDexApplication { <init>(); }
+-keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
 
 # End of content from /home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/aapt_proguard_file/release/aapt_rules.txt
 # The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/proguard.txt
@@ -219,6 +225,31 @@
 -dontwarn sun.misc.Signal
 
 # End of content from /home/vitor/.gradle/caches/transforms-3/5cafba0ec714bc11790f886e3b0d471e/transformed/rules/lib/META-INF/proguard/coroutines.pro
+# The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/proguard.txt
+-dontwarn com.google.appengine.api.**
+-dontwarn okio.**
+-dontwarn org.apache.**
+-dontwarn retrofit.android.**
+-dontwarn retrofit.appengine.**
+-dontwarn retrofit.client.**
+-dontwarn rx.**
+
+# This is necessary for keeping SecureTokenHttpApi and IdentityToolkitHttpApi
+# Otherwise those classes get stripped out, as they are only being used
+# reflectively.
+
+-keepclasseswithmembernames interface * {
+    @retrofit.http.* <methods>;
+}
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.firebase-auth-api.zzadf {
+  <fields>;
+}
+
+# End of content from /home/vitor/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/proguard.txt
 # The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/e39fe4bf08d15a7a36bde2a48516de12/transformed/jetified-firebase-firestore-24.4.0/proguard.txt
 # Needed for DNS resolution.  Present in OpenJDK, but not Android
 -dontwarn javax.naming.**
@@ -240,19 +271,34 @@
 -dontwarn com.google.j2objc.annotations.**
 
 # End of content from /home/vitor/.gradle/caches/transforms-3/e39fe4bf08d15a7a36bde2a48516de12/transformed/jetified-firebase-firestore-24.4.0/proguard.txt
-# The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/8bbf934d4862951386a3804d4b07cb8d/transformed/jetified-firebase-auth-interop-19.0.2/proguard.txt
+# The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/89ba8e05a34cf734bca3914f66f9a9fb/transformed/jetified-firebase-auth-interop-20.0.0/proguard.txt
 # Can be removed once we pull in a dependency on firebase-common that includes
 # https://github.com/firebase/firebase-android-sdk/pull/1472/commits/856f1ca1151cdd88679bbc778892f23dfa34fc06#diff-a2ed34b5a38b4c6c686b09e54865eb48
 -dontwarn com.google.auto.value.AutoValue
 -dontwarn com.google.auto.value.AutoValue$Builder
 
-# End of content from /home/vitor/.gradle/caches/transforms-3/8bbf934d4862951386a3804d4b07cb8d/transformed/jetified-firebase-auth-interop-19.0.2/proguard.txt
+# End of content from /home/vitor/.gradle/caches/transforms-3/89ba8e05a34cf734bca3914f66f9a9fb/transformed/jetified-firebase-auth-interop-20.0.0/proguard.txt
 # The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/proguard.txt
 -dontwarn com.google.firebase.platforminfo.KotlinDetector
 -dontwarn com.google.auto.value.AutoValue
 -dontwarn com.google.auto.value.AutoValue$Builder
 
 # End of content from /home/vitor/.gradle/caches/transforms-3/c1f7cd0e68ddf89c76a753ac7fd1a66c/transformed/jetified-firebase-common-20.2.0/proguard.txt
+# The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/b2ae3d9b208b4da88d8c6a5604e658eb/transformed/jetified-play-services-auth-base-18.0.4/proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.auth.zzeu {
+  <fields>;
+}
+
+# End of content from /home/vitor/.gradle/caches/transforms-3/b2ae3d9b208b4da88d8c6a5604e658eb/transformed/jetified-play-services-auth-base-18.0.4/proguard.txt
+# The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/15429486c2a95aa33d4234da5fa47db0/transformed/jetified-play-services-fido-19.0.0/proguard.txt
+# Methods enable and disable in this class are complained as unresolved
+# references, but they are system APIs and are not used by Fido client apps.
+-dontwarn android.nfc.NfcAdapter
+
+# End of content from /home/vitor/.gradle/caches/transforms-3/15429486c2a95aa33d4234da5fa47db0/transformed/jetified-play-services-fido-19.0.0/proguard.txt
 # The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/19fea4fb28dedd992824e13cc158e7a1/transformed/jetified-play-services-base-18.0.1/proguard.txt
 # b/35135904 Ensure that proguard will not strip the mResultGuardian.
 -keepclassmembers class com.google.android.gms.common.api.internal.BasePendingResult {
@@ -443,6 +489,15 @@
 }
 
 # End of content from /home/vitor/.gradle/caches/transforms-3/a52ba731080118b245e428e7c0aad4f3/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/2926cbc8da7cfff1c5633b32799072d8/transformed/jetified-grpc-android-1.48.1/proguard.txt
+-keepclassmembers class io.grpc.okhttp.OkHttpChannelBuilder {
+  io.grpc.okhttp.OkHttpChannelBuilder forTarget(java.lang.String);
+  io.grpc.okhttp.OkHttpChannelBuilder scheduledExecutorService(java.util.concurrent.ScheduledExecutorService);
+  io.grpc.okhttp.OkHttpChannelBuilder sslSocketFactory(javax.net.ssl.SSLSocketFactory);
+  io.grpc.okhttp.OkHttpChannelBuilder transportExecutor(java.util.concurrent.Executor);
+}
+
+# End of content from /home/vitor/.gradle/caches/transforms-3/2926cbc8da7cfff1c5633b32799072d8/transformed/jetified-grpc-android-1.48.1/proguard.txt
 # The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/8129b238d4d069661aca07bff47ad65b/transformed/jetified-protolite-well-known-types-18.0.0/proguard.txt
 # Add project specific ProGuard rules here.
 # You can control the set of applied configuration files using the
@@ -473,15 +528,6 @@
 }
 
 # End of content from /home/vitor/.gradle/caches/transforms-3/8129b238d4d069661aca07bff47ad65b/transformed/jetified-protolite-well-known-types-18.0.0/proguard.txt
-# The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/2926cbc8da7cfff1c5633b32799072d8/transformed/jetified-grpc-android-1.48.1/proguard.txt
--keepclassmembers class io.grpc.okhttp.OkHttpChannelBuilder {
-  io.grpc.okhttp.OkHttpChannelBuilder forTarget(java.lang.String);
-  io.grpc.okhttp.OkHttpChannelBuilder scheduledExecutorService(java.util.concurrent.ScheduledExecutorService);
-  io.grpc.okhttp.OkHttpChannelBuilder sslSocketFactory(javax.net.ssl.SSLSocketFactory);
-  io.grpc.okhttp.OkHttpChannelBuilder transportExecutor(java.util.concurrent.Executor);
-}
-
-# End of content from /home/vitor/.gradle/caches/transforms-3/2926cbc8da7cfff1c5633b32799072d8/transformed/jetified-grpc-android-1.48.1/proguard.txt
 # The proguard configuration file for the following section is /home/vitor/.gradle/caches/transforms-3/f95b31beb5b7f2eb055a97bf2e6fcf0f/transformed/jetified-annotation-experimental-1.1.0/proguard.txt
 # Copyright (C) 2020 The Android Open Source Project
 #

@@ -4,6 +4,19 @@
       jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/flutter/release/libs.jar"
       resolved="__local_aars__:/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/flutter/release/libs.jar:unspecified"/>
   <library
+      name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:firebase_auth::release"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_auth/.transforms/719a671dfb173ec7b0f84d7ff4df8cad/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.firebase.auth:firebase_auth:unspecified"
+      folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_auth/.transforms/719a671dfb173ec7b0f84d7ff4df8cad/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:firebase_database::release"
       jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_database/.transforms/f8c396bad544b8cb7e75ab5e9033e160/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.firebase.database:firebase_database:unspecified"
@@ -30,10 +43,49 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:firebase_dynamic_links::release"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_dynamic_links/.transforms/73293357619e309fe99e392541998c15/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.firebase.dynamiclinks:firebase_dynamic_links:unspecified"
+      folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_dynamic_links/.transforms/73293357619e309fe99e392541998c15/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:firebase_core::release"
       jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_core/.transforms/ade89995dba9f7ccdc5de124dc24e10b/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.firebase.core:firebase_core:unspecified"
       folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/firebase_core/.transforms/ade89995dba9f7ccdc5de124dc24e10b/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:google_sign_in_android::release"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/google_sign_in_android/.transforms/58380c8db54b780fe760f94282150f41/transformed/out/jars/classes.jar"
+      resolved="io.flutter.plugins.googlesignin:google_sign_in_android:unspecified"
+      folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/google_sign_in_android/.transforms/58380c8db54b780fe760f94282150f41/transformed/out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/android@@:desktop_webview_auth::release"
+      jars="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/desktop_webview_auth/.transforms/9fff981915ed534d14b447b60633978f/transformed/out/jars/classes.jar"
+      resolved="com.example.desktop_webview_auth:desktop_webview_auth:unspecified"
+      folder="/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/desktop_webview_auth/.transforms/9fff981915ed534d14b447b60633978f/transformed/out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -94,9 +146,9 @@
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.5.2/f4cc07a50437659e0043e7da762809a46932b6a0/kotlinx-coroutines-core-jvm-1.5.2.jar"
       resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30@jar"
-      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.5.30/5fd47535cc85f9e24996f939c2de6583991481b0/kotlin-stdlib-jdk8-1.5.30.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30"/>
+      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.10/e80fe6ac3c3573a80305f5ec43f86b829e8ab53d/kotlin-stdlib-jdk8-1.6.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10"/>
   <library
       name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10@jar"
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.10/e1c380673654a089c4f0c9f83d0ddfdc1efdb498/kotlin-stdlib-jdk7-1.6.10.jar"
@@ -341,10 +393,36 @@
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.10/c118700e3a33c8a0d9adc920e9dec0831171925/kotlin-stdlib-common-1.6.10.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10"/>
   <library
+      name="com.google.firebase:firebase-auth:21.1.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0/jars/classes.jar"
+      resolved="com.google.firebase:firebase-auth:21.1.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/0548e507d3019ac84ce4969b57803f45/transformed/jetified-firebase-auth-21.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="com.google.firebase:firebase-firestore:24.4.0@aar"
       jars="/home/vitor/.gradle/caches/transforms-3/e39fe4bf08d15a7a36bde2a48516de12/transformed/jetified-firebase-firestore-24.4.0/jars/classes.jar"
       resolved="com.google.firebase:firebase-firestore:24.4.0"
       folder="/home/vitor/.gradle/caches/transforms-3/e39fe4bf08d15a7a36bde2a48516de12/transformed/jetified-firebase-firestore-24.4.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.firebase:firebase-dynamic-links:21.1.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/e85453bab06ab800ea54b5e2e463fb1f/transformed/jetified-firebase-dynamic-links-21.1.0/jars/classes.jar"
+      resolved="com.google.firebase:firebase-dynamic-links:21.1.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/e85453bab06ab800ea54b5e2e463fb1f/transformed/jetified-firebase-dynamic-links-21.1.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -367,10 +445,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-appcheck-interop:16.1.0@aar"
-      jars="/home/vitor/.gradle/caches/transforms-3/9f3a6c99108e58509d099405466dc822/transformed/jetified-firebase-appcheck-interop-16.1.0/jars/classes.jar"
-      resolved="com.google.firebase:firebase-appcheck-interop:16.1.0"
-      folder="/home/vitor/.gradle/caches/transforms-3/9f3a6c99108e58509d099405466dc822/transformed/jetified-firebase-appcheck-interop-16.1.0"
+      name="com.google.firebase:firebase-auth-interop:20.0.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/89ba8e05a34cf734bca3914f66f9a9fb/transformed/jetified-firebase-auth-interop-20.0.0/jars/classes.jar"
+      resolved="com.google.firebase:firebase-auth-interop:20.0.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/89ba8e05a34cf734bca3914f66f9a9fb/transformed/jetified-firebase-auth-interop-20.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -380,10 +458,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-auth-interop:19.0.2@aar"
-      jars="/home/vitor/.gradle/caches/transforms-3/8bbf934d4862951386a3804d4b07cb8d/transformed/jetified-firebase-auth-interop-19.0.2/jars/classes.jar"
-      resolved="com.google.firebase:firebase-auth-interop:19.0.2"
-      folder="/home/vitor/.gradle/caches/transforms-3/8bbf934d4862951386a3804d4b07cb8d/transformed/jetified-firebase-auth-interop-19.0.2"
+      name="com.google.firebase:firebase-appcheck-interop:16.1.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/9f3a6c99108e58509d099405466dc822/transformed/jetified-firebase-appcheck-interop-16.1.0/jars/classes.jar"
+      resolved="com.google.firebase:firebase-appcheck-interop:16.1.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/9f3a6c99108e58509d099405466dc822/transformed/jetified-firebase-appcheck-interop-16.1.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -406,10 +484,75 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="com.google.android.gms:play-services-auth:20.4.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/13c11db9378fe5d4a5611e5dfad2a7a1/transformed/jetified-play-services-auth-20.4.0/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-auth:20.4.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/13c11db9378fe5d4a5611e5dfad2a7a1/transformed/jetified-play-services-auth-20.4.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.gms:play-services-safetynet:17.0.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/6fc382fce3370b231ba05fbc8b124f61/transformed/jetified-play-services-safetynet-17.0.0/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-safetynet:17.0.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/6fc382fce3370b231ba05fbc8b124f61/transformed/jetified-play-services-safetynet-17.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="com.google.firebase:firebase-database-collection:18.0.1@aar"
       jars="/home/vitor/.gradle/caches/transforms-3/7c741d4936f86c00542d609dae4f68c7/transformed/jetified-firebase-database-collection-18.0.1/jars/classes.jar"
       resolved="com.google.firebase:firebase-database-collection:18.0.1"
       folder="/home/vitor/.gradle/caches/transforms-3/7c741d4936f86c00542d609dae4f68c7/transformed/jetified-firebase-database-collection-18.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.gms:play-services-auth-api-phone:18.0.1@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/661f963381eb53c6cea0a92b5aed8fdd/transformed/jetified-play-services-auth-api-phone-18.0.1/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-auth-api-phone:18.0.1"
+      folder="/home/vitor/.gradle/caches/transforms-3/661f963381eb53c6cea0a92b5aed8fdd/transformed/jetified-play-services-auth-api-phone-18.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.gms:play-services-auth-base:18.0.4@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/b2ae3d9b208b4da88d8c6a5604e658eb/transformed/jetified-play-services-auth-base-18.0.4/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-auth-base:18.0.4"
+      folder="/home/vitor/.gradle/caches/transforms-3/b2ae3d9b208b4da88d8c6a5604e658eb/transformed/jetified-play-services-auth-base-18.0.4"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.gms:play-services-fido:19.0.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/15429486c2a95aa33d4234da5fa47db0/transformed/jetified-play-services-fido-19.0.0/jars/classes.jar"
+      resolved="com.google.android.gms:play-services-fido:19.0.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/15429486c2a95aa33d4234da5fa47db0/transformed/jetified-play-services-fido-19.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -445,10 +588,36 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="com.google.firebase:firebase-measurement-connector:19.0.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/8595d92ec56dfc0c05e001ba31fa19c4/transformed/jetified-firebase-measurement-connector-19.0.0/jars/classes.jar"
+      resolved="com.google.firebase:firebase-measurement-connector:19.0.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/8595d92ec56dfc0c05e001ba31fa19c4/transformed/jetified-firebase-measurement-connector-19.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="com.google.android.gms:play-services-basement:18.1.0@aar"
       jars="/home/vitor/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0/jars/classes.jar"
       resolved="com.google.android.gms:play-services-basement:18.1.0"
       folder="/home/vitor/.gradle/caches/transforms-3/3ee0f8915dc9bf42c60f3eef0b7bd28a/transformed/jetified-play-services-basement-18.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.browser:browser:1.4.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/38e30c664341fe5bfcc1d9de04582443/transformed/browser-1.4.0/jars/classes.jar"
+      resolved="androidx.browser:browser:1.4.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/38e30c664341fe5bfcc1d9de04582443/transformed/browser-1.4.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -471,14 +640,27 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:firebase-annotations:16.1.0@jar"
-      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-annotations/16.1.0/64bf465fd5aa693067bfd6bc28efb260e1ad29ea/firebase-annotations-16.1.0.jar"
-      resolved="com.google.firebase:firebase-annotations:16.1.0"/>
+      name="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/92bbcff336b1c071492380cf1ca47662/transformed/localbroadcastmanager-1.0.0/jars/classes.jar"
+      resolved="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/92bbcff336b1c071492380cf1ca47662/transformed/localbroadcastmanager-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
   <library
-      name="com.google.firebase:protolite-well-known-types:18.0.0@aar"
-      jars="/home/vitor/.gradle/caches/transforms-3/8129b238d4d069661aca07bff47ad65b/transformed/jetified-protolite-well-known-types-18.0.0/jars/classes.jar"
-      resolved="com.google.firebase:protolite-well-known-types:18.0.0"
-      folder="/home/vitor/.gradle/caches/transforms-3/8129b238d4d069661aca07bff47ad65b/transformed/jetified-protolite-well-known-types-18.0.0"
+      name="androidx.concurrent:concurrent-futures:1.0.0@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/androidx.concurrent/concurrent-futures/1.0.0/c1e77e3ee6f4643b77496a1ddf7a2eef1aefdaa1/concurrent-futures-1.0.0.jar"
+      resolved="androidx.concurrent:concurrent-futures:1.0.0"/>
+  <library
+      name="androidx.interpolator:interpolator:1.0.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/0874b2ce249aebd6be8581da2886a270/transformed/interpolator-1.0.0/jars/classes.jar"
+      resolved="androidx.interpolator:interpolator:1.0.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/0874b2ce249aebd6be8581da2886a270/transformed/interpolator-1.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -525,9 +707,46 @@
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-android/9222c47cc3ae890f07f7c961bbb3cb69050fe4aa/guava-31.1-android.jar"
       resolved="com.google.guava:guava:31.1-android"/>
   <library
+      name="com.google.guava:failureaccess:1.0.1@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar"
+      resolved="com.google.guava:failureaccess:1.0.1"/>
+  <library
+      name="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+      resolved="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"/>
+  <library
+      name="com.google.code.findbugs:jsr305:3.0.2@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
+      resolved="com.google.code.findbugs:jsr305:3.0.2"/>
+  <library
+      name="org.checkerframework:checker-qual:3.12.0@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.12.0/d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5/checker-qual-3.12.0.jar"
+      resolved="org.checkerframework:checker-qual:3.12.0"/>
+  <library
       name="com.google.errorprone:error_prone_annotations:2.14.0@jar"
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.14.0/9f01b3654d3c536859705f09f8d267ee977b4004/error_prone_annotations-2.14.0.jar"
       resolved="com.google.errorprone:error_prone_annotations:2.14.0"/>
+  <library
+      name="com.google.j2objc:j2objc-annotations:1.3@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar"
+      resolved="com.google.j2objc:j2objc-annotations:1.3"/>
+  <library
+      name="com.google.firebase:firebase-annotations:16.1.0@jar"
+      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-annotations/16.1.0/64bf465fd5aa693067bfd6bc28efb260e1ad29ea/firebase-annotations-16.1.0.jar"
+      resolved="com.google.firebase:firebase-annotations:16.1.0"/>
+  <library
+      name="com.google.firebase:protolite-well-known-types:18.0.0@aar"
+      jars="/home/vitor/.gradle/caches/transforms-3/8129b238d4d069661aca07bff47ad65b/transformed/jetified-protolite-well-known-types-18.0.0/jars/classes.jar"
+      resolved="com.google.firebase:protolite-well-known-types:18.0.0"
+      folder="/home/vitor/.gradle/caches/transforms-3/8129b238d4d069661aca07bff47ad65b/transformed/jetified-protolite-well-known-types-18.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
   <library
       name="com.google.protobuf:protobuf-javalite:3.21.1@jar"
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-javalite/3.21.1/2d9b63718aa78e133c315f38aed3d35ce7137fa5/protobuf-javalite-3.21.1.jar"
@@ -541,10 +760,6 @@
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/io.perfmark/perfmark-api/0.25.0/340a0c3d81cdcd9ecd7dc2ae00fb2633b469b157/perfmark-api-0.25.0.jar"
       resolved="io.perfmark:perfmark-api:0.25.0"/>
   <library
-      name="com.google.code.findbugs:jsr305:3.0.2@jar"
-      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar"
-      resolved="com.google.code.findbugs:jsr305:3.0.2"/>
-  <library
       name="com.google.code.gson:gson:2.9.0@jar"
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.9.0/8a1167e089096758b49f9b34066ef98b2f4b37aa/gson-2.9.0.jar"
       resolved="com.google.code.gson:gson:2.9.0"/>
@@ -556,22 +771,6 @@
       name="org.codehaus.mojo:animal-sniffer-annotations:1.21@jar"
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.21/419a9acd297cb6fe6f91b982d909f2c20e9fa5c0/animal-sniffer-annotations-1.21.jar"
       resolved="org.codehaus.mojo:animal-sniffer-annotations:1.21"/>
-  <library
-      name="com.google.guava:failureaccess:1.0.1@jar"
-      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar"
-      resolved="com.google.guava:failureaccess:1.0.1"/>
-  <library
-      name="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava@jar"
-      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
-      resolved="com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"/>
-  <library
-      name="org.checkerframework:checker-qual:3.12.0@jar"
-      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.12.0/d5692f0526415fcc6de94bb5bfbd3afd9dd3b3e5/checker-qual-3.12.0.jar"
-      resolved="org.checkerframework:checker-qual:3.12.0"/>
-  <library
-      name="com.google.j2objc:j2objc-annotations:1.3@jar"
-      jars="/home/vitor/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.3/ba035118bc8bac37d7eff77700720999acd9986d/j2objc-annotations-1.3.jar"
-      resolved="com.google.j2objc:j2objc-annotations:1.3"/>
   <library
       name="io.grpc:grpc-context:1.48.1@jar"
       jars="/home/vitor/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.48.1/f06a4ea08f6eb8d447fcc9ce02040061b3504f77/grpc-context-1.48.1.jar"
