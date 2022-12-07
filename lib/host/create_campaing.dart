@@ -109,6 +109,7 @@ Future<String> createNewCampaing(String campaingId) async {
 
   Map<String, dynamic> mapCampaing = <String, dynamic>{
     "campaign_code": campaingId,
+    "master_id": FirebaseAuth.instance.currentUser!.uid,
   };
 
   DocumentReference playerId = await campaigns.add(mapCampaing);
