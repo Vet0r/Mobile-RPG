@@ -1,4 +1,0 @@
-#Wed Nov 23 18:40:29 BRT 2022
-base.0=/home/vitor/Desktop/Mobile RPG/Mobile-RPG/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
