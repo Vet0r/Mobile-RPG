@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
+import 'package:mobile_rpg/styles/strings.dart';
 
 import '../standard_textfiel_decoration.dart';
 import 'host.dart';
@@ -25,18 +27,21 @@ class _CreatCampaingState extends State<CreatCampaing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: CustomTeheme.background,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: TextField(
-            cursorColor: Colors.black,
-            decoration: standardTextFieldDecoration("ID da Campanha"),
+            style: TextStyle(color: CustomTeheme.text),
+            cursorColor: CustomTeheme.text,
+            decoration:
+                standardTextFieldDecoration(StringsAppContent.iddacampanha),
             controller: idCampaingController,
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: CustomTeheme.buttons70,
         onPressed: () async {
           if (idCampaingController.text == "") {
             showDialog(
@@ -77,7 +82,8 @@ class _CreatCampaingState extends State<CreatCampaing> {
                 showDialog(
                   context: context,
                   builder: (context) {
-                    return const AlertDialog(
+                    return AlertDialog(
+                      backgroundColor: CustomTeheme.errorCard,
                       content: Text("Você não é o dono dessa campanha"),
                     );
                   },

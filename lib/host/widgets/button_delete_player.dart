@@ -1,11 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 buttonDelete(String? campaingId, BuildContext context, bool isDelete,
     DocumentSnapshot<Map<String, dynamic>> doc) {
   return TextButton(
     style: ButtonStyle(
-      backgroundColor: MaterialStateProperty.all(Colors.brown),
+      backgroundColor: MaterialStateProperty.all(
+          isDelete ? CustomTeheme.errorCard : CustomTeheme.buttons),
     ),
     onPressed: () {
       isDelete

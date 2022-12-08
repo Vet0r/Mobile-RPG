@@ -10,7 +10,7 @@ circularFieldsFortableMaster(
     String field,
     BuildContext context,
     DocumentSnapshot<Map<String, dynamic>>? documents,
-    {MaterialColor? fieldColor}) {
+    {Color? fieldColor}) {
   return Padding(
     padding: const EdgeInsets.only(left: 5.0, right: 5, bottom: 7, top: 7),
     child: Container(

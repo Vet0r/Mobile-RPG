@@ -15,17 +15,27 @@ class ButtonsChose extends StatelessWidget {
     return Scaffold(
       floatingActionButton: signOutButton(context),
       backgroundColor: CustomTeheme.background,
-      body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            initButton(context, true),
-            const SizedBox(
-              width: 10,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          SizedBox(
+            width: MediaQuery.of(context).size.height * 0.1,
+            height: MediaQuery.of(context).size.height * 0.1,
+            child: Image.asset("assets/pngfind.com-formatura-png-2075195.png"),
+          ),
+          Center(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                initButton(context, true),
+                const SizedBox(
+                  width: 10,
+                ),
+                initButton(context, false),
+              ],
             ),
-            initButton(context, false),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

@@ -6,8 +6,12 @@ import 'package:mobile_rpg/host/searching_for_players.dart';
 import 'package:mobile_rpg/host/sow_player_table.dart';
 import 'package:mobile_rpg/host/widgets/circular_field_for_table2_master.dart';
 import 'package:mobile_rpg/host/widgets/circular_field_for_table_master.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 import '../player/widgets/dice.dart';
+import '../standard_textfiel_decoration.dart';
+import '../styles/strings.dart';
+import 'base_stats.dart';
 import 'widgets/button_delete_player.dart';
 import 'widgets/fields_for_table_master.dart';
 import 'master_dice.dart';
@@ -25,8 +29,11 @@ class _HostState extends State<Host> {
   var controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    var notes = TextEditingController();
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: CustomTeheme.background,
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('campaigns')
@@ -48,8 +55,16 @@ class _HostState extends State<Host> {
                     return Padding(
                       padding: EdgeInsets.all(8),
                       child: Container(
-                        width: 100,
-                        color: Colors.brown,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            width: 5,
+                            color: CustomTeheme.buttons70,
+                            style: BorderStyle.solid,
+                          ),
+                          borderRadius: BorderRadius.circular(6),
+                          color: CustomTeheme.buttons,
+                        ),
+                        width: width * 0.9,
                         child: Column(
                           children: [
                             TextButton(
@@ -75,89 +90,33 @@ class _HostState extends State<Host> {
                                               .contains('name')
                                           ? documents.get('name')
                                           : 'NONAME',
-                                      style: const TextStyle(
-                                          fontSize: 30, color: Colors.black),
+                                      style: TextStyle(
+                                          fontSize: width * 0.09,
+                                          color: Colors.black),
                                     ),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceEvenly,
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Container(
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  const BorderRadius.all(
-                                                Radius.circular(12),
-                                              ),
-                                              border: Border.all(
-                                                width: 3,
-                                                color: Colors.black26,
-                                                style: BorderStyle.solid,
-                                              ),
-                                            ),
-                                            child: Text(
-                                              "HP:" +
-                                                  documents
-                                                      .get('hp')
-                                                      .toString(),
-                                              style: const TextStyle(
-                                                  fontSize: 20,
-                                                  color: Colors.black),
-                                            ),
-                                          ),
+                                        baseStats(
+                                          context,
+                                          width,
+                                          documents,
+                                          ("HP:${documents.get('hp')}"),
                                         ),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                const BorderRadius.all(
-                                              Radius.circular(12),
-                                            ),
-                                            border: Border.all(
-                                              width: 3,
-                                              color: Colors.black26,
-                                              style: BorderStyle.solid,
-                                            ),
-                                          ),
-                                          child: Text(
-                                            "CA:" +
-                                                documents.get('hp').toString(),
-                                            style: const TextStyle(
-                                                fontSize: 20,
-                                                color: Colors.black),
-                                          ),
+                                        baseStats(
+                                          context,
+                                          width,
+                                          documents,
+                                          "CA:${documents.get('hp')}",
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Container(
-                                            child: Text(
-                                              "RFE:" +
-                                                  documents
-                                                      .get('hp')
-                                                      .toString(),
-                                              style: const TextStyle(
-                                                  fontSize: 20,
-                                                  color: Colors.black),
-                                            ),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  const BorderRadius.all(
-                                                Radius.circular(12),
-                                              ),
-                                              border: Border.all(
-                                                width: 3,
-                                                color: Colors.black26,
-                                                style: BorderStyle.solid,
-                                              ),
-                                            ),
-                                          ),
+                                        baseStats(
+                                          context,
+                                          width,
+                                          documents,
+                                          "RFE:${documents.get('hp')}",
                                         ),
                                       ],
-                                    ),
-                                    Text(
-                                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo c",
-                                      style: const TextStyle(
-                                          fontSize: 15, color: Colors.black),
                                     ),
                                   ],
                                 ),

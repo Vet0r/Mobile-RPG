@@ -1,10 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 playerAppBar(String? campaignId, String? playerId, BuildContext context) {
   return AppBar(
-    backgroundColor: Colors.black45,
+    backgroundColor: CustomTeheme.buttons70,
     centerTitle: true,
     automaticallyImplyLeading: false,
     title: FutureBuilder(

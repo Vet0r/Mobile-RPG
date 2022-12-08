@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 standardTextFieldDecoration(String field) {
   return InputDecoration(
-      enabledBorder: const OutlineInputBorder(
-        borderSide: BorderSide(width: 3, color: Colors.brown),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 3, color: CustomTeheme.buttons),
       ),
-      fillColor: Colors.black,
+      fillColor: CustomTeheme.text,
       border: const OutlineInputBorder(),
-      focusedBorder: const OutlineInputBorder(
-        borderSide: BorderSide(width: 3, color: Colors.brown),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(width: 3, color: CustomTeheme.buttons70),
       ),
       labelText: field,
-      labelStyle: const TextStyle(color: Colors.brown));
+      labelStyle: TextStyle(color: CustomTeheme.text));
 }

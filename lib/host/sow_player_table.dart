@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_rpg/host/searching_for_players.dart';
 import 'package:mobile_rpg/host/widgets/circular_field_for_table2_master.dart';
 import 'package:mobile_rpg/host/widgets/circular_field_for_table_master.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 import 'widgets/button_delete_player.dart';
 import 'widgets/fields_for_table_master.dart';
 
@@ -22,8 +23,10 @@ class _PlayerTableState extends State<PlayerTable> {
   var controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: CustomTeheme.buttons70,
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('campaigns')
@@ -47,7 +50,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         children: [
                           Text(
                             snapshot.data!.get('name'),
-                            style: const TextStyle(fontSize: 30),
+                            style: TextStyle(fontSize: width * 0.1),
                           ),
                           IconButton(
                             onPressed: () {
@@ -55,11 +58,9 @@ class _PlayerTableState extends State<PlayerTable> {
                                 context: context,
                                 builder: (context) {
                                   return AlertDialog(
-                                    backgroundColor: Colors.grey,
+                                    backgroundColor: CustomTeheme.buttons70,
                                     content: SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.10,
+                                      height: height * 0.10,
                                       child: Column(
                                         children: [
                                           const Text(
@@ -112,7 +113,8 @@ class _PlayerTableState extends State<PlayerTable> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         circularFieldsFortableMaster(true, widget.campaingId!,
-                            'force', 'Força', context, snapshot.data!),
+                            'force', 'Força', context, snapshot.data!,
+                            fieldColor: CustomTeheme.buttons),
                         circularFieldsFortableMaster(true, widget.campaingId!,
                             'dex', 'Destreza', context, snapshot.data!),
                       ],

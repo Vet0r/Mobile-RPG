@@ -8,6 +8,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:mobile_rpg/player/widgets/dice.dart';
 import 'package:mobile_rpg/player/player_app_bar.dart';
 import 'package:mobile_rpg/player/retangular_fields_for_table.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 import 'widgets/circular2_fields_for_table.dart';
 import 'widgets/circular_fields_for_table.dart';
@@ -30,7 +31,7 @@ class _PlayerState extends State<Player> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: CustomTeheme.buttons,
       appBar: playerAppBar(widget.campaignId, widget.playerId, context),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
@@ -52,7 +53,7 @@ class _PlayerState extends State<Player> {
                         padding: const EdgeInsets.all(16.0),
                         child: Container(
                           width: MediaQuery.of(context).size.width,
-                          color: Colors.grey,
+                          color: CustomTeheme.buttons,
                           child: Column(
                             children: [
                               Row(

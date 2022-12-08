@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_rpg/player/create_new_player.dart';
 import 'package:mobile_rpg/player/player.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 import '../../standard_textfiel_decoration.dart';
 
@@ -22,7 +23,7 @@ class _ChoseYourNameState extends State<ChoseYourName> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: CustomTeheme.background,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -30,17 +31,19 @@ class _ChoseYourNameState extends State<ChoseYourName> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
+                style: TextStyle(color: CustomTeheme.text),
                 decoration: standardTextFieldDecoration("Nome"),
                 controller: nameController,
-                cursorColor: Colors.black,
+                cursorColor: Colors.white,
               ),
               const SizedBox(
                 height: 50,
               ),
               TextField(
+                style: TextStyle(color: CustomTeheme.text),
                 decoration: standardTextFieldDecoration("ID da Campanha"),
                 controller: campaingIdController,
-                cursorColor: Colors.black,
+                cursorColor: Colors.white,
               ),
               isLoading == true
                   ? const SizedBox(
@@ -56,6 +59,7 @@ class _ChoseYourNameState extends State<ChoseYourName> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: CustomTeheme.buttons70,
         onPressed: () async {
           if (nameController.text == "") {
             showDialog(
