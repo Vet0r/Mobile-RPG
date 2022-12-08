@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider;
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_rpg/buttons_chose.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 import 'init_button.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -56,10 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
-          return SignInScreen(
-            providers: [
-              EmailAuthProvider(),
-            ],
+          return MaterialApp(
+            theme: darkThemeDataCustom,
+            home: SignInScreen(
+              providers: [
+                EmailAuthProvider(),
+              ],
+            ),
           );
         }
         return ButtonsChose(
@@ -69,3 +73,44 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+final ThemeData darkThemeDataCustom = _buildDarkTheme();
+
+ThemeData _buildDarkTheme() {
+  final ThemeData base = ThemeData.dark();
+  return base.copyWith(
+    inputDecorationTheme: InputDecorationTheme(
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(8),
+      ),
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: ButtonStyle(
+        padding: MaterialStateProperty.all<EdgeInsets>(
+          const EdgeInsets.all(24),
+        ),
+        backgroundColor:
+            MaterialStateProperty.all<Color>(CustomTeheme.buttons70),
+        foregroundColor:
+            MaterialStateProperty.all<Color>(CustomTeheme.background),
+      ),
+    ),
+    colorScheme: darkColorScheme,
+    primaryColor: darkColorScheme.primary,
+    scaffoldBackgroundColor: darkColorScheme.background,
+  );
+}
+
+var darkColorScheme = ColorScheme(
+  brightness: Brightness.dark,
+  primary: Color(0xFFADC6FF),
+  onPrimary: Color(0xFF002E69),
+  secondary: Color(0xFFBBC6E4),
+  onSecondary: Color(0xFF253048),
+  error: Color(0xFFFFB4AB),
+  onError: Color(0xFF690005),
+  background: CustomTeheme.background,
+  onBackground: Color(0xFFE3E2E6),
+  surface: Color(0xFF1B1B1F),
+  onSurface: Color(0xFFE3E2E6),
+);
