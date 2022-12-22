@@ -116,6 +116,8 @@ Future<String> createNewCampaing(String campaingId) async {
   Map<String, dynamic> mapCampaing = <String, dynamic>{
     "campaign_code": campaingId,
     "master_id": FirebaseAuth.instance.currentUser!.uid,
+    "theme_song":
+        "https://cdn.pixabay.com/download/audio/2021/09/06/audio_cb1c3e82d9.mp3?filename=nightmare-on-imaginationland-8040.mp3",
   };
 
   DocumentReference playerId = await campaigns.add(mapCampaing);

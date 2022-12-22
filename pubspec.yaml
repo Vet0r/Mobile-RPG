@@ -22,12 +22,17 @@ dependencies:
   firebase_ui_auth: ^1.0.6
   google_sign_in: ^5.4.2
   firebase_auth: ^4.1.3
+  audio_manager: ^0.8.2
+  flutter_launcher_icons: ^0.11.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^2.0.0
+
+flutter_icons:
+  android: true
+  image_path: "assets/pngfind.com-formatura-png-2075195.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:ffi';
 
+import 'package:audio_manager/audio_manager.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -56,6 +57,46 @@ class _PlayerState extends State<Player> {
                           color: CustomTeheme.buttons,
                           child: Column(
                             children: [
+                              //AudioManager.instance.playOrPause();
+                              StreamBuilder(
+                                stream: FirebaseFirestore.instance
+                                    .collection('campaigns')
+                                    .doc(widget.campaignId)
+                                    .snapshots(),
+                                builder: (context, snapshot) {
+                                  if (!snapshot.hasData) {
+                                    return Center(
+                                      child: Container(),
+                                    );
+                                  } else if (snapshot
+                                          .data!["theme_is_playng"] ==
+                                      true) {
+                                    AudioManager.instance
+                                        .start(
+                                      snapshot.data!["theme_song"],
+                                      "Mobile RPG",
+                                      desc: "Mobile RPG Theme",
+                                      cover:
+                                          "assets/pngfind.com-formatura-png-2075195.png",
+                                    )
+                                        .then(
+                                      (err) {
+                                        print(
+                                            "ERRO AQUI $err -------------------");
+                                      },
+                                    );
+                                    AudioManager.instance.seekTo(
+                                      parseDuration(
+                                        snapshot.data!["theme_time"],
+                                      ),
+                                    );
+                                    return Container();
+                                  } else {
+                                    AudioManager.instance.toPause();
+                                  }
+                                  return Container();
+                                },
+                              ),
                               Row(
                                 children: [
                                   fieldsFortable(
@@ -106,8 +147,10 @@ class _PlayerState extends State<Player> {
                                 height: 0.1,
                                 thickness: 2,
                               ),
-                              fieldsFortable(
-                                  'dice', 'Dado', context, snapshot.data),
+                              snapshot.data!["loading_dice"] == true
+                                  ? CircularProgressIndicator()
+                                  : fieldsFortable(
+                                      'dice', 'Dado', context, snapshot.data),
                               diceForTable(widget.campaignId!, 'dice', 'Dado',
                                   context, snapshot.data),
                               const Divider(
@@ -158,4 +201,19 @@ class _PlayerState extends State<Player> {
       ),
     );
   }
+}
+
+Duration parseDuration(String s) {
+  int hours = 0;
+  int minutes = 0;
+  int micros;
+  List<String> parts = s.split(':');
+  if (parts.length > 2) {
+    hours = int.parse(parts[parts.length - 3]);
+  }
+  if (parts.length > 1) {
+    minutes = int.parse(parts[parts.length - 2]);
+  }
+  micros = (double.parse(parts[parts.length - 1]) * 1000000).round();
+  return Duration(hours: hours, minutes: minutes, microseconds: micros);
 }

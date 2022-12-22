@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../styles/custom_theme.dart';
 import 'edit_button.dart';
 
 fieldsFortableMaster(
@@ -9,7 +10,8 @@ fieldsFortableMaster(
     String fieldFB,
     String field,
     BuildContext context,
-    DocumentSnapshot<Map<String, dynamic>>? documents) {
+    DocumentSnapshot<Map<String, dynamic>>? documents,
+    {bool? canEdit}) {
   var controller = TextEditingController();
   return Padding(
     padding: const EdgeInsets.only(left: 15.0, right: 15),
@@ -20,14 +22,20 @@ fieldsFortableMaster(
           children: [
             Text(
               "$field: ${documents?.get(fieldFB)}",
-              style: const TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 20, color: CustomTeheme.text),
             ),
-            fieldFB == "roled_dice" || fieldFB == "dice"
+            fieldFB == "roled_dice"
                 ? Container()
                 : SizedBox(
                     height: MediaQuery.of(context).size.height * 0.04,
-                    child: editButton(
-                        isNumber, campaignId, fieldFB, documents, context)),
+                    child: canEdit == null
+                        ? editButton(
+                            isNumber, campaignId, fieldFB, documents, context)
+                        : canEdit == false
+                            ? Container()
+                            : editButton(isNumber, campaignId, fieldFB,
+                                documents, context),
+                  ),
           ],
         ),
         const Divider(

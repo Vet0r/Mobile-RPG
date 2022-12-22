@@ -1,20 +1,16 @@
+// ignore_for_file: unnecessary_null_comparison, prefer_if_null_operators
+
 import 'dart:math';
 
+import 'package:audio_manager/audio_manager.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_rpg/host/searching_for_players.dart';
 import 'package:mobile_rpg/host/sow_player_table.dart';
-import 'package:mobile_rpg/host/widgets/circular_field_for_table2_master.dart';
-import 'package:mobile_rpg/host/widgets/circular_field_for_table_master.dart';
 import 'package:mobile_rpg/styles/custom_theme.dart';
 
-import '../player/widgets/dice.dart';
 import '../standard_textfiel_decoration.dart';
-import '../styles/strings.dart';
 import 'base_stats.dart';
-import 'widgets/button_delete_player.dart';
-import 'widgets/fields_for_table_master.dart';
-import 'master_dice.dart';
 
 class Host extends StatefulWidget {
   String? campaingId;
@@ -31,8 +27,84 @@ class _HostState extends State<Host> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
-    var notes = TextEditingController();
     return Scaffold(
+      appBar: AppBar(
+        title: FutureBuilder(
+          future: FirebaseFirestore.instance
+              .collection('campaigns')
+              .doc(widget.campaingId)
+              .get(),
+          builder: (context, snapshot) {
+            return Center(
+              child: Text(
+                snapshot.data!["campaign_code"],
+              ),
+            );
+          },
+        ),
+        backgroundColor: CustomTeheme.buttons70,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return AlertDialog(
+                    backgroundColor: CustomTeheme.buttons70,
+                    content: SizedBox(
+                      height: height * 0.20,
+                      child: Column(
+                        children: [
+                          TextField(
+                            style: TextStyle(color: CustomTeheme.text),
+                            decoration: standardTextFieldDecoration("mp3 Link"),
+                            controller: controller,
+                            cursorColor: Colors.white,
+                          ),
+                          IconButton(
+                              onPressed: () {
+                                setState(() {
+                                  controller.text = controller.text;
+                                });
+                                AudioManager.instance
+                                    .start(
+                                  controller.text,
+                                  "Mobile RPG",
+                                  desc: "Mobile RPG Sound",
+                                  cover:
+                                      "assets/pngfind.com-formatura-png-2075195.png",
+                                )
+                                    .then(
+                                  (err) {
+                                    print("ERRO AQUI $err -------------------");
+                                  },
+                                );
+                                Map<String, dynamic> themeMap =
+                                    <String, dynamic>{
+                                  "theme_time":
+                                      AudioManager.instance.position.toString(),
+                                  "theme_song": controller.text,
+                                  "theme_is_playng":
+                                      !AudioManager.instance.isPlaying,
+                                };
+                                FirebaseFirestore.instance
+                                    .collection('campaigns')
+                                    .doc(widget.campaingId)
+                                    .update(themeMap);
+                                AudioManager.instance.playOrPause();
+                              },
+                              icon: const Icon(Icons.play_arrow))
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              );
+            },
+          ),
+        ],
+      ),
       backgroundColor: CustomTeheme.background,
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
@@ -42,10 +114,10 @@ class _HostState extends State<Host> {
             .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
-            return searchingWidget("Buscando jogadores");
+            return searchingWidget("Buscando jogadores", context);
           }
           if (snapshot.data?.size == 0) {
-            return searchingWidget("Aguardando jogadores");
+            return searchingWidget("Aguardando jogadores", context);
           } else {
             return Padding(
               padding: const EdgeInsets.all(8.0),
@@ -118,6 +190,24 @@ class _HostState extends State<Host> {
                                         ),
                                       ],
                                     ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        baseStats(
+                                          context,
+                                          width,
+                                          documents,
+                                          "Dado:${documents.get('dice')}",
+                                        ),
+                                        baseStats(
+                                          context,
+                                          width,
+                                          documents,
+                                          "Dado rolado:${documents.get('roled_dice')}",
+                                        ),
+                                      ],
+                                    )
                                   ],
                                 ),
                               ),

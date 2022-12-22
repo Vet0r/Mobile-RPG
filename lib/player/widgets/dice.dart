@@ -29,10 +29,19 @@ diceForTable(String campID, String fieldFB, String field, BuildContext context,
         onPressed: () {
           update.update(
             {
+              "loading_dice": true,
               "dice": Random().nextInt(int.parse(controller.text)),
               "roled_dice": int.parse(controller.text),
             },
           );
+          Future.delayed(Duration(seconds: 5)).then((_) {
+            update.update(
+              {
+                "loading_dice": false,
+              },
+            );
+            print("aeeee---");
+          });
         },
         icon: const Icon(Icons.square_rounded),
       ),

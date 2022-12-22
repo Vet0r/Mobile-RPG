@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../styles/custom_theme.dart';
+
 editButton(bool isNumber, String campaignId, String fieldFB,
     DocumentSnapshot<Map<String, dynamic>>? documents, BuildContext context) {
   var controller = TextEditingController();
@@ -43,7 +45,7 @@ editButton(bool isNumber, String campaignId, String fieldFB,
           },
         );
       },
-      icon: const Icon(Icons.mode),
+      icon: Icon(Icons.mode, color: CustomTeheme.text),
     ),
   );
 }

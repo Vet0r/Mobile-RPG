@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 baseStats(BuildContext context, double width,
     QueryDocumentSnapshot<Map<String, dynamic>> documents, String field) {
   return Padding(
-    padding: const EdgeInsets.all(8.0),
+    padding: const EdgeInsets.all(5.0),
     child: Container(
       decoration: BoxDecoration(
         borderRadius: const BorderRadius.all(

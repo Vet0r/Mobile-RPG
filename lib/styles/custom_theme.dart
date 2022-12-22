@@ -6,4 +6,5 @@ class CustomTeheme {
   static Color buttons70 = Color.fromARGB(255, 147, 190, 38);
   static Color errorCard = Color.fromRGBO(250, 84, 28, 1);
   static Color text = Color.fromRGBO(254, 254, 254, 1);
+  static Color backgroundTable = Color.fromARGB(255, 66, 88, 9);
 }

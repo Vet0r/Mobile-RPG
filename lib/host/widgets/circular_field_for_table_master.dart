@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import '../../styles/custom_theme.dart';
 import 'edit_button.dart';
 
 circularFieldsFortableMaster(
@@ -29,14 +30,14 @@ circularFieldsFortableMaster(
         children: [
           Text(
             field,
-            style: const TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 20, color: CustomTeheme.text),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "${documents?.get(fieldFB)}",
-                style: const TextStyle(fontSize: 25),
+                style: TextStyle(fontSize: 25, color: CustomTeheme.text),
               ),
               editButton(isNumber, campaignId, fieldFB, documents, context),
             ],
@@ -46,7 +47,7 @@ circularFieldsFortableMaster(
             children: [
               Text(
                 "${documents?.get("${fieldFB}Md")}",
-                style: const TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: CustomTeheme.text),
               ),
               editButton(
                   isNumber, campaignId, "${fieldFB}Md", documents, context),

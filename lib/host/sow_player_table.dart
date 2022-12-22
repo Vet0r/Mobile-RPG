@@ -26,7 +26,7 @@ class _PlayerTableState extends State<PlayerTable> {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: CustomTeheme.buttons70,
+      backgroundColor: CustomTeheme.backgroundTable,
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('campaigns')
@@ -36,11 +36,11 @@ class _PlayerTableState extends State<PlayerTable> {
             .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
-            return searchingWidget("Buscando jogador");
+            return searchingWidget("Buscando jogador", context);
           } else {
             return ListView(children: [
               Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Column(
                   children: [
                     Padding(
@@ -50,7 +50,9 @@ class _PlayerTableState extends State<PlayerTable> {
                         children: [
                           Text(
                             snapshot.data!.get('name'),
-                            style: TextStyle(fontSize: width * 0.1),
+                            style: TextStyle(
+                                fontSize: width * 0.1,
+                                color: CustomTeheme.text),
                           ),
                           IconButton(
                             onPressed: () {
@@ -153,8 +155,15 @@ class _PlayerTableState extends State<PlayerTable> {
                     ),
                     Row(
                       children: [
-                        fieldsFortableMaster(true, widget.campaingId!, 'dice',
-                            'Dado', context, snapshot.data!),
+                        fieldsFortableMaster(
+                          true,
+                          widget.campaingId!,
+                          'dice',
+                          'Dado',
+                          context,
+                          snapshot.data!,
+                          canEdit: snapshot.data!["loading_dice"],
+                        ),
                         fieldsFortableMaster(
                             true,
                             widget.campaingId!,
@@ -226,7 +235,8 @@ class _PlayerTableState extends State<PlayerTable> {
                           padding: const EdgeInsets.only(right: 8.0),
                           child: Text(
                             "Dado: ${value.toString()}",
-                            style: const TextStyle(fontSize: 20),
+                            style: TextStyle(
+                                fontSize: 20, color: CustomTeheme.text),
                           ),
                         ),
                         Padding(
@@ -239,7 +249,7 @@ class _PlayerTableState extends State<PlayerTable> {
                               ),
                               border: Border.all(
                                 width: 3,
-                                color: Colors.black26,
+                                color: CustomTeheme.text,
                                 style: BorderStyle.solid,
                               ),
                             ),
@@ -258,7 +268,8 @@ class _PlayerTableState extends State<PlayerTable> {
                               value;
                             });
                           },
-                          icon: const Icon(Icons.square_rounded),
+                          icon: Icon(Icons.square_rounded,
+                              color: CustomTeheme.text),
                         ),
                       ],
                     ),
