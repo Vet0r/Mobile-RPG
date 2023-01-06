@@ -1,22 +1,41 @@
-import 'dart:math';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:webview_flutter_plus/webview_flutter_plus.dart';
 
-masterDiceForTable(BuildContext context) {
-  int value = 0;
-  var controller = TextEditingController();
-  return TextField(
-    controller: controller,
-    decoration: InputDecoration(
-      suffixIcon: IconButton(
-        onPressed: () {
-          value = Random().nextInt(
-            int.parse(controller.text),
-          );
+import '../styles/custom_theme.dart';
+
+class MasterDice extends StatefulWidget {
+  const MasterDice({super.key});
+
+  @override
+  State<MasterDice> createState() => _MasterDiceState();
+}
+
+class _MasterDiceState extends State<MasterDice> {
+  late WebViewPlusController controller;
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: CustomTeheme.backgroundTable,
+      body: WebViewPlus(
+        javascriptMode: JavascriptMode.unrestricted,
+        initialUrl: "assets/dado/dice/index.html",
+        onWebViewCreated: (controller) {
+          this.controller = controller;
         },
-        icon: Text(value.toString()),
+        javascriptChannels: {
+          JavascriptChannel(
+            name: 'DiceResultChannel',
+            onMessageReceived: (message) async {
+              List<String> numberList = message.message.split(',');
+              int sum = numberList.map(int.parse).reduce((a, b) => a + b);
+            },
+          ),
+          JavascriptChannel(
+            name: 'DiceNumberChannel',
+            onMessageReceived: (message) async {},
+          )
+        },
       ),
-    ),
-  );
+    );
+  }
 }

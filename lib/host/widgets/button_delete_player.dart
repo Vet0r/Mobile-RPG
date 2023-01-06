@@ -19,6 +19,7 @@ buttonDelete(String? campaingId, BuildContext context, bool isDelete,
                   .doc(doc.id)
                   .delete(),
               Navigator.pop(context),
+              Navigator.pop(context),
             }
           : Navigator.pop(context);
     },

@@ -114,6 +114,7 @@ Future<String> createNewCampaing(String campaingId) async {
       FirebaseFirestore.instance.collection('/campaigns');
 
   Map<String, dynamic> mapCampaing = <String, dynamic>{
+    "theme_is_playng": false,
     "campaign_code": campaingId,
     "master_id": FirebaseAuth.instance.currentUser!.uid,
     "theme_song":

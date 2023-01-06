@@ -144,7 +144,7 @@ class _HostState extends State<Host> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => PlayerTable(
+                                    builder: (context) => ShowPlayerTable(
                                       campaingId: widget.campaingId,
                                       playerId: documents.id,
                                     ),
@@ -180,34 +180,34 @@ class _HostState extends State<Host> {
                                           context,
                                           width,
                                           documents,
-                                          "CA:${documents.get('hp')}",
+                                          "INI:${documents.get('iniciative')}",
                                         ),
                                         baseStats(
                                           context,
                                           width,
                                           documents,
-                                          "RFE:${documents.get('hp')}",
+                                          "ESQ:${documents.get('hp')}",
                                         ),
                                       ],
                                     ),
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        baseStats(
-                                          context,
-                                          width,
-                                          documents,
-                                          "Dado:${documents.get('dice')}",
-                                        ),
-                                        baseStats(
-                                          context,
-                                          width,
-                                          documents,
-                                          "Dado rolado:${documents.get('roled_dice')}",
-                                        ),
-                                      ],
-                                    )
+                                    baseStats(
+                                      context,
+                                      width,
+                                      documents,
+                                      "${documents.get('dices_result')}",
+                                    ),
+                                    baseStats(
+                                      context,
+                                      width,
+                                      documents,
+                                      "${documents.get('roled_dice')}",
+                                    ),
+                                    baseStats(
+                                      context,
+                                      width,
+                                      documents,
+                                      "Dado:${documents.get('dice')}",
+                                    ),
                                   ],
                                 ),
                               ),

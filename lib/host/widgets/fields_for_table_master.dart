@@ -10,8 +10,7 @@ fieldsFortableMaster(
     String fieldFB,
     String field,
     BuildContext context,
-    DocumentSnapshot<Map<String, dynamic>>? documents,
-    {bool? canEdit}) {
+    DocumentSnapshot<Map<String, dynamic>>? documents) {
   var controller = TextEditingController();
   return Padding(
     padding: const EdgeInsets.only(left: 15.0, right: 15),
@@ -28,13 +27,8 @@ fieldsFortableMaster(
                 ? Container()
                 : SizedBox(
                     height: MediaQuery.of(context).size.height * 0.04,
-                    child: canEdit == null
-                        ? editButton(
-                            isNumber, campaignId, fieldFB, documents, context)
-                        : canEdit == false
-                            ? Container()
-                            : editButton(isNumber, campaignId, fieldFB,
-                                documents, context),
+                    child: editButton(
+                        isNumber, campaignId, fieldFB, documents, context),
                   ),
           ],
         ),
