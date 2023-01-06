@@ -755,7 +755,7 @@
             dice.position.set(pos * step, 0, step * 0.5);
             dice.castShadow = true;
             dice.userData = that.known_types[i];
-            this.dices.push(dice); this.scene.add(dice);
+            // this.dices.push(dice); this.scene.add(dice);
         }
 
         this.running = (new Date()).getTime();
@@ -787,12 +787,12 @@
 
     this.dice_box.prototype.bind_mouse = function(container, notation_getter, before_roll, after_roll) {
         var box = this;
-        $t.bind(container, ['mousedown', 'touchstart'], function(ev) {
+        $t.bind(container, ['touchstart'], function(ev) {
             ev.preventDefault();
             box.mouse_time = (new Date()).getTime();
             box.mouse_start = $t.get_mouse_coords(ev);
         });
-        $t.bind(container, ['mouseup', 'touchend'], function(ev) {
+        $t.bind(container, ['touchend'], function(ev) {
             if (box.rolling) return;
             if (box.mouse_start == undefined) return;
             ev.stopPropagation();
@@ -812,7 +812,7 @@
 
     this.dice_box.prototype.bind_throw = function(button, notation_getter, before_roll, after_roll) {
         var box = this;
-        $t.bind(button, ['mouseup', 'touchend'], function(ev) {
+        $t.bind(button, ['touchend'], function(ev) {
             ev.stopPropagation();
             box.start_throw(notation_getter, before_roll, after_roll);
         });

@@ -16,12 +16,12 @@ function dice_initialize(container) {
 
     function on_set_change(ev) { set.style.width = set.value.length + 3 + 'ex'; }
     $t.bind(set, 'keyup', on_set_change);
-    $t.bind(set, 'mousedown', function(ev) { ev.stopPropagation(); });
-    $t.bind(set, 'mouseup', function(ev) { ev.stopPropagation(); });
+    $t.bind(set, 'touchstart', function(ev) { ev.stopPropagation(); });
+    $t.bind(set, 'touchend', function(ev) { ev.stopPropagation(); });
     $t.bind(set, 'focus', function(ev) { $t.set(container, { class: '' }); });
     $t.bind(set, 'blur', function(ev) { $t.set(container, { class: 'noselect' }); });
 
-    $t.bind($t.id('clear'), ['mouseup', 'touchend'], function(ev) {
+    $t.bind($t.id('clear'), ['touchend'], function(ev) {
         ev.stopPropagation();
         set.value = '0';
         on_set_change();
@@ -86,7 +86,7 @@ function dice_initialize(container) {
     box.bind_mouse(container, notation_getter, before_roll, after_roll);
     box.bind_throw($t.id('throw'), notation_getter, before_roll, after_roll);
 
-    $t.bind(container, ['mouseup', 'touchend'], function(ev) {
+    $t.bind(container, ['touchend'], function(ev) {
         ev.stopPropagation();
         if (selector_div.style.display == 'none') {
             if (!box.rolling) show_selector();
