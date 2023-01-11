@@ -90,9 +90,9 @@ ThemeData _buildDarkTheme() {
           const EdgeInsets.all(24),
         ),
         backgroundColor:
-            MaterialStateProperty.all<Color>(CustomTeheme.buttons70),
+            MaterialStateProperty.all<Color>(CustomTheme.buttonGreen),
         foregroundColor:
-            MaterialStateProperty.all<Color>(CustomTeheme.background),
+            MaterialStateProperty.all<Color>(CustomTheme.background),
       ),
     ),
     colorScheme: darkColorScheme,
@@ -109,7 +109,7 @@ var darkColorScheme = ColorScheme(
   onSecondary: Color(0xFF253048),
   error: Color(0xFFFFB4AB),
   onError: Color(0xFF690005),
-  background: CustomTeheme.background,
+  background: CustomTheme.background,
   onBackground: Color(0xFFE3E2E6),
   surface: Color(0xFF1B1B1F),
   onSurface: Color(0xFFE3E2E6),

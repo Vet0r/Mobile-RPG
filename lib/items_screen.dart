@@ -5,7 +5,8 @@ import 'package:mobile_rpg/styles/custom_theme.dart';
 class ItemsScreen extends StatefulWidget {
   String? campaingId;
   String? playerId;
-  ItemsScreen({this.campaingId, super.key, this.playerId});
+  int? appColor;
+  ItemsScreen({this.appColor, this.campaingId, super.key, this.playerId});
   @override
   State<ItemsScreen> createState() => _ItemsScreenState();
 }
@@ -50,7 +51,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTeheme.buttons,
+      backgroundColor: CustomTheme.buttons[widget.appColor!],
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(

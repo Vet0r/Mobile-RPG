@@ -12,8 +12,8 @@ import '../standard_textfiel_decoration.dart';
 import 'host.dart';
 
 class CreatCampaing extends StatefulWidget {
-  const CreatCampaing({super.key});
-
+  CreatCampaing({super.key, this.appColor});
+  int? appColor;
   @override
   State<CreatCampaing> createState() => _CreatCampaingState();
 }
@@ -27,21 +27,23 @@ class _CreatCampaingState extends State<CreatCampaing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTeheme.background,
+      backgroundColor: CustomTheme.background,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: TextField(
-            style: TextStyle(color: CustomTeheme.text),
-            cursorColor: CustomTeheme.text,
-            decoration:
-                standardTextFieldDecoration(StringsAppContent.iddacampanha),
+            style: TextStyle(
+              color: CustomTheme.white[widget.appColor!],
+            ),
+            cursorColor: CustomTheme.white[widget.appColor!],
+            decoration: standardTextFieldDecoration(
+                StringsAppContent.iddacampanha, widget.appColor!),
             controller: idCampaingController,
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: CustomTeheme.buttons70,
+        backgroundColor: CustomTheme.buttons70[widget.appColor!],
         onPressed: () async {
           if (idCampaingController.text == "") {
             showDialog(
@@ -74,6 +76,7 @@ class _CreatCampaingState extends State<CreatCampaing> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Host(
+                      appColor: widget.appColor!,
                       campaingId: fbIdcamp,
                     ),
                   ),
@@ -83,7 +86,7 @@ class _CreatCampaingState extends State<CreatCampaing> {
                   context: context,
                   builder: (context) {
                     return AlertDialog(
-                      backgroundColor: CustomTeheme.errorCard,
+                      backgroundColor: CustomTheme.errorCard[widget.appColor!],
                       content: Text("Você não é o dono dessa campanha"),
                     );
                   },
@@ -95,6 +98,7 @@ class _CreatCampaingState extends State<CreatCampaing> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => Host(
+                    appColor: widget.appColor,
                     campaingId: fbIdcamp,
                   ),
                 ),
@@ -103,7 +107,10 @@ class _CreatCampaingState extends State<CreatCampaing> {
           }
         },
         tooltip: 'Próximo',
-        child: const Icon(Icons.arrow_forward),
+        child: Icon(
+          Icons.arrow_forward,
+          color: CustomTheme.text[widget.appColor!],
+        ),
       ),
     );
   }

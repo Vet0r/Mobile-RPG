@@ -8,9 +8,11 @@ import '../styles/custom_theme.dart';
 class PlayerSkills extends StatefulWidget {
   String? playerId;
   String? campaignId;
+  int? appColor;
 
   PlayerSkills({
     Key? key,
+    this.appColor,
     this.playerId,
     this.campaignId,
   }) : super(key: key);
@@ -23,7 +25,7 @@ class _PlayerSkillsState extends State<PlayerSkills> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTeheme.buttons,
+      backgroundColor: CustomTheme.buttons[widget.appColor!],
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('campaigns')

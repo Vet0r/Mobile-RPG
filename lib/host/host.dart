@@ -5,6 +5,7 @@ import 'dart:math';
 import 'package:audio_manager/audio_manager.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:mobile_rpg/host/searching_for_players.dart';
 import 'package:mobile_rpg/host/sow_player_table.dart';
 import 'package:mobile_rpg/styles/custom_theme.dart';
@@ -14,7 +15,8 @@ import 'base_stats.dart';
 
 class Host extends StatefulWidget {
   String? campaingId;
-  Host({this.campaingId, super.key});
+  int? appColor;
+  Host({this.campaingId, this.appColor, super.key});
 
   @override
   State<Host> createState() => _HostState();
@@ -42,7 +44,7 @@ class _HostState extends State<Host> {
             );
           },
         ),
-        backgroundColor: CustomTeheme.buttons70,
+        backgroundColor: CustomTheme.buttons70[widget.appColor!],
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.menu),
@@ -51,16 +53,18 @@ class _HostState extends State<Host> {
                 context: context,
                 builder: (context) {
                   return AlertDialog(
-                    backgroundColor: CustomTeheme.buttons70,
+                    backgroundColor: CustomTheme.buttons70[widget.appColor!],
                     content: SizedBox(
                       height: height * 0.20,
                       child: Column(
                         children: [
                           TextField(
-                            style: TextStyle(color: CustomTeheme.text),
-                            decoration: standardTextFieldDecoration("mp3 Link"),
+                            style: TextStyle(
+                                color: CustomTheme.text[widget.appColor!]),
+                            decoration: standardTextFieldDecoration(
+                                "mp3 Link", widget.appColor!),
                             controller: controller,
-                            cursorColor: Colors.white,
+                            cursorColor: CustomTheme.white[widget.appColor!],
                           ),
                           IconButton(
                               onPressed: () {
@@ -105,19 +109,21 @@ class _HostState extends State<Host> {
           ),
         ],
       ),
-      backgroundColor: CustomTeheme.background,
+      backgroundColor: CustomTheme.background,
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('campaigns')
             .doc(widget.campaingId)
             .collection("players")
+            .orderBy("ordem")
             .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
-            return searchingWidget("Buscando jogadores", context);
+            return searchingWidget("Buscando rede", context, widget.appColor!);
           }
           if (snapshot.data?.size == 0) {
-            return searchingWidget("Aguardando jogadores", context);
+            return searchingWidget(
+                "Aguardando jogadores", context, widget.appColor!);
           } else {
             return Padding(
               padding: const EdgeInsets.all(8.0),
@@ -130,11 +136,13 @@ class _HostState extends State<Host> {
                         decoration: BoxDecoration(
                           border: Border.all(
                             width: 5,
-                            color: CustomTeheme.buttons70,
+                            color: documents["is_npc"]
+                                ? CustomTheme.errorCard[widget.appColor!]
+                                : CustomTheme.buttons70[widget.appColor!],
                             style: BorderStyle.solid,
                           ),
                           borderRadius: BorderRadius.circular(6),
-                          color: CustomTeheme.buttons,
+                          color: CustomTheme.buttons[widget.appColor!],
                         ),
                         width: width * 0.9,
                         child: Column(
@@ -145,6 +153,7 @@ class _HostState extends State<Host> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) => ShowPlayerTable(
+                                      appColor: widget.appColor,
                                       campaingId: widget.campaingId,
                                       playerId: documents.id,
                                     ),
@@ -164,7 +173,7 @@ class _HostState extends State<Host> {
                                           : 'NONAME',
                                       style: TextStyle(
                                           fontSize: width * 0.09,
-                                          color: Colors.black),
+                                          color: CustomTheme.black),
                                     ),
                                     Row(
                                       mainAxisAlignment:
@@ -207,6 +216,45 @@ class _HostState extends State<Host> {
                                       width,
                                       documents,
                                       "Dado:${documents.get('dice')}",
+                                    ),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Ordem:",
+                                          style: TextStyle(
+                                              color: CustomTheme.black),
+                                        ),
+                                        Align(
+                                          alignment: Alignment.topRight,
+                                          child: SizedBox(
+                                            width: 50,
+                                            child: TextField(
+                                              onSubmitted: (value) {
+                                                FirebaseFirestore.instance
+                                                    .collection('campaigns')
+                                                    .doc(widget.campaingId)
+                                                    .collection("players")
+                                                    .doc(documents.id)
+                                                    .update({
+                                                  "ordem": int.parse(value),
+                                                });
+                                              },
+                                              inputFormatters: [
+                                                FilteringTextInputFormatter
+                                                    .digitsOnly
+                                              ],
+                                              keyboardType:
+                                                  TextInputType.number,
+                                              decoration: InputDecoration(
+                                                hintText:
+                                                    "  ${documents.get('ordem')}",
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),

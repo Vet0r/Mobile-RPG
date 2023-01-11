@@ -14,9 +14,11 @@ import 'fields_for_table.dart';
 class PlayerScreen extends StatefulWidget {
   String? playerId;
   String? campaignId;
+  int? appColor;
 
   PlayerScreen({
     Key? key,
+    this.appColor,
     this.playerId,
     this.campaignId,
   }) : super(key: key);
@@ -47,7 +49,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                       padding: const EdgeInsets.all(16.0),
                       child: Container(
                         width: MediaQuery.of(context).size.width,
-                        color: CustomTeheme.buttons,
+                        color: CustomTheme.buttons[widget.appColor!],
                         child: Column(
                           children: [
                             //AudioManager.instance.playOrPause();
@@ -200,6 +202,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               '',
                               context,
                               snapshot.data!,
+                              widget.appColor!,
                             ),
                             fieldsFortableMaster(
                               false,
@@ -208,6 +211,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               '',
                               context,
                               snapshot.data!,
+                              widget.appColor!,
                             ),
                             fieldsFortableMaster(
                               false,
@@ -216,6 +220,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               '',
                               context,
                               snapshot.data!,
+                              widget.appColor!,
                             ),
                             fieldsFortableMaster(
                               false,
@@ -224,6 +229,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               '',
                               context,
                               snapshot.data!,
+                              widget.appColor!,
                             ),
                             fieldsFortableMaster(
                               false,
@@ -232,6 +238,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                               '',
                               context,
                               snapshot.data!,
+                              widget.appColor!,
                             ),
                           ],
                         ),

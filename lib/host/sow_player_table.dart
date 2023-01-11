@@ -18,7 +18,8 @@ import 'widgets/fields_for_table_master.dart';
 class ShowPlayerTable extends StatefulWidget {
   String? campaingId;
   String? playerId;
-  ShowPlayerTable({this.campaingId, super.key, this.playerId});
+  int? appColor;
+  ShowPlayerTable({this.appColor, this.campaingId, super.key, this.playerId});
 
   @override
   State<ShowPlayerTable> createState() => _ShowPlayerTableState();
@@ -32,23 +33,26 @@ class _ShowPlayerTableState extends State<ShowPlayerTable> {
     double height = MediaQuery.of(context).size.height;
     final pages = [
       PlayerTable(
+        appColor: widget.appColor,
         campaingId: widget.campaingId,
         playerId: widget.playerId,
       ),
       PlayerSkills(
+        appColor: widget.appColor,
         playerId: widget.playerId,
         campaignId: widget.campaingId,
       ),
       ItemsScreen(
+        appColor: widget.appColor,
         playerId: widget.playerId,
         campaingId: widget.campaingId,
       ),
-      const MasterDice(),
+      MasterDice(appColor: widget.appColor),
     ];
     return Scaffold(
         body: pages[_currentIndex],
         bottomNavigationBar: NavigationBar(
-          backgroundColor: CustomTeheme.backgroundTable,
+          backgroundColor: CustomTheme.backgroundTable[widget.appColor!],
           destinations: const [
             NavigationDestination(
               icon: Icon(Icons.drive_file_rename_outline),
@@ -74,6 +78,6 @@ class _ShowPlayerTableState extends State<ShowPlayerTable> {
           },
           selectedIndex: _currentIndex,
         ),
-        backgroundColor: CustomTeheme.buttons70);
+        backgroundColor: CustomTheme.buttons70[widget.appColor!]);
   }
 }

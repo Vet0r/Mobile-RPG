@@ -10,7 +10,8 @@ fieldsFortableMaster(
     String fieldFB,
     String field,
     BuildContext context,
-    DocumentSnapshot<Map<String, dynamic>>? documents) {
+    DocumentSnapshot<Map<String, dynamic>>? documents,
+    int appColor) {
   var controller = TextEditingController();
   return Padding(
     padding: const EdgeInsets.only(left: 15.0, right: 15),
@@ -21,14 +22,14 @@ fieldsFortableMaster(
           children: [
             Text(
               "$field: ${documents?.get(fieldFB)}",
-              style: TextStyle(fontSize: 20, color: CustomTeheme.text),
+              style: TextStyle(fontSize: 20, color: CustomTheme.text[appColor]),
             ),
             fieldFB == "roled_dice"
                 ? Container()
                 : SizedBox(
                     height: MediaQuery.of(context).size.height * 0.04,
-                    child: editButton(
-                        isNumber, campaignId, fieldFB, documents, context),
+                    child: editButton(isNumber, campaignId, fieldFB, documents,
+                        context, appColor),
                   ),
           ],
         ),

@@ -11,6 +11,7 @@ circularFieldsFortable2Master(
     String field,
     BuildContext context,
     DocumentSnapshot<Map<String, dynamic>>? documents,
+    int appColor,
     {MaterialColor? fieldColor}) {
   return Padding(
     padding: const EdgeInsets.only(left: 5.0, right: 5, bottom: 7, top: 7),
@@ -22,7 +23,7 @@ circularFieldsFortable2Master(
         ),
         border: Border.all(
           width: 3,
-          color: Colors.black26,
+          color: CustomTheme.black.withAlpha(66),
           style: BorderStyle.solid,
         ),
       ),
@@ -30,16 +31,18 @@ circularFieldsFortable2Master(
         children: [
           Text(
             field,
-            style: TextStyle(fontSize: 14, color: CustomTeheme.text),
+            style: TextStyle(fontSize: 14, color: CustomTheme.text[appColor]),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "${documents?.get(fieldFB)}",
-                style: TextStyle(fontSize: 25, color: CustomTeheme.text),
+                style:
+                    TextStyle(fontSize: 25, color: CustomTheme.text[appColor]),
               ),
-              editButton(isNumber, campaignId, fieldFB, documents, context),
+              editButton(
+                  isNumber, campaignId, fieldFB, documents, context, appColor),
             ],
           ),
         ],

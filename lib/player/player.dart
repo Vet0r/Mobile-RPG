@@ -12,11 +12,13 @@ import '../items_screen.dart';
 class Player extends StatefulWidget {
   String? playerId;
   String? campaignId;
+  int? appColor;
 
   Player({
     Key? key,
     this.playerId,
     this.campaignId,
+    this.appColor,
   }) : super(key: key);
   @override
   State<Player> createState() => _PlayerState();
@@ -28,27 +30,32 @@ class _PlayerState extends State<Player> {
   Widget build(BuildContext context) {
     final pages = [
       PlayerScreen(
+        appColor: widget.appColor,
         campaignId: widget.campaignId,
         playerId: widget.playerId,
       ),
       PlayerSkills(
+        appColor: widget.appColor,
         playerId: widget.playerId,
         campaignId: widget.campaignId,
       ),
       ItemsScreen(
+        appColor: widget.appColor,
         playerId: widget.playerId,
         campaingId: widget.campaignId,
       ),
       PlayerDice(
+        appColor: widget.appColor,
         playerId: widget.playerId,
         campaignId: widget.campaignId,
       ),
     ];
     return Scaffold(
-      backgroundColor: CustomTeheme.buttons,
-      appBar: playerAppBar(widget.campaignId, widget.playerId, context),
+      backgroundColor: CustomTheme.buttons[widget.appColor!],
+      appBar: playerAppBar(
+          widget.campaignId, widget.playerId, context, widget.appColor!),
       bottomNavigationBar: NavigationBar(
-        backgroundColor: CustomTeheme.buttons70,
+        backgroundColor: CustomTheme.buttons70[widget.appColor!],
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.drive_file_rename_outline),

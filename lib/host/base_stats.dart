@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 baseStats(BuildContext context, double width,
     QueryDocumentSnapshot<Map<String, dynamic>> documents, String field) {
@@ -12,7 +13,7 @@ baseStats(BuildContext context, double width,
         ),
         border: Border.all(
           width: 3,
-          color: Colors.black26,
+          color: CustomTheme.black.withAlpha(66),
           style: BorderStyle.solid,
         ),
       ),
@@ -20,7 +21,7 @@ baseStats(BuildContext context, double width,
         padding: EdgeInsets.all(width * 0.01),
         child: Text(
           field,
-          style: TextStyle(fontSize: width * 0.06, color: Colors.black),
+          style: TextStyle(fontSize: width * 0.06, color: CustomTheme.black),
         ),
       ),
     ),

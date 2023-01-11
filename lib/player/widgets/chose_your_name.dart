@@ -10,8 +10,8 @@ import 'package:mobile_rpg/styles/custom_theme.dart';
 import '../../standard_textfiel_decoration.dart';
 
 class ChoseYourName extends StatefulWidget {
-  const ChoseYourName({super.key});
-
+  ChoseYourName({super.key, this.appColor});
+  int? appColor;
   @override
   State<ChoseYourName> createState() => _ChoseYourNameState();
 }
@@ -23,7 +23,7 @@ class _ChoseYourNameState extends State<ChoseYourName> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTeheme.background,
+      backgroundColor: CustomTheme.background,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -31,26 +31,28 @@ class _ChoseYourNameState extends State<ChoseYourName> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
-                style: TextStyle(color: CustomTeheme.text),
-                decoration: standardTextFieldDecoration("Nome"),
+                style: TextStyle(color: CustomTheme.white[widget.appColor!]),
+                decoration:
+                    standardTextFieldDecoration("Nome", widget.appColor!),
                 controller: nameController,
-                cursorColor: Colors.white,
+                cursorColor: CustomTheme.white[widget.appColor!],
               ),
               const SizedBox(
                 height: 50,
               ),
               TextField(
-                style: TextStyle(color: CustomTeheme.text),
-                decoration: standardTextFieldDecoration("ID da Campanha"),
+                style: TextStyle(color: CustomTheme.white[widget.appColor!]),
+                decoration: standardTextFieldDecoration(
+                    "ID da Campanha", widget.appColor!),
                 controller: campaingIdController,
-                cursorColor: Colors.white,
+                cursorColor: CustomTheme.white[widget.appColor!],
               ),
               isLoading == true
-                  ? const SizedBox(
+                  ? SizedBox(
                       height: 20,
                       width: 20,
                       child: CircularProgressIndicator(
-                        color: Colors.black,
+                        color: CustomTheme.black,
                       ),
                     )
                   : Container(),
@@ -59,7 +61,7 @@ class _ChoseYourNameState extends State<ChoseYourName> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: CustomTeheme.buttons70,
+        backgroundColor: CustomTheme.buttons70[widget.appColor!],
         onPressed: () async {
           if (nameController.text == "") {
             showDialog(
@@ -137,6 +139,7 @@ class _ChoseYourNameState extends State<ChoseYourName> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Player(
+                      appColor: widget.appColor,
                       playerId: playerId,
                       campaignId: campingDocId,
                     ),
@@ -158,6 +161,7 @@ class _ChoseYourNameState extends State<ChoseYourName> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Player(
+                      appColor: widget.appColor,
                       playerId: playerId,
                       campaignId: campingDocId,
                     ),
@@ -177,7 +181,8 @@ class _ChoseYourNameState extends State<ChoseYourName> {
           }
         },
         tooltip: 'Próximo',
-        child: const Icon(Icons.arrow_forward),
+        child: Icon(Icons.arrow_forward,
+            color: CustomTheme.text[widget.appColor!]),
       ),
     );
   }

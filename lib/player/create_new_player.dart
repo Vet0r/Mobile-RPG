@@ -112,6 +112,8 @@ Future<String> createNewPlayer(String name, String campaingDocId) async {
     "weapon0": weapons[0],
     "weapon1": weapons[1],
     "weapon2": weapons[2],
+    "ordem": 0,
+    "is_npc": false,
   };
 
   DocumentReference playerId = await players.add(mapPlayer);

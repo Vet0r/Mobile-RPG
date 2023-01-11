@@ -7,9 +7,11 @@ import '../styles/custom_theme.dart';
 class PlayerDice extends StatefulWidget {
   String? playerId;
   String? campaignId;
+  int? appColor;
 
   PlayerDice({
     Key? key,
+    this.appColor,
     this.playerId,
     this.campaignId,
   }) : super(key: key);
@@ -22,7 +24,7 @@ class _PlayerDiceState extends State<PlayerDice> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTeheme.backgroundTable,
+      backgroundColor: CustomTheme.backgroundTable[widget.appColor!],
       body: WebViewPlus(
         javascriptMode: JavascriptMode.unrestricted,
         initialUrl: "assets/dado/dice/index.html",

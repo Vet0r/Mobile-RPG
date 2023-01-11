@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 circular2FieldsFortable(String fieldFB, String field, BuildContext context,
     DocumentSnapshot<Map<String, dynamic>>? documents,
@@ -14,7 +15,7 @@ circular2FieldsFortable(String fieldFB, String field, BuildContext context,
         ),
         border: Border.all(
           width: 3,
-          color: Colors.black26,
+          color: CustomTheme.black.withAlpha(66),
           style: BorderStyle.solid,
         ),
       ),

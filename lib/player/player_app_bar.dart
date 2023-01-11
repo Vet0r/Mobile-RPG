@@ -3,9 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_rpg/styles/custom_theme.dart';
 
-playerAppBar(String? campaignId, String? playerId, BuildContext context) {
+playerAppBar(
+    String? campaignId, String? playerId, BuildContext context, int appColor) {
   return AppBar(
-    backgroundColor: CustomTeheme.buttons70,
+    backgroundColor: CustomTheme.buttons70[appColor],
     centerTitle: true,
     automaticallyImplyLeading: false,
     title: FutureBuilder(
@@ -26,6 +27,7 @@ playerAppBar(String? campaignId, String? playerId, BuildContext context) {
           children: [
             Text(
               snapshot.data!["name"],
+              style: TextStyle(color: CustomTheme.text[appColor]),
             ),
             FutureBuilder(
                 future: FirebaseFirestore.instance
@@ -36,7 +38,10 @@ playerAppBar(String? campaignId, String? playerId, BuildContext context) {
                   if (!snapshot.hasData) {
                     return Container();
                   }
-                  return Text("Aventura: ${snapshot.data!["campaign_code"]}");
+                  return Text(
+                    "Aventura: ${snapshot.data!["campaign_code"]}",
+                    style: TextStyle(color: CustomTheme.text[appColor]),
+                  );
                 }),
           ],
         );

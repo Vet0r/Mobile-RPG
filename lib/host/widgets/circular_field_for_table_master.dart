@@ -11,6 +11,7 @@ circularFieldsFortableMaster(
     String field,
     BuildContext context,
     DocumentSnapshot<Map<String, dynamic>>? documents,
+    int appColor,
     {Color? fieldColor}) {
   return Padding(
     padding: const EdgeInsets.only(left: 5.0, right: 5, bottom: 7, top: 7),
@@ -22,7 +23,7 @@ circularFieldsFortableMaster(
         ),
         border: Border.all(
           width: 3,
-          color: Colors.black26,
+          color: CustomTheme.black.withAlpha(66),
           style: BorderStyle.solid,
         ),
       ),
@@ -30,16 +31,18 @@ circularFieldsFortableMaster(
         children: [
           Text(
             field,
-            style: TextStyle(fontSize: 20, color: CustomTeheme.text),
+            style: TextStyle(fontSize: 20, color: CustomTheme.text[appColor]),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 "${documents?.get(fieldFB)}",
-                style: TextStyle(fontSize: 25, color: CustomTeheme.text),
+                style:
+                    TextStyle(fontSize: 25, color: CustomTheme.text[appColor]),
               ),
-              editButton(isNumber, campaignId, fieldFB, documents, context),
+              editButton(
+                  isNumber, campaignId, fieldFB, documents, context, appColor),
             ],
           ),
           Row(
@@ -47,10 +50,11 @@ circularFieldsFortableMaster(
             children: [
               Text(
                 "${documents?.get("${fieldFB}Md")}",
-                style: TextStyle(fontSize: 15, color: CustomTeheme.text),
+                style:
+                    TextStyle(fontSize: 15, color: CustomTheme.text[appColor]),
               ),
-              editButton(
-                  isNumber, campaignId, "${fieldFB}Md", documents, context),
+              editButton(isNumber, campaignId, "${fieldFB}Md", documents,
+                  context, appColor),
             ],
           ),
         ],

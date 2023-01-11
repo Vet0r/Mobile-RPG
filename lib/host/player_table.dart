@@ -12,7 +12,8 @@ import '../styles/custom_theme.dart';
 class PlayerTable extends StatefulWidget {
   String? campaingId;
   String? playerId;
-  PlayerTable({this.campaingId, super.key, this.playerId});
+  int? appColor;
+  PlayerTable({this.appColor, this.campaingId, super.key, this.playerId});
   @override
   State<PlayerTable> createState() => _PlayerTableState();
 }
@@ -31,7 +32,7 @@ class _PlayerTableState extends State<PlayerTable> {
           .snapshots(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
-          return searchingWidget("Buscando jogador", context);
+          return searchingWidget("Buscando jogador", context, widget.appColor!);
         } else {
           return ListView(
             children: [
@@ -48,7 +49,7 @@ class _PlayerTableState extends State<PlayerTable> {
                             snapshot.data!.get('name'),
                             style: TextStyle(
                                 fontSize: width * 0.1,
-                                color: CustomTeheme.text),
+                                color: CustomTheme.text[widget.appColor!]),
                           ),
                           IconButton(
                             onPressed: () {
@@ -56,7 +57,8 @@ class _PlayerTableState extends State<PlayerTable> {
                                 context: context,
                                 builder: (context) {
                                   return AlertDialog(
-                                    backgroundColor: CustomTeheme.buttons70,
+                                    backgroundColor:
+                                        CustomTheme.buttons70[widget.appColor!],
                                     content: SizedBox(
                                       height: height * 0.10,
                                       child: Column(
@@ -71,12 +73,14 @@ class _PlayerTableState extends State<PlayerTable> {
                                                   widget.campaingId,
                                                   context,
                                                   true,
-                                                  snapshot.data!),
+                                                  snapshot.data!,
+                                                  widget.appColor!),
                                               buttonDelete(
                                                   widget.campaingId,
                                                   context,
                                                   false,
-                                                  snapshot.data!),
+                                                  snapshot.data!,
+                                                  widget.appColor!),
                                             ],
                                           ),
                                         ],
@@ -94,9 +98,9 @@ class _PlayerTableState extends State<PlayerTable> {
                     Row(
                       children: [
                         fieldsFortableMaster(true, widget.campaingId!, 'level',
-                            'Level', context, snapshot.data!),
+                            'Level', context, snapshot.data!, widget.appColor!),
                         fieldsFortableMaster(true, widget.campaingId!, 'race',
-                            'Etnia', context, snapshot.data!),
+                            'Etnia', context, snapshot.data!, widget.appColor!),
                       ],
                     ),
                     const Divider(
@@ -104,49 +108,80 @@ class _PlayerTableState extends State<PlayerTable> {
                       thickness: 2,
                     ),
                     fieldsFortableMaster(true, widget.campaingId!, 'money',
-                            '\$', context, snapshot.data!),
+                        '\$', context, snapshot.data!, widget.appColor!),
                     const Divider(
                       height: 0.1,
                       thickness: 2,
                     ),
                     fieldsFortableMaster(false, widget.campaingId!, 'class',
-                        'Classe', context, snapshot.data!),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        circularFieldsFortableMaster(true, widget.campaingId!,
-                            'force', 'Força', context, snapshot.data!,
-                            fieldColor: CustomTeheme.buttons),
-                        circularFieldsFortableMaster(true, widget.campaingId!,
-                            'dex', 'Destreza', context, snapshot.data!),
-                      ],
-                    ),
+                        'Classe', context, snapshot.data!, widget.appColor!),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         circularFieldsFortableMaster(
                             true,
                             widget.campaingId!,
-                            'inteligence',
-                            'Inteligência',
+                            'force',
+                            'Força',
                             context,
-                            snapshot.data!),
-                        circularFieldsFortableMaster(true, widget.campaingId!,
-                            'knologe', 'Sentidos', context, snapshot.data!),
+                            snapshot.data!,
+                            widget.appColor!,
+                            fieldColor: CustomTheme.buttons[widget.appColor!]),
+                        circularFieldsFortableMaster(
+                          true,
+                          widget.campaingId!,
+                          'dex',
+                          'Destreza',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        circularFieldsFortableMaster(true, widget.campaingId!,
-                            'charisma', 'Social', context, snapshot.data!),
                         circularFieldsFortableMaster(
-                            true,
-                            widget.campaingId!,
-                            'constitution',
-                            'Constituição',
-                            context,
-                            snapshot.data!),
+                          true,
+                          widget.campaingId!,
+                          'inteligence',
+                          'Inteligência',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
+                        circularFieldsFortableMaster(
+                          true,
+                          widget.campaingId!,
+                          'knologe',
+                          'Sentidos',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        circularFieldsFortableMaster(
+                          true,
+                          widget.campaingId!,
+                          'charisma',
+                          'Social',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
+                        circularFieldsFortableMaster(
+                          true,
+                          widget.campaingId!,
+                          'constitution',
+                          'Constituição',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
                       ],
                     ),
                     const Divider(
@@ -160,6 +195,7 @@ class _PlayerTableState extends State<PlayerTable> {
                       'Dado',
                       context,
                       snapshot.data!,
+                      widget.appColor!,
                     ),
                     const Divider(
                       height: 0.1,
@@ -168,22 +204,33 @@ class _PlayerTableState extends State<PlayerTable> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        circularFieldsFortable2Master(true, widget.campaingId!,
-                            'armor', 'Armadura', context, snapshot.data!),
                         circularFieldsFortable2Master(
-                            true,
-                            widget.campaingId!,
-                            'iniciative',
-                            'Iniciativa',
-                            context,
-                            snapshot.data!),
+                          true,
+                          widget.campaingId!,
+                          'armor',
+                          'Armadura',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
                         circularFieldsFortable2Master(
-                            true,
-                            widget.campaingId!,
-                            'deslocamento',
-                            'Deslocamento',
-                            context,
-                            snapshot.data!),
+                          true,
+                          widget.campaingId!,
+                          'iniciative',
+                          'Iniciativa',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
+                        circularFieldsFortable2Master(
+                          true,
+                          widget.campaingId!,
+                          'deslocamento',
+                          'Deslocamento',
+                          context,
+                          snapshot.data!,
+                          widget.appColor!,
+                        ),
                       ],
                     ),
                     const Divider(
@@ -214,6 +261,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         'HP Total',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                       fieldsFortableMaster(
                         true,
@@ -222,6 +270,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         'HP',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                       fieldsFortableMaster(
                         true,
@@ -230,6 +279,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         'HP Temporário',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                       const Divider(
                         height: 0.1,
@@ -243,6 +293,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         '',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                       fieldsFortableMaster(
                         false,
@@ -251,6 +302,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         '',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                       fieldsFortableMaster(
                         false,
@@ -259,6 +311,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         '',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                       fieldsFortableMaster(
                         false,
@@ -267,6 +320,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         '',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                       fieldsFortableMaster(
                         false,
@@ -275,6 +329,7 @@ class _PlayerTableState extends State<PlayerTable> {
                         '',
                         context,
                         snapshot.data!,
+                        widget.appColor!,
                       ),
                     ]),
                   ],

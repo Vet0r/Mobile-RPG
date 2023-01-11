@@ -2,6 +2,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 import '../../standard_textfiel_decoration.dart';
 
@@ -28,7 +29,7 @@ WeaponsAndArmorsTextField(
         ),
         border: Border.all(
           width: 3,
-          color: Colors.black26,
+          color: CustomTheme.black.withAlpha(66),
           style: BorderStyle.solid,
         ),
       ),
@@ -127,7 +128,7 @@ armor(BuildContext context, String armor, String campainId, String playerId,
         VerticalDivider(
           thickness: 1.0,
           width: MediaQuery.of(context).size.width * 0.01,
-          color: Colors.black,
+          color: CustomTheme.black,
         ),
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.20,
@@ -157,7 +158,7 @@ armor(BuildContext context, String armor, String campainId, String playerId,
         VerticalDivider(
           thickness: 1.0,
           width: MediaQuery.of(context).size.width * 0.01,
-          color: Colors.black,
+          color: CustomTheme.black,
         ),
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.20,
@@ -227,7 +228,7 @@ weapons(BuildContext context, String weapons, String campainId, String playerId,
         VerticalDivider(
           thickness: 1.0,
           width: MediaQuery.of(context).size.width * 0.01,
-          color: Colors.black,
+          color: CustomTheme.black,
         ),
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.20,
@@ -257,7 +258,7 @@ weapons(BuildContext context, String weapons, String campainId, String playerId,
         VerticalDivider(
           thickness: 1.0,
           width: MediaQuery.of(context).size.width * 0.01,
-          color: Colors.black,
+          color: CustomTheme.black,
         ),
         SizedBox(
           width: MediaQuery.of(context).size.width * 0.20,

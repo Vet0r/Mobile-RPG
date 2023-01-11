@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:mobile_rpg/styles/custom_theme.dart';
 
 buttonDelete(String? campaingId, BuildContext context, bool isDelete,
-    DocumentSnapshot<Map<String, dynamic>> doc) {
+    DocumentSnapshot<Map<String, dynamic>> doc, int appColor) {
   return TextButton(
     style: ButtonStyle(
-      backgroundColor: MaterialStateProperty.all(
-          isDelete ? CustomTeheme.errorCard : CustomTeheme.buttons),
+      backgroundColor: MaterialStateProperty.all(isDelete
+          ? CustomTheme.errorCard[appColor]
+          : CustomTheme.buttons[appColor]),
     ),
     onPressed: () {
       isDelete
@@ -24,7 +25,7 @@ buttonDelete(String? campaingId, BuildContext context, bool isDelete,
           : Navigator.pop(context);
     },
     child: Text(
-      style: const TextStyle(color: Colors.black),
+      style: TextStyle(color: CustomTheme.black),
       isDelete ? "Sim" : "Não",
     ),
   );

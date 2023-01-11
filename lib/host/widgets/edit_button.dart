@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 
 import '../../styles/custom_theme.dart';
 
-editButton(bool isNumber, String campaignId, String fieldFB,
-    DocumentSnapshot<Map<String, dynamic>>? documents, BuildContext context) {
+editButton(
+    bool isNumber,
+    String campaignId,
+    String fieldFB,
+    DocumentSnapshot<Map<String, dynamic>>? documents,
+    BuildContext context,
+    int appColor) {
   var controller = TextEditingController();
   return SizedBox(
     height: 20,
@@ -37,7 +42,10 @@ editButton(bool isNumber, String campaignId, String fieldFB,
                       );
                       Navigator.pop(context);
                     },
-                    icon: const Icon(Icons.arrow_forward_rounded),
+                    icon: Icon(
+                      Icons.arrow_forward_rounded,
+                      color: CustomTheme.text[appColor],
+                    ),
                   ),
                 ),
               ),
@@ -45,7 +53,7 @@ editButton(bool isNumber, String campaignId, String fieldFB,
           },
         );
       },
-      icon: Icon(Icons.mode, color: CustomTeheme.text),
+      icon: Icon(Icons.mode, color: CustomTheme.text[appColor]),
     ),
   );
 }
