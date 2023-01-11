@@ -97,10 +97,14 @@ class _PlayerTableState extends State<PlayerTable> {
                             'Level', context, snapshot.data!),
                         fieldsFortableMaster(true, widget.campaingId!, 'race',
                             'Etnia', context, snapshot.data!),
-                        fieldsFortableMaster(true, widget.campaingId!, 'money',
-                            '\$', context, snapshot.data!),
                       ],
                     ),
+                    const Divider(
+                      height: 0.1,
+                      thickness: 2,
+                    ),
+                    fieldsFortableMaster(true, widget.campaingId!, 'money',
+                            '\$', context, snapshot.data!),
                     const Divider(
                       height: 0.1,
                       thickness: 2,

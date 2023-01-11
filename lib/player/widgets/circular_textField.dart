@@ -109,7 +109,7 @@ armor(BuildContext context, String armor, String campainId, String playerId,
                 decoration: InputDecoration(
                   hintText: field["name$index"],
                 ),
-                onSubmitted: (value) {
+                onChanged: (value) {
                   field = {
                     "damageRed$index": field["damageRed$index"],
                     "name$index": value,
@@ -139,7 +139,7 @@ armor(BuildContext context, String armor, String campainId, String playerId,
                 decoration: InputDecoration(
                   hintText: field["weight$index"],
                 ),
-                onSubmitted: (value) {
+                onChanged: (value) {
                   field = {
                     "damageRed$index": field["damageRed$index"],
                     "name$index": field["name$index"],
@@ -169,7 +169,7 @@ armor(BuildContext context, String armor, String campainId, String playerId,
                 decoration: InputDecoration(
                   hintText: field["damageRed$index"],
                 ),
-                onSubmitted: (value) {
+                onChanged: (value) {
                   field = {
                     "damageRed$index": value,
                     "name$index": field["name$index"],
@@ -209,7 +209,7 @@ weapons(BuildContext context, String weapons, String campainId, String playerId,
                 decoration: InputDecoration(
                   hintText: field["name$index"],
                 ),
-                onSubmitted: (value) {
+                onChanged: (value) {
                   field = {
                     "damage$index": field["damage$index"],
                     "name$index": value,
@@ -239,7 +239,7 @@ weapons(BuildContext context, String weapons, String campainId, String playerId,
                 decoration: InputDecoration(
                   hintText: field["weight$index"],
                 ),
-                onSubmitted: (value) {
+                onChanged: (value) {
                   field = {
                     "damage$index": field["damage$index"],
                     "name$index": field["name$index"],
@@ -269,7 +269,7 @@ weapons(BuildContext context, String weapons, String campainId, String playerId,
                 decoration: InputDecoration(
                   hintText: field["damage$index"],
                 ),
-                onSubmitted: (value) {
+                onChanged: (value) {
                   field = {
                     "damage$index": value,
                     "name$index": field["name$index"],

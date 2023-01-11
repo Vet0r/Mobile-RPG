@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_rpg/styles/custom_theme.dart';
 
 class ItemsScreen extends StatefulWidget {
   String? campaingId;
@@ -49,6 +50,7 @@ class _ItemsScreenState extends State<ItemsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: CustomTeheme.buttons,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(

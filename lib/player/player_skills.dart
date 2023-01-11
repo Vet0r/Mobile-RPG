@@ -23,7 +23,7 @@ class _PlayerSkillsState extends State<PlayerSkills> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTeheme.backgroundTable,
+      backgroundColor: CustomTeheme.buttons,
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection('campaigns')
@@ -52,7 +52,7 @@ class _PlayerSkillsState extends State<PlayerSkills> {
                   title: Text(chave),
                   subtitle: TextField(
                     decoration: InputDecoration(hintText: valor),
-                    onSubmitted: (value) {
+                    onChanged: (value) {
                       Map<String, dynamic> field = snapshot.data!["skills"];
                       Map<String, dynamic> newField = {
                         ...field,
