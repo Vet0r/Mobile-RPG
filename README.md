@@ -1,16 +1,6 @@
 # mobile_rpg
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Esse projeto usa flutter e firebase para criação de uma aplicação que tem o intuito de viabilizar jogos de rpg.
+Para usar o app você precisa de uma maquina com flutter e um pouco de conhecimento de flutter/firebase, você tambem vai precisar de 
+uma conta no google e um servidor firebase(completamente gratuito), faça o processo de linkagem do firebase com o projeto e libere o authenticator no firebase.
+dai em diante todo o processo de uso se da pelo flutter, o app está bem cru, principalmente nas partes de skills e itens
+##Você é livre para alterar esse app e usar como quiser, mas você não é autorizado a publicar ele sem me contatar antes
